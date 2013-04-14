@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://blog.ibireme.com/blog/2013/04/14/first-page/</loc>
+        <lastmod>2013-04-15T00:26:46+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.ibireme.com/blog/archives/</loc>
+        <lastmod>2013-04-15T00:26:46+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.ibireme.com/hehe.txt</loc>
+        <lastmod>2013-04-14T22:42:47+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.ibireme.com/</loc>
+        <lastmod>2013-04-15T00:26:46+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.ibireme.com/robots.txt</loc>
+        <lastmod>2013-04-14T22:42:47+08:00</lastmod>
+    </url>
+</urlset>
