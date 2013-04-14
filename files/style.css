@@ -1,0 +1,128 @@
+::selection {
+	background: #000;
+	}
+::-moz-selection {
+	background: #000;
+}
+
+body {
+	background-color: #303030;
+	font-family: Arial, Helvetica, sans-serif;
+	font-smooth: always;
+	text-shadow: #1c1c1c 0px 1px 2px;
+	font-size : 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0 0 1px rgba(0,0,0,0.01);
+}
+
+h1 {
+	font-size: 2.1em;
+	font-weight: bold;
+	color: #7e7e7e;
+	text-shadow: #1c1c1c 0px 1px 3px;
+}
+
+a {
+	text-decoration: none;
+	text-shadow: #1c1c1c 0px 1px 3px;
+}
+
+.apps a {
+	color: #ff4e0c;
+}
+
+.dev a {
+	color: #30a7ff;
+}
+
+.contact a {
+	color: #ff3c43;
+}
+
+.info a {
+	color: #ff4e0c;
+}
+
+.green a {
+	color: #339933;
+}
+
+.requirements a {
+	color: #ff4e0c;
+}
+
+.download a {
+	color: #30a7ff;
+}
+
+.reach a {
+	color: #33cc33;
+}
+
+.footer {
+	color: #7e7e7e;
+	text-align: center;
+	font-size: 0.65em;
+	text-shadow: #1c1c1c 0px 1px 3px;
+}
+
+.footer a {
+	color: inherit;
+	text-align: inherit;
+	font-size: inherit;
+	text-shadow: inherit;
+}
+            
+#maincontent {
+	color: #fbfbfb;
+	font-size: 1.375em;
+	text-align: left;
+	width: 480px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+
+.noticeme {
+	-webkit-animation: breathe 1.0s infinite; 
+	-webkit-animation-direction: alternate; 
+	-webkit-animation-timing-function: ease-out; 
+}
+
+@-webkit-keyframes breathe {
+        0% {
+                text-shadow: rgba(255, 239, 0, 0.9) 0px 0px 6px;
+        }
+        100% {
+                text-shadow: rgba(255, 239, 0, 0.3) 0px 0px 6px;
+        }
+}
+
+.noticememore {
+	border-bottom-style: double;
+	border-bottom-color: #7e7e7e;
+}
+
+.urgento p {
+	padding: 5px;
+	border-style: dashed;
+	border-color: #ff3c43;
+	font-size: 0.70em;
+	text-align: center;
+}
+
+.extrainfo {
+	color: #7e7e7e;
+}
+
+div.screenshotcrop {
+	height: 150px;
+	width: 490px;
+	overflow: hidden;
+}
+
+div.screenshotcrop img {
+	margin: 0px 0px 0px -7px;
+}
