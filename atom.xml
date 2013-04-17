@@ -4,7 +4,7 @@
   <title><![CDATA[Garan no dou]]></title>
   <link href="http://blog.ibireme.com/atom.xml" rel="self"/>
   <link href="http://blog.ibireme.com/"/>
-  <updated>2013-04-15T00:39:31+08:00</updated>
+  <updated>2013-04-18T00:39:16+08:00</updated>
   <id>http://blog.ibireme.com/</id>
   <author>
     <name><![CDATA[ibireme]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[一个查看UIView层次的小东西]]></title>
+    <link href="http://blog.ibireme.com/blog/2013/04/18/yy-3d-view/"/>
+    <updated>2013-04-18T00:27:00+08:00</updated>
+    <id>http://blog.ibireme.com/blog/2013/04/18/yy-3d-view</id>
+    <content type="html"><![CDATA[<p>看到Firefox可以用3D来显示DOM,也想在iOS里搞一个。。</p>
+
+<p>没什么用,只是看着好玩罢了～<a href="https://github.com/ibireme/YYViewHierarchy3D">Github</a></p>
+
+<script type="text/javascript" src="http://blog.ibireme.com/assets/jwplayer6/jwplayer.js"></script>
+
+
+<div id='player_9578'></div>
+
+
+<script type='text/javascript'>
+  jwplayer('player_9578').setup({
+    file: "/files/YYView3D.mp4",
+    width: "320",
+    height: "480",
+    primary: "flash",
+    image: "/files/YYView3D.png",
+  });
+</script>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第一章]]></title>
