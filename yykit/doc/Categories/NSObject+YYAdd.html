@@ -1,0 +1,1025 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSObject(YYAdd) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">YYKit </a></h1>
+				<a id="developerHome" href="../index.html">ibireme</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSObject(YYAdd) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/className">&nbsp;&nbsp;&nbsp;&nbsp;+ className</option>
+	
+	<option value="//api/name/swizzleClassMethod:withClassMethod:">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleClassMethod:withClassMethod:</option>
+	
+	<option value="//api/name/swizzleMethod:withMethod:">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleMethod:withMethod:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/associateValue:withKey:">&nbsp;&nbsp;&nbsp;&nbsp;- associateValue:withKey:</option>
+	
+	<option value="//api/name/associateWeakValue:withKey:">&nbsp;&nbsp;&nbsp;&nbsp;- associateWeakValue:withKey:</option>
+	
+	<option value="//api/name/associatedValueForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- associatedValueForKey:</option>
+	
+	<option value="//api/name/associatedValueRemove:">&nbsp;&nbsp;&nbsp;&nbsp;- associatedValueRemove:</option>
+	
+	<option value="//api/name/className">&nbsp;&nbsp;&nbsp;&nbsp;- className</option>
+	
+	<option value="//api/name/performSelector:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:</option>
+	
+	<option value="//api/name/performSelector:afterDelay:withObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:withObjects:</option>
+	
+	<option value="//api/name/performSelector:withObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:withObjects:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sending Messages with variable params.">Sending Messages with variable params.</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Swap method (Swizzling)">Swap method (Swizzling)</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Associate value">Associate value</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Others">Others</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/className">className</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleClassMethod:withClassMethod:">swizzleClassMethod:withClassMethod:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleMethod:withMethod:">swizzleMethod:withMethod:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associateValue:withKey:">associateValue:withKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associateWeakValue:withKey:">associateWeakValue:withKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associatedValueForKey:">associatedValueForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associatedValueRemove:">associatedValueRemove:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/className">className</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:">performSelector:afterDelay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:withObjects:">performSelector:afterDelay:withObjects:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:withObjects:">performSelector:withObjects:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSObject(YYAdd) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSObject(YYAdd) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSObject+YYAdd.h<br />NSObject+YYAdd.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Common tasks for NSObject.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Sending Messages with variable params." name="task_Sending Messages with variable params."></a>
+						<h3 class="subsubtitle task-title">Sending Messages with variable params.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelector:withObjects:">&ndash;&nbsp;performSelector:withObjects:</a></code>
+		<span class="tooltip"><p>Invokes a method of the receiver on the current thread with variable params.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelector:afterDelay:withObjects:">&ndash;&nbsp;performSelector:afterDelay:withObjects:</a></code>
+		<span class="tooltip"><p>Invokes a method of the receiver on the current thread
+with variable params after a delay.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelector:afterDelay:">&ndash;&nbsp;performSelector:afterDelay:</a></code>
+		<span class="tooltip"><p>Invokes a method of the receiver on the current thread after a delay.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Swap method (Swizzling)" name="task_Swap method (Swizzling)"></a>
+						<h3 class="subsubtitle task-title">Swap method (Swizzling)</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swizzleMethod:withMethod:">+&nbsp;swizzleMethod:withMethod:</a></code>
+		<span class="tooltip"><p>Swap two method&rsquo;s implementation in one class.
+It`s very dangerous,be careful.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swizzleClassMethod:withClassMethod:">+&nbsp;swizzleClassMethod:withClassMethod:</a></code>
+		<span class="tooltip"><p>Swap two class method&rsquo;s implementation in one class.
+It`s very dangerous,be careful.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Associate value" name="task_Associate value"></a>
+						<h3 class="subsubtitle task-title">Associate value</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/associateValue:withKey:">&ndash;&nbsp;associateValue:withKey:</a></code>
+		<span class="tooltip"><p>Associate one object to <code>self</code>,as if it was a strong property (strong,nonatomic).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/associateWeakValue:withKey:">&ndash;&nbsp;associateWeakValue:withKey:</a></code>
+		<span class="tooltip"><p>Associate one object to <code>self</code>,as if it was a weak property (week,nonatomic).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/associatedValueForKey:">&ndash;&nbsp;associatedValueForKey:</a></code>
+		<span class="tooltip"><p>Get the associated value from <code>self</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/associatedValueRemove:">&ndash;&nbsp;associatedValueRemove:</a></code>
+		<span class="tooltip"><p>Remove associate between value and <code>self</code>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Others" name="task_Others"></a>
+						<h3 class="subsubtitle task-title">Others</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/className">+&nbsp;className</a></code>
+		<span class="tooltip"><p>Get the class name use NSString.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/className">&ndash;&nbsp;className</a></code>
+		<span class="tooltip"><p>Get the class name use NSString.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/className" title="className"></a>
+	<h3 class="subsubtitle method-title">className</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the class name use NSString.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)className</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/swizzleClassMethod:withClassMethod:" title="swizzleClassMethod:withClassMethod:"></a>
+	<h3 class="subsubtitle method-title">swizzleClassMethod:withClassMethod:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Swap two class method&rsquo;s implementation in one class.
+It`s very dangerous,be careful.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)swizzleClassMethod:(SEL)<em>originalSel</em> withClassMethod:(SEL)<em>newSel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>originalSel</em></dt>
+			<dd><p>Selector 1.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newSel</em></dt>
+			<dd><p>Selector 2.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>if success.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/swizzleMethod:withMethod:" title="swizzleMethod:withMethod:"></a>
+	<h3 class="subsubtitle method-title">swizzleMethod:withMethod:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Swap two method&rsquo;s implementation in one class.
+It`s very dangerous,be careful.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)swizzleMethod:(SEL)<em>originalSel</em> withMethod:(SEL)<em>newSel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>originalSel</em></dt>
+			<dd><p>Selector 1.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newSel</em></dt>
+			<dd><p>Selector 2.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>if success</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/associateValue:withKey:" title="associateValue:withKey:"></a>
+	<h3 class="subsubtitle method-title">associateValue:withKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Associate one object to <code>self</code>,as if it was a strong property (strong,nonatomic).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)associateValue:(id)<em>value</em> withKey:(void *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The object to associate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The pointer to get value from <code>self</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Do not copy this object, or you cannot get the associated value.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/associateWeakValue:withKey:" title="associateWeakValue:withKey:"></a>
+	<h3 class="subsubtitle method-title">associateWeakValue:withKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Associate one object to <code>self</code>,as if it was a weak property (week,nonatomic).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)associateWeakValue:(id)<em>value</em> withKey:(void *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The object to associate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The pointer to get value from <code>self</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Do not copy this object, or you cannot get the associated value.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/associatedValueForKey:" title="associatedValueForKey:"></a>
+	<h3 class="subsubtitle method-title">associatedValueForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the associated value from <code>self</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)associatedValueForKey:(void *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The pointer to get value from <code>self</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/associatedValueRemove:" title="associatedValueRemove:"></a>
+	<h3 class="subsubtitle method-title">associatedValueRemove:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove associate between value and <code>self</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)associatedValueRemove:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The value which associated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/className" title="className"></a>
+	<h3 class="subsubtitle method-title">className</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the class name use NSString.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)className</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelector:afterDelay:" title="performSelector:afterDelay:"></a>
+	<h3 class="subsubtitle method-title">performSelector:afterDelay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a method of the receiver on the current thread after a delay.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)performSelector:(SEL)<em>aSelector</em> afterDelay:(NSTimeInterval)<em>delay</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aSelector</em></dt>
+			<dd><p>A selector that identifies the method to invoke.
+The method should not have a significant return value and
+should take no argument.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delay</em></dt>
+			<dd><p>The minimum time before which the message is sent.
+Specifying a delay of 0 does not necessarily
+cause the selector to be performed immediately.
+The selector is still queued on the thread’s run loop
+and performed as soon as possible.</p>
+
+<p>@throw NSInvalidArgumentException</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelector:afterDelay:withObjects:" title="performSelector:afterDelay:withObjects:"></a>
+	<h3 class="subsubtitle method-title">performSelector:afterDelay:withObjects:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a method of the receiver on the current thread
+with variable params after a delay.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)performSelector:(SEL)<em>aSelector</em> afterDelay:(NSTimeInterval)<em>delay</em> withObjects:(id)<em>firstObj</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aSelector</em></dt>
+			<dd><p>A selector that identifies the method to invoke.
+The method should not have a significant return value and
+should take at lest one argument of type id.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delay</em></dt>
+			<dd><p>The minimum time before which the message is sent.
+Specifying a delay of 0 does not necessarily
+cause the selector to be performed immediately.
+The selector is still queued on the thread&rsquo;s run loop
+and performed as soon as possible.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>firstObj</em></dt>
+			<dd><p>The first argument to pass to the method when it is invoked.
+Pass nil if the method does not take an argument.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>The variable arguments.</p>
+
+<p>@throw NSInvalidArgumentException</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>example code:</p>
+
+<pre>
+[self performSelector:@selector(test::::) afterDelay:1.0 withObjects:@"a",@"b",@"c",@"d"];
+</pre>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelector:withObjects:" title="performSelector:withObjects:"></a>
+	<h3 class="subsubtitle method-title">performSelector:withObjects:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a method of the receiver on the current thread with variable params.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)performSelector:(SEL)<em>aSelector</em> withObjects:(id)<em>firstObj</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aSelector</em></dt>
+			<dd><p>A selector that identifies the method to invoke.
+The method should not have a significant return value and
+should take at lest one argument of type id.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>firstObj</em></dt>
+			<dd><p>The first argument to pass to the method when it is invoked.
+Pass nil if the method does not take an argument.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>The variable arguments.</p>
+
+<p>@throw NSInvalidArgumentException</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>example code:</p>
+
+<pre>
+[self performSelector:@selector(test::::) withObjects:@"a",@"b",@"c",@"d"];
+</pre>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
