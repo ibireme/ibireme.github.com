@@ -1,4 +1,4 @@
-#用之前一定要注意 License
+#用之前一定要注意License
 #也最好先看看Github页面
 
 
@@ -10,33 +10,34 @@
 #pragma mark - -系统基础库
 {
 #pragma mark Category/Util
-    sstoolkit       '一套Category类型的库,附带很多自定义控件 功能不错～' 
-    cocoa-helpers   '一些Cocoa的扩展 3年前的工程'
-    CoconutKit      '一系列扩展和一些自定东西'
-    STUtils         '一系列扩展包'   //撸了一部分 一般 有用的不多 
-    PSFoundation    '一系列扩展 和功能增强'   //这里一大票，巨多。。 合各家的工具
+    sstoolkit       '一套Category类型的库,附带很多自定义控件 功能不错～' //Addon已lu View没动，文档很好值得参考
+    cocoa-helpers   '一些Cocoa的扩展 3年前的工程' //东西不多，已lu
+    CoconutKit      '一系列扩展和一些自定东西' //大部分是自定义的View和Controller等过程 已lu
+    STUtils         '一系列扩展包'   //撸了一部分 一般
+    PSFoundation    '一系列扩展 和功能增强'   //合各家的工具 (大部分都噜了，UIImage待)
     ConciseKit      '一系列宏定义 挺有意思'
-    DTFoundation    '又一系列扩展。。。'
-    BBBootstrap     '一些类似YYKit的扩展库'
-    NSObject-Utility-Categories '如题'  
-    NSArray-Utilities '如题'        
-    aqtoolkit       '一些常用的东西'
-    DLIntrospection '一些NSObject的扩展'
+    DTFoundation    '又一系列扩展。。。' //没什么lu
+    BBBootstrap     '一些类似YYKit的扩展库' ///~ 文档还可以
+    NSObject-Utility-Categories '如题'  //runtime相关
+    NSArray-Utilities '如题'            //已lu
+    aqtoolkit       '一些常用的东西'   ///有压缩、加密、Keychain等，有空看下
+    DLIntrospection '一些NSObject的扩展' ///类似上面的那个
     ABContactHelper '如题'
     NSDate-Extensions '如题日期;
-    ALActionBlocks  '在UIControl上添加的Block事件'
-    jrswizzle       '一个很棒的运行时扩展 方法替换等' 
+    ALActionBlocks  '在UIControl上添加的Block事件'  //已lu
+    jrswizzle       '一个很棒的运行时扩展 方法替换等'  //已lu
     moriarty        '一些还算有用的功能'
     QSUtilities     '一些基础库 (Instagram有用到)'
     libextobjc      '一堆oc的扩展'
     PrettyTimestamp '友好时间的扩展'
     ios-jail-break-detector '检测是否越狱 有上线'
     crackify        '检测App是否被破解'
-    NSBundle-OBCodeSigningInfo '检查当前签名\Sandbox状态'
+    NSBundle-OBCodeSigningInfo '检查当前签名\Sandbox状态 MacOSX'
     UIView-AnimatedProperty '为UIView添加动画效果的property,有用到swizzle'
     Block-KVO       'Block风格的KVO~'
     MTDates         '一些Data的category'
     CocoaSecurity   '常见的哈希、加密解密算法'
+    sskeychain      '访问keychain 支持iOS Mac'
     // tapkulibrary 这里面也有不少category
     // three20      也有
     
@@ -614,6 +615,10 @@
     newsyc              '一个newsyc.me的客户端 (iPhone hacker News)'
     News-YC---iPhone    'hackerNews的客户端'
     Upcoming            '一个设计很棒的日程安排'
+    ThatInbox           'Ink出的邮件客户端'
+    ThatCloud           'Ink出的云端文件管理'
+    ThatPDF             'Ink出的PDF编辑'
+    ThatPhoto           'Ink出的图片编辑'
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -632,6 +637,7 @@
     Nocilla         '一个模拟HTTP响应的调试库'
     dyci-main       '一个可以在调试时动态添加代码的工具 需要改动Xcode'
     GestureLab      '调试和把玩GestureRecognizor的'
+    cedar           'BDD风格单元测试'
 }
 
 
@@ -717,6 +723,7 @@
     zephyros    '窗口管理 for hackers'
     
     
+    cocoapods-xcode-plugin 'cocoapod 插件'
     ColorSense-for-Xcode 'Xcode的插件 支持动态调整UIColor'
     KSImageNamed-Xcode 'Xcode的插件 支持显示工程里的UIImage'
     nib2objc        '把xib和nib翻译成m 包括命令.GUI.Service'
