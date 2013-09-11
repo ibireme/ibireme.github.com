@@ -3,4 +3,4 @@ ibireme.github.com
 
 My Github Pages
 
-http://blog.ibireme.com
+http://github.ibireme.com
