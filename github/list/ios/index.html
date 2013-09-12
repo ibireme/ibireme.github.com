@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Github repos for iOS</title>
+<title>Github repos (iOS)</title>
 
 <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
 <!--[if IE 7]>
@@ -16,7 +16,6 @@
 
 $(document).ready(function(){
 
-    
     
     
     function getRepoHTML(repo){
@@ -129,7 +128,8 @@ $(document).ready(function(){
     }
     var trs = $("tr");
     for (var i=0; i<trs.length; i++){
-       getRepoInfo(trs[i]);
+       //getRepoInfo(trs[i]);
+       //will ban IP... X_X 
     }
 
 
@@ -277,7 +277,6 @@ $(document).ready(function(){
 }
 
 
-
 .list-box-heading i{
     float:right;
     padding-right:5px;
@@ -287,12 +286,7 @@ $(document).ready(function(){
 position: relative;
 height: 0;
 overflow: hidden;
-//-webkit-transition: height 0.25s ease;
-//-moz-transition: height 0.25s ease;
-//-o-transition: height 0.25s ease;
-//transition: height 0.25s ease;
 }
-
 
 .table-hover tbody tr:hover td, 
 .table-hover tbody tr:hover th {
