@@ -124,7 +124,7 @@ $(document).ready(function(){
             var fork = data.forks_count;
             console.log("star" + star + " fork" + fork);
             $(tr).first().find(".icon-star-empty").first().parent()[0].innerHTML = '<i class="icon-star-empty"></i> ' + star;
-            $(tr).first().find(".icon-code-fork").first().parent()[0].innerHTML = '<i class="icon-code-fork"></i> ' + star;
+            $(tr).first().find(".icon-code-fork").first().parent()[0].innerHTML = '<i class="icon-code-fork"></i> ' + fork;
         });
     }
     var trs = $("tr");
