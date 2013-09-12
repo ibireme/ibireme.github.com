@@ -21,7 +21,7 @@ $(document).ready(function(){
     function getRepoHTML(repo){
         var url;
         if (repo.owner && repo.owner != ''){
-            url = 'https://github.com/' + repo.owner + '/' + repo.name + '"> ' + repo.name;
+            url = 'https://github.com/' + repo.owner + '/' + repo.name;
         } else {
             url = 'https://github.com/search?q=' + repo.name;
         }
