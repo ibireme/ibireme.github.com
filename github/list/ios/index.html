@@ -15,8 +15,6 @@
 
 $(document).ready(function(){
 
-    
-    
     function getRepoHTML(repo){
         var url;
         if (!repo || !repo.name) {
@@ -100,31 +98,69 @@ $(document).ready(function(){
             var major = list[i];
             inner += getMajorHTML(major);
         }
-        return '<div id="fix-top-header"><div id="fix-top-inner">- ( ゜- ゜)つロ 乾杯~</div></div>'
-         + inner;
+        return '<div id="fix-top-header">' + 
+            '<div id="fix-top-inner">- ( ゜- ゜)つロ 乾杯~</div>' + 
+            '<div id="fix-top-action">' + 
+                '<a href="#" id="action-expand-all">全部展开</a>' + 
+                    "&nbsp;&nbsp;" +
+                '<a href="#" id="action-collapse-all">全部折叠</a>' +
+            '</div>' +
+        '</div>' +
+        inner;
     }
     
     var html = getListHTML(githubList);
     $(".list")[0].innerHTML = html;
     
-    
-    
-    
+
     function toggleBox(head){
         $(head).parent().next(".list-box-inner-wrap").first().animate({height: 'toggle', opacity: 'toggle'}, "fast");
-        var className = $(head).find("i").first().className;
+        var className = $(head).find("i")[0].className;
         if(className == "icon-angle-up") className = "icon-angle-down";
         else if(className == "icon-angle-down") className = "icon-angle-up";
-        $(head).find("i").first().className = className;
+        $(head).find("i")[0].className = className;
+    }
+    
+    function _toggleBox(head){
+        return function(){toggleBox(head);};
+    }
+    
+    function expandAll(){
+        var time = 0;
+        var list = $(".list-box-heading a");
+        for (var i=0; i<list.length; i++){
+            var head = list[i];
+            if(! $(head).parent().next(".list-box-inner-wrap").first().is(':visible')) {
+                setTimeout(_toggleBox(head),time);
+                time += 20;
+            }
+        }
+    }
+    
+    function collapseAll(){
+        var time = 0;
+        var list = $(".list-box-heading a");
+        for (var i=0; i<list.length; i++){
+            var head = list[i];
+            if($(head).parent().next(".list-box-inner-wrap").first().is(':visible')) {
+                setTimeout(_toggleBox(head),time);
+                time += 20;
+            }
+        }
     }
     
     $(".list-box-heading a").click(function(){
         toggleBox(this);
     });
+    $("#action-expand-all").click(function(){
+        expandAll();
+    });
+    $("#action-collapse-all").click(function(){
+        collapseAll();
+    });
+    setTimeout(collapseAll,100);
     
-    
-    
-    
+    //获取fork、star数量
     function getRepoInfo(tr){
         var owner = $(tr).first().attr("owner");
         if (!owner || owner=='') {
@@ -144,7 +180,8 @@ $(document).ready(function(){
     var trs = $("tr");
     for (var i=0; i<trs.length; i++){
        //getRepoInfo(trs[i]);
-       //will ban IP... X_X 
+       //will ban IP... X_X
+       //github 没有oauth时，每小时60次调用限制..
     }
 
 
@@ -196,8 +233,6 @@ $(document).ready(function(){
 });
 
 
-
-
 </script>
 
 <style>
@@ -233,7 +268,6 @@ $(document).ready(function(){
  color:white;
 }
 
-
 body {
     width: 1024px;
     margin: 0 auto;
@@ -241,9 +275,8 @@ body {
 }
 
 a {  
-   color:#007fff;;  
+   color:#007fff;
 }
-
 
 #fix-top-header {
     display: block;
@@ -260,6 +293,14 @@ a {
     border-bottom: 1px solid #FAFAFA;
     line-height: 35px;
     font-weight: bold;
+}
+
+#fix-top-inner {
+    float:left;
+}
+#fix-top-action {
+    float:right;
+    padding-right: 10px;
 }
     
 .list {
@@ -344,11 +385,13 @@ vertical-align: top;
 border-top: 0px;
 }
 
-
 </style>
 </head>
 <body>
-    <div class="list">
-    </div>
+    <div class="list"></div>
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1766511"></script>
+    <!-- UY END -->
 </body>
 </html>
