@@ -31,8 +31,8 @@ list: [
     {name:'Block-KVO',                  owner:'',  desc:'Block风格的KVO~'},
     {name:'MTDates',                    owner:'',  desc:'一些Data的category'},
     {name:'CocoaSecurity',              owner:'',  desc:'常见的哈希、加密解密算法'},
-    {name:'sskeychain',                 owner:'',  desc:'访问keychain 支持iOS Mac'}
-    {name:'ABContactHelper',            owner:'erica',      desc:'访问联系人'},
+    {name:'sskeychain',                 owner:'',  desc:'访问keychain 支持iOS Mac'},
+    {name:'ABContactHelper',            owner:'erica',      desc:'访问联系人'}
 ]
 },
 
