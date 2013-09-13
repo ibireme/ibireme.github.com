@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Github repos (iOS)</title>
-
+<meta charset="utf-8">
 <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
 <!--[if IE 7]>
   <link rel="stylesheet" href="/static/font-awesome/css/font-awesome-ie7.min.css">
@@ -11,8 +11,7 @@
 <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
 <script src="github.js"></script>
 
-
-<script type="text/javascript">
+<script type="text/javascript"> 
 
 $(document).ready(function(){
 
@@ -20,6 +19,9 @@ $(document).ready(function(){
     
     function getRepoHTML(repo){
         var url;
+        if (!repo || !repo.name) {
+            return "";
+        }
         if (repo.owner && repo.owner != ''){
             url = 'https://github.com/' + repo.owner + '/' + repo.name;
         } else {
@@ -36,6 +38,9 @@ $(document).ready(function(){
     
     function getMinorHTML(minor){
         var inner = "";
+        if(!minor) {
+            return inner;
+        }
         if (!minor.list){
             return '<table class="table table-hover">' +
                 '<colgroup> <col width="26%" /><col width="60%" /><col width="7%" /><col width="7%" />' +
@@ -98,9 +103,12 @@ $(document).ready(function(){
         return '<div id="fix-top-header"><div id="fix-top-inner">- ( ゜- ゜)つロ 乾杯~</div></div>'
          + inner;
     }
-
+    
     var html = getListHTML(githubList);
     $(".list")[0].innerHTML = html;
+    
+    
+    
     
     function toggleBox(head){
         $(head).parent().next(".list-box-inner-wrap").first().animate({height: 'toggle', opacity: 'toggle'}, "fast");
@@ -141,13 +149,13 @@ $(document).ready(function(){
 
 
     function getElementTop(element){
-    　　　　var actualTop = element.offsetTop;
-    　　　　var current = element.offsetParent;
-    　　　　while (current !== null){
-    　　　　　　actualTop += current.offsetTop;
-    　　　　　　current = current.offsetParent;
-    　　　　}
-    　　　　return actualTop;
+        var actualTop = element.offsetTop;
+        var current = element.offsetParent;
+        while (current !== null){
+            actualTop += current.offsetTop;
+            current = current.offsetParent;
+        }
+        return actualTop;
     }
 
     $(window).scroll(function (){
@@ -176,7 +184,13 @@ $(document).ready(function(){
         if(!curHeader){
             return;
         }
-        $("#fix-top-inner")[0].innerHTML = curHeader.innerText;
+        var inner;
+        if(typeof curHeader.textContent == "string") {
+            inner = curHeader.textContent;
+        } else {
+            inner = curHeader.innerText;
+        }
+        $("#fix-top-inner")[0].innerHTML = inner;
     });
 
 });
@@ -190,30 +204,45 @@ $(document).ready(function(){
 
 
 
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #FFF;
-        -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #CCC;
-        -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #AAA;
-    }
-    ::-webkit-scrollbar-thumb:active {
-        background: #888;
-        -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
-    }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #FFF;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #CCC;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AAA;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #888;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}
 
-    body {
-        width: 1024px;
-        margin: 0 auto;
-        font-family: "Helvetica","Microsoft Yahei","微软雅黑","Arial","sans-serif";
-    }
+::selection {
+ background: #9954bb; 
+ color:white;
+}
+
+::-moz-selection  {
+ background: #9954bb; 
+ color:white;
+}
+
+
+body {
+    width: 1024px;
+    margin: 0 auto;
+    font-family: "Helvetica","Microsoft Yahei","微软雅黑","Arial","sans-serif";
+}
+
+a {  
+   color:#007fff;;  
+}
 
 
 #fix-top-header {
@@ -238,14 +267,14 @@ $(document).ready(function(){
 }
 
 .list-box {
-  border: 1px solid #7cbb00;
+  border: 1px solid #007fff;
 }
 .list-box-inner {
-  border-top: 1px solid #7cbb00;
+  border-top: 1px solid #007fff;
 }
 .list-box-heading {
     font-weight: bold;
-    background-color: #7cbb00;
+    background-color: #007fff;
 }
 .list-box-heading a,
 .list-box-heading a:hover,
@@ -256,7 +285,7 @@ $(document).ready(function(){
     outline: 0;
     color: #FFF;
     text-decoration: none;
-    background-color: #7cbb00;
+    background-color: #007fff;
 }
 
 
@@ -264,7 +293,7 @@ $(document).ready(function(){
 .list-box-inner .list-box-heading a:hover,
 .list-box-inner .list-box-heading a:active,
 .list-box-inner .list-box-heading a:visited {
-    background-color: #f8b601;
+    background-color: #79bcff;
 }
 
 .list-box-heading a:hover,
@@ -274,13 +303,13 @@ $(document).ready(function(){
 
 
 .list-box-inner .list-box {
-    border: 1px solid #f8b601;
+    border: 1px solid #79bcff;
 }
 .list-box-inner .list-box-inner {
-    border-top: 1px solid #f8b601;
+    border-top: 1px solid #79bcff;
 }
 .list-box-inner .list-box-heading {
-    background-color: #f8b601;
+    background-color: #79bcff;
 }
 
 
