@@ -194,10 +194,21 @@ $(document).ready(function(){
         }
         return actualTop;
     }
+    
+    $(".scroll-top").click(function (){
+          $("html,body").animate({ scrollTop:0},"slow");
+    });
 
     $(window).scroll(function (){
         var headers = $(".list-box-heading a");
         var y = window.pageYOffset;
+        
+        if (y > 100) {
+            $(".scroll-top").show();
+        } else {
+            $(".scroll-top").hide();
+        }
+        
         if (y < 35) {
             $("#fix-top-inner")[0].innerHTML = "- ( ゜- ゜)つロ Github-iOS备忘";
             return;
@@ -367,22 +378,37 @@ overflow: hidden;
 
 .table-hover tbody tr:hover td, 
 .table-hover tbody tr:hover th {
-background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 .table {
-border-collapse: collapse;
-border-spacing: 0;
-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
 }
 
 .table th, 
 .table td {
-padding: 5px;
-line-height: 20px;
-text-align: left;
-vertical-align: top;
-border-top: 0px;
+    padding: 5px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 0px;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 10px;
+    padding-top: 0px;
+    width: 20px;
+    height: 25px;
+    z-index: 1000;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 </style>
@@ -390,7 +416,7 @@ border-top: 0px;
 <body>
     <div class="list"></div>
     
-    
+    <div class="scroll-top" style="display:none;"><i class="icon-angle-up"></i></div>
     
     <div id="disqus_thread" style="padding-top:10px;"></div>
     <script type="text/javascript">
