@@ -27,7 +27,7 @@ list: [
     {name:'PrettyTimestamp',    owner:'jonhocking',      desc:'友好时间的扩展'},
     {name:'ios-jail-break-detector',    owner:'diwu',    desc:'检测是否越狱 有上线'},
     {name:'crackify',           owner:'itruf',           desc:'检测App是否被破解'},
-    {name:'NSBundle-OBCodeSigningInfo', owner:'ole',     desc:'检查当前签名\Sandbox状态 MacOSX'},
+    {name:'NSBundle-OBCodeSigningInfo', owner:'ole',     desc:'检查当前签名、Sandbox状态 MacOSX'},
     {name:'UIView-AnimatedProperty',owner:'iMartinKiss', desc:'为UIView添加动画效果的property,有用到swizzle'},
     {name:'Block-KVO',          owner:'iMartinKiss',     desc:'Block风格的KVO~'},
     {name:'MTDates',          owner:'mysterioustrousers',desc:'一些Data的category'},
@@ -40,6 +40,8 @@ list: [
     {name:'SoloComponents-iOS', owner:'andreyvit',       desc:'几个轻量的组件,没什么用,2年没更新'},
     {name:'MAObjCRuntime',      owner:'mikeash',         desc:'将运行时包装成ObjC'},
     {name:'Objective-C-Generics',owner:'tomersh',        desc:'通过宏定义勉强实现的范型'},
+    {name:'TBMacros',           owner:'twobitlabs',      desc:'一些常用的宏定义'},
+    {name:'NSString-Ruby',      owner:'zdavison',        desc:'为Ruby程序员带来的字符串相关功能'},
     {name:'ObjectiveRecord',    owner:'mneorr',          desc:'CoreData包装的活动记录 有RoR风格的API'}
 ]
 },
@@ -190,6 +192,7 @@ list:[
     {name:'octokit.objc',         owner:'octokit',        desc:'Github的API'},
     {name:'ParcelKit',            owner:'overcommitted',  desc:'Dropbox封装CoreData'},
     {name:'cocoalibspotify',      owner:'spotify',        desc:'spotify官方SDK'},
+    {name:'GDFileManagerKit',     owner:'GrahamDennis',   desc:'访问 dropbox GDrive之类的云存储'}
     ]
 },
 
@@ -238,6 +241,7 @@ list:[
     {name:'tiny-wings',                   owner:'haqu',    desc:'仿TinyWings的Demo 用Cocos2D'},
     {name:'Tiny-Wings-Remake-on-Android', owner:'diwu',    desc:'如题.'},
     {name:'tweejump',               owner:'haqu',          desc:'是小鸟就跳100层 Game'},
+    {name:'wizardwar',              owner:'seanhess',      desc:'一个很完整的2D小游戏,支持对战,已在AppStore上架'},
     {name:'Sparrow-Framework',      owner:'PrimaryFeather',desc:'开源游戏引擎 2D 1.0版'},
     {name:'Sparrow-Framework',      owner:'Gamua',         desc:'开源游戏引擎 2D 2.0版'},
     ]
@@ -296,7 +300,8 @@ list:[
     {name:'DSGraphicsKit',  owner:'Discontinuity-srl', desc:'支持图片常见处理 视图控制3D等'},
     {name:'uiimage-from-animated-gif', owner:'mayoff', desc:'显示gif'},
     {name:'cam',                 owner:'thisandagain', desc:'一个AVFoundation的封装、照相等功能'},
-    {name:'Filtrr',              owner:'OmidH',        desc:'几个Filter 速度也不行'}
+    {name:'Filtrr',              owner:'OmidH',        desc:'几个Filter 速度也不行'},
+    {name:'ZXingObjC',           owner:'TheLevelUp',   desc:'ZXing 二维码/条形码处理'}
     ]
 },
 {name:'颜色',
@@ -325,6 +330,7 @@ list:[
 {name:'绘图库',
 list:[
     {name:'iOSPlot',                   owner:'honcheng',       desc:'画饼图/折线图的库 用CA'},
+    {name:'ios-linechart',             owner:'mruegenberg',    desc:'简单好用的饼图/折线图'},
     {name:'Core-Animation-Pie-Chart',  owner:'briancoyner',    desc:'用CA画饼图 示例'},
     {name:'ADGraphView',               owner:'Antondomashnev', desc:'一个CG绘画库 股票曲线演示'},
     {name:'SVGKit',                    owner:'SVGKit',         desc:'一个用CA来呈现SVG图片的库'},
@@ -391,7 +397,10 @@ list:[
     {name:'LTransitionImageView',    owner:'lukagabric',   desc:'一个Image的过渡效果'},
     {name:'STScratchView',      owner:'SebastienThiebaud', desc:'刮奖的效果'},
     {name:'XBPageCurl',              owner:'xissburg',     desc:'GL实现的翻页效果～'},
-    {name:'ADTransitionController',  owner:'applidium',    desc:'很多有趣的导航视图切换动画'}
+    {name:'ADTransitionController',  owner:'applidium',    desc:'很多有趣的导航视图切换动画'},
+    {name:'VCTransitionsLibrary',    owner:'ColinEberhardt',desc:'iOS7下，一些自定义转场动画~ 挺棒'},
+    {name:'JazzHands',               owner:'IFTTT',        desc:'IFTTT简介的动画框架，是个关键帧动画框架哟~'}
+
     ]
 },
 
@@ -405,7 +414,7 @@ list:[
     {name:'MBProgressHUD',            owner:'jdg',               desc:'一个HUD 用得很广泛 无阴影 全屏模态'},
     {name:'MBProgressHUD',            owner:'matej',             desc:'和MBHUD一样 但有更新 添加了BLock iOS6'},
     {name:'ATMHud',                   owner:'atomton',           desc:'很棒的HUD 有阴影和动画~'},
-    {name:'SVProgressHUD',            owner:'samvermette',       desc:'一个HUD 样式雷茜MB_HUD 有一些进度等'},
+    {name:'SVProgressHUD',            owner:'samvermette',       desc:'一个HUD 样式类似MB_HUD 有一些进度等'},
     {name:'HTProgressHUD',            owner:'Hardtack',          desc:'又一个HUD'},
     {name:'ETActivityIndicatorView',  owner:'EugeneTrapeznikov', desc:'Windows Phone 7风格风火轮'}
     ]
@@ -573,7 +582,8 @@ list:[
     {name:'KLScrollSelect',            owner:'KieranLafferty', desc:'一个竖屏滚动的选择瀑布流'},
     {name:'RNRippleTableView',         owner:'rnystrom',       desc:'Cell梳子抖动~ 挺有创意'},
     {name:'RETableViewManager',        owner:'romaonthego',    desc:'数据驱动的Table 由数据画出Table内容'},
-    {name:'ios-SDNestedTable',         owner:'serverdensity',  desc:'二级菜单的Table'}
+    {name:'ios-SDNestedTable',         owner:'serverdensity',  desc:'二级菜单的Table'},
+    {name:'SWTableViewCell',           owner:'CEWendel',       desc:'类似iOS7邮件中的Cell,左右滑动出现多个功能键'}
     ]
 },
 
@@ -604,7 +614,8 @@ list:[
     {name:'ARLabel',               owner:'ivankovacevic',   desc:'自动字体大小'},
     {name:'LEffectLabel',          owner:'lukagabric',      desc:'渐变动画颜色的Label,类似滑动解锁'},
     {name:'BBCyclingLabel',        owner:'brunodecarvalho', desc:'在Label发生改变时,有动画效果'},
-    {name:'HTAutocompleteTextField',owner:'hoteltonight',   desc:'TextField带自动补全'}
+    {name:'HTAutocompleteTextField',owner:'hoteltonight',   desc:'TextField带自动补全'},
+    {name:'JVFloatLabeledTextField',owner:'jverdi',         desc:'带有能浮动的占位符的 文本框'}
     ]
 },
 {name:'界面切换/导航',
@@ -680,7 +691,7 @@ list:[
     {name:'CQMFloatingController', owner:'cocopon',       desc:'一个浮动的VC 类似Pop没有箭头 可以用在横屏iPhone等'},
     {name:'WSCoachMarksView',    owner:'workshirt',       desc:'为某个控件加上蒙板 类似Spotlight'},
     {name:'KLHorizontalSelect',  owner:'KieranLafferty',  desc:'横向扫动选择'},
-    {name:'iOS-blur',            owner:'JagCesar',        desc:'iOS7的模糊效果 iOS7Only'},
+    {name:'iOS-blur',            owner:'ArcticMinds',     desc:'iOS7的模糊效果 iOS7Only'},
     {name:'FXBlurView',          owner:'nicklockwood',    desc:'iOS7的模糊效果 可以用在iOS5以上'},
     {name:'Masonry',             owner:'cloudkite',       desc:'AutoLayout框架'},
     {name:'KeepLayout',          owner:'iMartinKiss',     desc:'AutoLayout框架 貌似比较好用'},
@@ -698,7 +709,8 @@ list:[
     {name:'MosaicLayout',        owner:'TwoTinedFork',    desc:'WP7磁片风格Layout UICollectionView'},
     {name:'iPhone-IntroductionTutorial',owner:'MatthewYork',desc:'用于创建启动引导界面的...'},
     {name:'US2FormValidator',    owner:'ustwo',           desc:'一套Table表单验证提示'},
-    {name:'AURosetteView',       owner:'emilwojtaszek',   desc:'玫瑰花瓣似的展开菜单'}
+    {name:'AURosetteView',       owner:'emilwojtaszek',   desc:'玫瑰花瓣似的展开菜单'},
+    {name:'EAIntroView',         owner:'ealeksandrov',    desc:'App启动的介绍界面'}
     ]
 },
 {name:'高级功能',
@@ -745,7 +757,7 @@ list:[
     {name:'PrettyKit',       owner:'vicpenap',   desc:'一套系统UI的子类 有着平滑渐变和阴影效果'},
     {name:'nui',             owner:'tombenner',  desc:'一套加在UIKit上的Category,允许用类CSS代码来控制样式'},
     {name:'QuickDialog',     owner:'escoz',      desc:'一套自定义控件库,用来快速建造基于Table的设置'},
-    {name:'MGBox2',          owner:'sobri909',   desc:'一套UIView的扩展和子类(Table Grid..) 有不错的类CSS的功能 有些好用的代码'},
+    {name:'MGBoxKit',        owner:'sobri909',   desc:'一套UIView的扩展和子类(Table Grid..) 有不错的类CSS的功能 有些好用的代码'},
     {name:'MGBox',           owner:'sobri909',   desc:'MGBox的旧版 应该去看v2'},
     {name:'iOS-boilerplate', owner:'gimenete',   desc:'一些常见功能实现的例子:HUD Table滑动,打开URL用WebView等 挺老的工程'},
     {name:'idev-recipes',    owner:'boctor',     desc:'iDevRecipes博客的代码,演示了如何自定义一些控件,代码比较老..'},
@@ -788,7 +800,8 @@ list:[
     {name:'ThatInbox',          owner:'Ink',            desc:'Ink出的邮件客户端'},
     {name:'ThatCloud',          owner:'Ink',            desc:'Ink出的云端文件管理'},
     {name:'ThatPDF',            owner:'Ink',            desc:'Ink出的PDF编辑'},
-    {name:'ThatPhoto',          owner:'Ink',            desc:'Ink出的图片编辑'}
+    {name:'ThatPhoto',          owner:'Ink',            desc:'Ink出的图片编辑'},
+    {name:'Inkpad',             owner:'sprang',         desc:'一个完整的矢量绘图App，很棒'}
     ]
 },
 
@@ -805,6 +818,8 @@ list:[
     {name:'Frank',            owner:'moredip',           desc:'自动化测试工具？'},
     {name:'superdb',          owner:'Shopify',           desc:'一个Debuger工具 用命令行调试。。'},
     {name:'iOS-Hierarchy-Viewer', owner:'glock45',       desc:'一个调试iOS界面的工具 通过浏览器访问~~ 值得瞅瞅～～'},
+    {name:'LLDB-QuickLook',   owner:'ryanolsonk',        desc:'在调试时用命令行调用QuickLook来显示图片、UIView等'},
+    {name:'iConsole',         owner:'nicklockwood',      desc:'在App内显示调试信息、执行调试命令'},
     {name:'Nocilla',          owner:'luisobo',           desc:'一个模拟HTTP响应的调试库'},
     {name:'dyci-main',        owner:'DyCI',              desc:'一个可以在调试时动态添加代码的工具 需要改动Xcode'},
     {name:'GestureLab',       owner:'markd2',            desc:'调试和把玩GestureRecognizor的'},
@@ -829,7 +844,8 @@ list:[
     {name:'iOS-Runtime-Headers', owner:'nst',          desc:'从运行时Dump出来的公有/私有 Framework头 通过这个可以进行不同版本的对比'},
     {name:'objectiveresource',   owner:'yfactorial',   desc:'RoR相关的东西 '},
     {name:'GRMustache',          owner:'groue',        desc:'Mustache模板?'},
-    {name:'titanium_modules',    owner:'appcelerator', desc:'Titanium 的常用模块'}
+    {name:'titanium_modules',    owner:'appcelerator', desc:'Titanium 的常用模块'},
+    {name:'fontdiao',            owner:'lexrus',       desc:'类似FontAwesome的东西,包含了一些国内网站logo'}
     ]
 },
 
@@ -840,6 +856,8 @@ list:[
     {name:'iOS-5-Cookbook',         owner:'erica',     desc:'随书代码～'},
     {name:'iOS-6-Cookbook',         owner:'erica',     desc:''},
     {name:'iOS-6-Advanced-Cookbook',owner:'erica',     desc:''},
+    {name:'iOS7-day-by-day',        owner:'ShinobiControls',desc:'iOS7-day-by-day 博客的代码'},
+    {name:'iOS7-Sampler',           owner:'shu223',    desc:'iOS7的一些新功能演示~'},
     {name:'MyProjects',             owner:'chaozhao',  desc:'一些http:/ /mysparks.info上面的代码'},
     {name:'Xcode-Snippets',         owner:'mattt',     desc:'一些Xcode代码片段'}
     ]
@@ -905,7 +923,11 @@ list:[
     {name:'SafariOmnibar',     owner:'rs',           desc:'一个Sarari插件'},
     {name:'HexFiend',          owner:'ridiculousfish',desc:'16进制编辑器'},
 
+
+
+    {name:'Xcode5-Plugin-Template', owner:'kattrali',desc:'Xcode5插件的开发模板'},
     {name:'cocoapods-xcode-plugin', owner:'kattrali',desc:'cocoapod 插件'},
+    {name:'KFCocoaPodsPlugin',      owner:'ricobeck',desc:'cocoapod 插件, 方便编辑Podfile，显示构建日志'},
     {name:'VVDocumenter-Xcode',     owner:'onevcat', desc:'Xcode的插件 写注释时自动提醒JavaDoc风格'},
     {name:'ColorSense-for-Xcode',   owner:'omz',     desc:'Xcode的插件 支持动态调整UIColor'},
     {name:'KSImageNamed-Xcode',     owner:'ksuther', desc:'Xcode的插件 支持显示工程里的UIImage'},
