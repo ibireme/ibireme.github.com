@@ -42,7 +42,8 @@ list: [
     {name:'Objective-C-Generics',owner:'tomersh',        desc:'通过宏定义勉强实现的范型'},
     {name:'TBMacros',           owner:'twobitlabs',      desc:'一些常用的宏定义'},
     {name:'NSString-Ruby',      owner:'zdavison',        desc:'为Ruby程序员带来的字符串相关功能'},
-    {name:'ObjectiveRecord',    owner:'mneorr',          desc:'CoreData包装的活动记录 有RoR风格的API'}
+    {name:'ObjectiveRecord',    owner:'mneorr',          desc:'CoreData包装的活动记录 有RoR风格的API'},
+    {name:'FastImageCache',     owner:'path',            desc:'滑动时快速显示图片的库，Path开发'}
 ]
 },
 
@@ -202,6 +203,7 @@ list:[
 
 {name:'音频',
 list:[
+    {name:'iOSSystemSoundsLibrary',owner:'TUNER88',    desc:'列出和播放iOS系统声音~'},
     {name:'novocaine',           owner:'alexbw',       desc:'一个声音库 录音放音 页面上有CoreAudio的教程链接'},
     {name:'TheAmazingAudioEngine', owner:'TheAmazingAudioEngine', desc:'一个声音库 包装了CoreAudio'},
     {name:'AudioStreamer',       owner:'mattgallagher',desc:'音频流播放库 支持Mac'},
@@ -516,6 +518,7 @@ list:[
 {name:'Alert',
 list:[
     {name:'BlockAlertsAnd-ActionSheets', owner:'gpambrozio',    desc:'一个Block支持的Alert控件 支持自定义 不错~'},
+    {name:'PXAlertView',                 owner:'alexanderjarvis',desc:'一个用来替代系统的Alert,高可定制,有iOS7风格'},
     {name:'MBAlertView',                 owner:'mobitar',       desc:'一个简洁的AlertView,和HUD'},
     {name:'MJPopupViewController',       owner:'martinjuhasz',  desc:'用不同左右动画弹出AlertView'},
     {name:'MZFormSheetController',       owner:'m1entus',       desc:'一个不错的弹出Alert Controller'},
@@ -818,6 +821,7 @@ list:[
     {name:'Frank',            owner:'moredip',           desc:'自动化测试工具？'},
     {name:'superdb',          owner:'Shopify',           desc:'一个Debuger工具 用命令行调试。。'},
     {name:'iOS-Hierarchy-Viewer', owner:'glock45',       desc:'一个调试iOS界面的工具 通过浏览器访问~~ 值得瞅瞅～～'},
+    {name:'hierarchydetective',owner:'chinmaygarde',     desc:'一个3D显示iOS视图层级的调试工具'},
     {name:'LLDB-QuickLook',   owner:'ryanolsonk',        desc:'在调试时用命令行调用QuickLook来显示图片、UIView等'},
     {name:'iConsole',         owner:'nicklockwood',      desc:'在App内显示调试信息、执行调试命令'},
     {name:'Nocilla',          owner:'luisobo',           desc:'一个模拟HTTP响应的调试库'},
