@@ -20,7 +20,10 @@ $(document).ready(function(){
         if (!repo || !repo.name) {
             return "";
         }
-        if (repo.owner && repo.owner != ''){
+
+        if (repo.url && repo.url != '') {
+            url = repo.url;
+        } else if (repo.owner && repo.owner != ''){
             url = 'https://github.com/' + repo.owner + '/' + repo.name;
         } else {
             url = 'https://github.com/search?q=' + repo.name;
