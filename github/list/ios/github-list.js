@@ -221,7 +221,7 @@ list:[
     {name:'ObjectAL-for-iPhone', owner:'kstenerud',    desc:'一个OpenAL的包装库 比较好用'},
     {name:'SoundBankPlayer',     owner:'hollance',     desc:'一个仿SoundFout的库 但更简单'},
     {name:'Finch',               owner:'zoul',         desc:'对底层的OpenAL包装'},
-    {name:'SoundManager',        owner:'ap4y',         desc:'nicklockwood', desc:'很简单的Sound播放管理'},
+    {name:'SoundManager',        owner:'ap4y',         desc:'很简单的Sound播放管理'},
     {name:'OrigamiEngine',       owner:'音乐播放引擎 支持 flac, cue, mp3, m4a, m3u'},
     {name:'libpd',               owner:'libpd',        desc:'一个用PD来创造音乐的库？ 纯C'},
     {name:'pd-for-ios',          owner:'libpd',        desc:'同libpd'},
