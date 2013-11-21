@@ -62,6 +62,7 @@ list:[
     {name:'EGOCache',       owner:'enormego',      desc:'EGOImage里面的 Cache功能'},
     {name:'HJCache',        owner:'markofjohnson', desc:'一个缓存网络内容等的Cache'},
     {name:'RNCryptor',      owner:'rnapier',       desc:'加密解密相关 貌似更上流, note:去看一下他博客'},
+    {name:'ssziparchive',   owner:'soffes',        desc:'zip压缩 zip解压~'},
     {name:'ZipKit',         owner:'kolpanic',      desc:'一个ZipKit 从bitbucket Mirror过来'},
     {name:'ZipKit',    owner:'FivesquareSoftware', desc:'如同ZipKit 改为ARC了'},
     {name:'zipzap',         owner:'pixelglow',     desc:'Zip文件处理 底层为libz'},
@@ -69,8 +70,9 @@ list:[
     {name:'MTControl',  owner:'mysterioustrousers',desc:'jQuery风格touch事件绑定'},
     {name:'storage',        owner:'thisandagain',  desc:'快速、线程安全的I/O存储操作'},
     {name:'CHCSVParser',    owner:'davedelong',    desc:'CVS文件解析'},
-    {name:'NSMoment',       owner:'YannickL',      desc:'日期的解析，格式化等，支持多语言'},
-    {name:'CMUnistrokeGestureRecognizer',owner:'chrismiles',desc:'各种奇怪的手势检测'}
+    {name:'YLMoment',       owner:'YannickL',      desc:'日期的解析，格式化等，支持多语言'},
+    {name:'CMUnistrokeGestureRecognizer',owner:'chrismiles',desc:'各种奇怪的手势检测'},
+    {name:'EKAlgorithms.git',owner:'EvgenyKarkan', desc:'常见算法的ObjC实现，包括排序、查找、数组、字符串、常用数据结构..'}
 ]
 },
 
@@ -82,6 +84,7 @@ list:[
     {name:'OmniGroup',          owner:'omnigroup',         desc:'一套很庞大的库(OmniGroup) 支持Mac和iOS 更新迅速'},
     {name:'ReactiveCocoa',      owner:'ReactiveCocoa',     desc:'一套响应式编程的框架(Functional Reactive Programming) 支持Mac'},
     {name:'WebViewJavascriptBridge', owner:'marcuswestin', desc:'WebView和Cocoa之间的事件传递'},
+    {name:'OCUDL',              owner:'dbachrach',         desc:'自定义literals 有点意思～～'},
     {name:'Kiwi',               owner:'allending',         desc:'一个Behavior驱动编程框架? (BDD)?'},
     {name:'Mantle',             owner:'github',            desc:'一个Model层, 替代CoreData 可以生成Model对象~ Github官方出品..'},
     {name:'MagicalRecord',      owner:'magicalpanda',      desc:'CoreData的包装 简化代码'},
@@ -96,6 +99,7 @@ list:[
 
 {name:'功能/封装',
 list:[
+    {name:'iOS-System-Services',owner:'Shmoopi',      desc:'获取各种设备信息 包括硬件、网络、内存、进程等等'},
     {name:'MKStoreKit',      owner:'MugunthKumar',    desc:'iAP用的库'},
     {name:'CargoBay',        owner:'mattt',           desc:'一个包装iAP StoreKit的库'},
     {name:'RMStore',         owner:'robotmedia',      desc:'很轻量的iAP包装'},
@@ -175,6 +179,7 @@ list:[
 list:[
     {name:'EGOImageLoading',  owner:'enormego',      desc:'下载使用网络图片的库'},
     {name:'SDWebImage',       owner:'rs',            desc:'异步加载网络图片 (UIImage Category)'},
+    {name:'TCBlobDownload',   owner:'thibaultCha',   desc:'下载大文件/ 断点续传'},
     {name:'GroundControl',    owner:'mattt',         desc:'一个通过远程plist改变配置的库'},
     {name:'appirater',        owner:'arashpayan',    desc:'提醒用户稍后到AppStore给你评分的功能'},
     {name:'iRate',            owner:'nicklockwood',  desc:'类似appirater 提醒用户稍后到AppStore评分 支持Mac'},
@@ -222,7 +227,7 @@ list:[
     {name:'SoundBankPlayer',     owner:'hollance',     desc:'一个仿SoundFout的库 但更简单'},
     {name:'Finch',               owner:'zoul',         desc:'对底层的OpenAL包装'},
     {name:'SoundManager',        owner:'ap4y',         desc:'很简单的Sound播放管理'},
-    {name:'OrigamiEngine',       owner:'音乐播放引擎 支持 flac, cue, mp3, m4a, m3u'},
+    {name:'OrigamiEngine',       owner:'ap4y',         desc:'音乐播放引擎 支持 flac, cue, mp3, m4a, m3u'},
     {name:'libpd',               owner:'libpd',        desc:'一个用PD来创造音乐的库？ 纯C'},
     {name:'pd-for-ios',          owner:'libpd',        desc:'同libpd'},
     {name:'RCTMidiLib',          owner:'recotana',     desc:'一个Pad连接Midi设备通信的包装'},
@@ -341,6 +346,7 @@ list:[
     {name:'ios-linechart',             owner:'mruegenberg',    desc:'简单好用的饼图/折线图'},
     {name:'JYRadarChart',              owner:'johnnywjy',      desc:'雷达图(螂蛛网图), 风格多样'},
     {name:'Core-Animation-Pie-Chart',  owner:'briancoyner',    desc:'用CA画饼图 示例'},
+    {name:'MSSimpleGauge',             owner:'sabymike',       desc:'扇形仪表盘'},
     {name:'ADGraphView',               owner:'Antondomashnev', desc:'一个CG绘画库 股票曲线演示'},
     {name:'SVGKit',                    owner:'SVGKit',         desc:'一个用CA来呈现SVG图片的库'},
     {name:'Smooth-Line-View',          owner:'levinunnink',    desc:'用QuartZ画出平滑的曲线'},
@@ -630,6 +636,7 @@ list:[
     {name:'AUIAnimatedText',       owner:'adam-siton',      desc:'一个UILabel子类 可以简单动画 颜色大小字体'},
     {name:'RTLabel',               owner:'honcheng',        desc:'简单的富文本Label 可以用Html样式'},
     {name:'TTTAttributedLabel',    owner:'mattt',           desc:'一个Label控件 支持富文本属性'},
+    {name:'MDHTMLLabel',           owner:'mattdonnelly',    desc:'一个富文本Label控件,可以支持链接和点击事件'},
     {name:'DTCoreText',            owner:'Cocoanetics',     desc:'CoreText的包装,可以输入HTML～～'},
     {name:'OHAttributedLabel',     owner:'AliSoftware',     desc:'支持NSAttributedString的UILabel控件'},
     {name:'ARLabel',               owner:'ivankovacevic',   desc:'自动字体大小'},
@@ -978,13 +985,24 @@ list:[
 
 {name:'非Github',
 list:[
-    {name:'cooliris-toolkit', url:'https://code.google.com/p/cooliris-toolkit/',  owner:'google', desc:'Cooliris出品基础工具包,Github有Clone'},
-    {name:'core-plot', url:'https://code.google.com/p/core-plot/',  owner:'google', desc:'强大的2D数据绘图库'},
-    {name:'j2objc', url:'https://code.google.com/p/j2objc/',  owner:'google', desc:'神奇的东西,将Java翻译成ObjC～ Google出品'},
-    {name:'theunarchiver', url:'https://code.google.com/p/theunarchiver/',  owner:'google', desc:'解压,支持Zip, Tar, Gzip, Bzip2, 7-Zip, Rar, LhA, StuffIt等'},
-    {name:'macfuse', url:'https://code.google.com/p/macfuse/',  owner:'google', desc:'创建OSX的文件系统～'},
-    {name:'google-toolbox-for-mac', url:'https://code.google.com/p/google-toolbox-for-mac/',  owner:'google', desc:'著名的Google工具箱'},
-    {name:'leveldb', url:'https://code.google.com/p/leveldb/',  owner:'google', desc:'一个轻量的KV数据库,支持iOS'},
+    {name:'cooliris-toolkit', url:'https://code.google.com/p/cooliris-toolkit/',  owner:'google', 
+        desc:'Cooliris出品基础工具包,Github有Clone'},
+    {name:'core-plot', url:'https://code.google.com/p/core-plot/',  owner:'google', 
+        desc:'强大的2D数据绘图库'},
+    {name:'j2objc', url:'https://code.google.com/p/j2objc/',  owner:'google', 
+        desc:'神奇的东西,将Java翻译成ObjC～ Google出品'},
+    {name:'theunarchiver', url:'https://code.google.com/p/theunarchiver/',  owner:'google', 
+        desc:'解压,支持Zip, Tar, Gzip, Bzip2, 7-Zip, Rar, LhA, StuffIt等'},
+    {name:'macfuse', url:'https://code.google.com/p/macfuse/',  owner:'google', 
+        desc:'创建OSX的文件系统～'},
+    {name:'google-toolbox-for-mac', url:'https://code.google.com/p/google-toolbox-for-mac/',  owner:'google', 
+        desc:'著名的Google工具箱'},
+    {name:'leveldb', url:'https://code.google.com/p/leveldb/',  owner:'google', 
+        desc:'一个轻量的KV数据库,支持iOS'},
+    {name:'RegexKitLite',url:'http://regexkit.sourceforge.net/RegexKitLite/',owner:'sf',
+        desc:'著名的ObjC 正则表达式'},
+    {name:'zipachive',  url:'https://code.google.com/p/ziparchive/',   owner:'google',
+        desc:'用得很广泛的ObjC zip文件压缩解压 (github上有几个mirror)'}
     ]
 }
 
