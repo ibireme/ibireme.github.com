@@ -290,6 +290,7 @@ list:[
     {name:'LBBlurredImage',      owner:'lukabernardi', desc:'UIImage扩展 可以模糊 不知道性能如何'},
     {name:'FilterKit',           owner:'eklipse2k8',   desc:'为拍照添加滤镜 基于GPUImage'},
     {name:'TCam',                owner:'azamsharp',    desc:'用CIFIlter实现的类似Instagram的类'},
+    {name:'CLImageEditor',       owner:'yackle',       desc:'一个功能齐全的图像处理(滤镜/曲线/裁减/旋转/等等~)'},
     {name:'PKCoreTechniques',    owner:'pkluz',        desc:'CA和CG的特性演示'},
     {name:'UIImage-Categories',  owner:'mbcharbonneau',desc:'UIImage的一些扩展'},
     {name:'uiimage-dsp',         owner:'gdawg',        desc:'UIImage模糊的一些方法'},
@@ -347,6 +348,8 @@ list:[
     {name:'JYRadarChart',              owner:'johnnywjy',      desc:'雷达图(螂蛛网图), 风格多样'},
     {name:'Core-Animation-Pie-Chart',  owner:'briancoyner',    desc:'用CA画饼图 示例'},
     {name:'MSSimpleGauge',             owner:'sabymike',       desc:'扇形仪表盘'},
+    {name:'FBDigitalFont',             owner:'lyokato',        desc:'LED液晶效果荧光字体，用CG实现'},
+    {name:'FBGlowLabel',               owner:'lyokato',        desc:'LED液晶效果荧光字体，UILabel'},
     {name:'ADGraphView',               owner:'Antondomashnev', desc:'一个CG绘画库 股票曲线演示'},
     {name:'SVGKit',                    owner:'SVGKit',         desc:'一个用CA来呈现SVG图片的库'},
     {name:'Smooth-Line-View',          owner:'levinunnink',    desc:'用QuartZ画出平滑的曲线'},
@@ -445,6 +448,7 @@ list:[
     {name:'DCFineTuneSlider',   owner:'domesticcatsoftware', desc:'可以拖动外部 和显示左右箭头的Slider'},
     {name:'ARAnnotatedSlider',       owner:'alexrepty',      desc:'KVO教学 一个在Slider上面显示小Poper的～'},
     {name:'LARSBar',                 owner:'larsacus',       desc:'显示声音dB的Slider'},
+    {name:'EDStarRating',            owner:'erndev',         desc:'打星评级 Slider控件'},
     {name:'OBSlider',                owner:'ole',            desc:'模拟iPhone音乐进度的表现'},
     {name:'TLTiltSlider',            owner:'TeehanLax',      desc:'仿iOS6 音量Slider,有金属光泽动画'},
     {name:'RETrimControl',           owner:'romaonthego',    desc:'类似iOS6录像裁减的控制条'}
@@ -458,7 +462,8 @@ list:[
     {name:'WNProgressView', owner:'n8chur',   desc:'一些有趣风格的ProgressView'},
     {name:'YLProgressBar',  owner:'YannickL', desc:'一些不错样式的ProgessBar'},
     {name:'DACircularProgress',owner:'danielamitay',desc:'圆环形进度条'},
-    {name:'MRProgress',     owner:'mrackwitz',desc:'圆环进度条,iOS7风格,iOS7 Only'}
+    {name:'MRProgress',     owner:'mrackwitz',desc:'圆环进度条,iOS7风格,iOS7 Only'},
+    {name:'MDRadialProgress',owner:'mdinacci',desc:'圆环进度条,多种风格 iOS6+'}
     ]
 },
 {name:'侧滑',
@@ -549,7 +554,9 @@ list:[
     {name:'MBMenuController',            owner:'MosheBerman',   desc:'一个自定义AlertSheetVC'},
     {name:'JLActionSheet',               owner:'JLoewy',        desc:'另一个自定义AlertSheet'},
     {name:'ASDepthModal',                owner:'autresphere',   desc:'实现简单的3维景深的模态视图 提供背景模糊'},
-    {name:'RNBlurModalView',             owner:'rnystrom',      desc:'将后方视图模糊'}
+    {name:'RNBlurModalView',             owner:'rnystrom',      desc:'将后方视图模糊'},
+    {name:'LMAlertView',                 owner:'lmcd',          desc:'iOS7 可自定义内容的AlertView'},
+    {name:'SDCAlertView',                owner:'Scott90',       desc:'iOS7 可自定义内容的AlertView'}
     ]
 },
 
