@@ -1005,7 +1005,7 @@ list:[
     {name:'google-toolbox-for-mac', url:'https://code.google.com/p/google-toolbox-for-mac/',  owner:'google', 
         desc:'著名的Google工具箱'},
     {name:'leveldb', url:'https://code.google.com/p/leveldb/',  owner:'google', 
-        desc:'一个轻量的KV数据库,支持iOS'},
+        desc:'Google大神开发的KV存储,高性能,低内存'},
     {name:'RegexKitLite',url:'http://regexkit.sourceforge.net/RegexKitLite/',owner:'sf',
         desc:'著名的ObjC 正则表达式'},
     {name:'zipachive',  url:'https://code.google.com/p/ziparchive/',   owner:'google',
