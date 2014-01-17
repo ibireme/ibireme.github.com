@@ -38,7 +38,6 @@ list: [
     {name:'MTDates',          owner:'mysterioustrousers',desc:'一些Data的category'},
     {name:'CocoaSecurity',      owner:'kelp404',         desc:'常见的哈希、加密解密算法'},
     {name:'sskeychain',         owner:'soffes',          desc:'访问keychain 支持iOS Mac'},
-    {name:'ABContactHelper',    owner:'erica',           desc:'访问联系人'},
     {name:'UISS',               owner:'robertwijas',     desc:'用JSON的风格设置UIKit样式'},
     {name:'Underscore.m',       owner:'robb',            desc:'仿JS的underscore.js来写的,用于访问和处理数据'},
     {name:'TICoreDataSync',     owner:'nothirst',        desc:'在不同设备间对CoreData进行同步 (iPhone iPad Mac)'},
@@ -105,6 +104,7 @@ list:[
 {name:'功能/封装',
 list:[
     {name:'iOS-System-Services',owner:'Shmoopi',      desc:'获取各种设备信息 包括硬件、网络、内存、进程等等'},
+    {name:'iAppInfos',       owner:'leverdeterre',    desc:'简单获取设备信息，例如设备、空间、Provisionning'},
     {name:'MKStoreKit',      owner:'MugunthKumar',    desc:'iAP用的库'},
     {name:'CargoBay',        owner:'mattt',           desc:'一个包装iAP StoreKit的库'},
     {name:'RMStore',         owner:'robotmedia',      desc:'很轻量的iAP包装'},
@@ -120,7 +120,10 @@ list:[
     {name:'PDKeychainBindingsController', owner:'carlbrown', desc:'以类似UserDefault的方式访问Keychain'},
     {name:'CoreTextWrapper',  owner:'akosma',         desc:'一个CoreText库的包装'},
     {name:'Slash',            owner:'chrisdevereux',  desc:'对AttributeString的封装'},
-    {name:'iHasApp',          owner:'danielamitay',   desc:'检测某个App是否安装，集成了常见的URL Scheme'}
+    {name:'ABContactHelper',  owner:'erica',          desc:'访问联系人'},
+    {name:'APAddressBook',    owner:'Alterplay',      desc:'封装了访问通信录/联系人的功能'},
+    {name:'iHasApp',          owner:'danielamitay',   desc:'检测某个App是否安装，集成了常见的URL Scheme'},
+    {name:'UIActivityCollection',owner:'shu223',      desc:'Github上UIActivity项目的集合'}
     
 ]
 },
@@ -147,6 +150,7 @@ list:[
     {name:'DTBonjour',          owner:'Cocoanetics',  desc:'Bonjour和Wifi'},
     {name:'XMPPFramework',      owner:'robbiehanson', desc:'XMPP客户端的库～ 支持Mac'},
     {name:'CocoaHTTPServer',    owner:'robbiehanson', desc:'一个轻量的HTTP Server 支持Mac'},
+    {name:'GCDWebServer',       owner:'swisspol',     desc:'一个轻量HTTP Server 用GCD实现的事件驱动'},
     {name:'SocketRocket',       owner:'square',       desc:'WebSocket客户端～'},
     {name:'MailCore',           owner:'MailCore',     desc:'IMAP SMTP邮件协议'},
     {name:'CocoaSPDY',          owner:'twitter',      desc:'SPDY协议~'},
@@ -170,7 +174,8 @@ list:[
     {name:'RSSKit',          owner:'H2CO3',        desc:'RSS Atom解析'},
     {name:'ElementParser',   owner:'Objective3',   desc:'提供Html和XML的解析'},
     {name:'hpple',           owner:'topfunky',     desc:'提供Html/XML解析'},
-    {name:'Objective-C-HMTL-Parser',owner:'zootreeves',desc:'一个很简单的HTML解析 包装了下libxml'},
+    {name:'Objective-C-HMTL-Parser',owner:'zootreeves',desc:'一个简单好用的HTML解析 包装了下libxml'},
+    {name:'OCGumbo',         owner:'tracy-e',      desc:'一个OC版HTML解析库， 包装自Google Gumbo(C99)'},
     {name:'RaptureXML',      owner:'ZaBlanc',      desc:'一个简单的XML解析器 包装了libxml'},
     {name:'KissXML',         owner:'robbiehanson', desc:'解析XML的库 包装了libxml'},
     {name:'TBXML',           owner:'71squared',    desc:'快速解析xml的库'},
@@ -319,6 +324,7 @@ list:[
     {name:'wolfpack',            owner:'justin',       desc:'图像处理库CI CG'},
     {name:'DSGraphicsKit',  owner:'Discontinuity-srl', desc:'支持图片常见处理 视图控制3D等'},
     {name:'uiimage-from-animated-gif', owner:'mayoff', desc:'显示gif'},
+    {name:'UIImage-Helpers',     owner:'NZN',          desc:'几个Category小功能：截图、模糊、纯色'},
     {name:'cam',                 owner:'thisandagain', desc:'一个AVFoundation的封装、照相等功能'},
     {name:'Filtrr',              owner:'OmidH',        desc:'几个Filter 速度也不行'},
     {name:'ZXingObjC',           owner:'TheLevelUp',   desc:'ZXing 二维码/条形码处理'}
@@ -366,6 +372,7 @@ list:[
     {name:'SignatureDemo',             owner:'jharwig',        desc:'一个QuartZ 触摸画平滑曲线的Demo～～～'},
     {name:'DynamicGraphView',          owner:'freshking',      desc:'动态折线图'},
     {name:'XYPieChart',                owner:'xyfeng',         desc:'饼图~有动画'},
+    {name:'BEMSimpleLineGraph',        owner:'Boris-Em',       desc:'折线图，有动画，功能一般'},
     {name:'Animated-Paths',            owner:'ole',            desc:'动画画出文字和图形的轮廓~'}
     ]
 },
@@ -455,6 +462,7 @@ list:[
     {name:'MTZTiltReflectionSlider', owner:'mdznr',          desc:'一个模仿iOS6 Music的Slider'},
     {name:'ASRangeSlider',           owner:'avrahamshuk',    desc:'一个两段式的Slider'},
     {name:'EFCircularSlider',        owner:'eliotfowler',    desc:'圆环形的slider'},
+    {name:'SAMultisectorControl',    owner:'snipter',        desc:'很帅的环形slider'},
     {name:'DCFineTuneSlider',   owner:'domesticcatsoftware', desc:'可以拖动外部 和显示左右箭头的Slider'},
     {name:'ARAnnotatedSlider',       owner:'alexrepty',      desc:'KVO教学 一个在Slider上面显示小Poper的～'},
     {name:'LARSBar',                 owner:'larsacus',       desc:'显示声音dB的Slider'},
@@ -473,79 +481,22 @@ list:[
     {name:'YLProgressBar',  owner:'YannickL', desc:'一些不错样式的ProgessBar'},
     {name:'DACircularProgress',owner:'danielamitay',desc:'圆环形进度条'},
     {name:'MRProgress',     owner:'mrackwitz',desc:'圆环进度条,iOS7风格,iOS7 Only'},
-    {name:'MDRadialProgress',owner:'mdinacci',desc:'圆环进度条,多种风格 iOS6+'}
-    ]
-},
-{name:'侧滑',
-list:[
-    {name:'ViewDeck',                owner:'Inferis',    desc:'左右侧滑控件'},
-    {name:'MSDynamicsDrawerViewController',owner:'monospacecollective',desc:'iOS7 动态弹性和景深的侧滑～'},
-    {name:'ECSlidingViewController', owner:'edgecase',   desc:'一个很简单的侧滑控件'},
-    {name:'JASidePanels',            owner:'gotosleep',  desc:'一套不错样式的侧滑控件'},
-    {name:'PSStackedView',           owner:'steipete',   desc:'一套侧滑且带Stack的控件,类似Twitter iPad'},
-    {name:'PKRevealController',      owner:'pkluz',      desc:'一个侧滑控件'},
-    {name:'JTRevealSidebarDemo',     owner:'mystcolor',  desc:'一个类似FB侧滑的Demo'},
-    {name:'PPRevealSideViewController', owner:'ipup',    desc:'又一个类似FB的侧滑控件'},
-    {name:'CLCascade',               owner:'appunite',   desc:'类似Twitter iPad版的侧滑控件'},
-    {name:'SlideViewController',owner:'andrewroycarter', desc:'侧滑菜单 类似FB的界面'},
-    {name:'MMDrawerController',    owner:'mutualmobile', desc:'一个侧滑控件'},
-    {name:'MFSideMenu',            owner:'mikefrederick',desc:'Facebook风格侧滑'},
-    {name:'SWRevealViewController',owner:'John-Lluch',   desc:'Facebook风格侧滑'},
-    {name:'DDMenuController',      owner:'devindoty',    desc:'又是一个Facebook风格侧滑'},
-    {name:'REFrostedViewController', owner:'romaonthego',desc:'一个iOS7风格的毛玻璃侧滑菜单'},
-    {name:'RNFrostedSidebar',       owner:'rnystrom',    desc:'一个由侧面划出的半透明菜单(小圆片),不错的交互效果'}
+    {name:'MDRadialProgress',owner:'mdinacci',desc:'圆环进度条,多种风格 iOS6+'},
+    {name:'PWProgressView', owner:'pwillsey', desc:'饼形进度条，半透明风格,效果不错'},
+    {name:'TWRProgressView',owner:'chasseurmic',desc:'自定义形状Mask的进度'},
+    {name:'M13ProgressSuite',owner:'Marxon13',desc:'一套不同风格的Progress：包括圆形、环形、进度、蒙板等等'},
+    {name:'SpinKit-ObjC',   owner:'raymondjavaxx',desc:'由JS版SpinKit模仿得来，几个不错的ActivityIndicator'},
     ]
 },
 
-{name:'Popover',
-list:[
-    {name:'PopoverView',        owner:'runway20',    desc:'CA实现的Popover 可用于iPhone,样式清新'},
-    {name:'WYPopoverController',owner:'nicolaschengdev',desc:'高可定制Popover 样式不错，很棒'},
-    {name:'CMPopTipView',       owner:'chrismiles',  desc:'把PopView带入的iPhone'},
-    {name:'FPPopover',          owner:'50pixels',    desc:'一个PopOver 支持iPhone'},
-    {name:'WEPopover',          owner:'werner77',    desc:'一个仿Popover API库 支持iPhone'},
-    {name:'UAModalPanel',       owner:'UrbanApps',   desc:'一个类似PopView控件 可以比较多的自定义 Demo样式较乱'},
-    {name:'ColorPopover',       owner:'gazolla',     desc:'一个用WEPopover写的单色选择'},
-    {name:'MultiRowCalloutAnnotationView', owner:'grgcombs', desc:'在Map里面弹出带表格的Pop'},
-    {name:'QBPopupMenu',        owner:'questbeat',   desc:'类似iOS文字上的Pop 可以自定义~'},
-    {name:'kxmenu',             owner:'kolyvan',     desc:'一个PopView,动作还可以'},
-    {name:'RNGridMenu',         owner:'rnystrom',    desc:'一个Pop菜单，有背景模糊，效果不错～'},
-    {name:'GIKPopoverBackgroundView', owner:'GiK',   desc:'为PopOver提供无缝背景 很棒'},
-    {name:'AwesomeMenu',        owner:'levey',       desc:'Path的扇形弹出按钮效果(CA)'},
-    {name:'QuadCurveMenu',      owner:'levey',       desc:'上面AwesomeMenu的fork 类似Path的菜单'},
-    {name:'MGTileMenu',         owner:'mattgemmell', desc:'弹出按钮菜单 在四周成方形 效果不错'},
-    {name:'ADPopupView',     owner:'Antondomashnev', desc:'在UIVIew上弹出自己画的界面 挺丑 但可以看看实现'},
-    {name:'KLExpandingSelect',owner:'KieranLafferty',desc:'四叶草风格弹出菜单~'},
-    {name:'StackMenu',          owner:'istsest',     desc:'Mac的Stack弹出菜单'}
-    ]
-},
 
-{name:'下拉刷新',
-list:[
-    {name:'MSPullToRefreshController',      owner:'bogardon',    desc:'一个不错的上下拉刷新的控件 里面是彩虹'},
-    {name:'EGOTableViewPullRefresh',        owner:'enormego',    desc:'下拉刷新,很早的一个控件了2年没更新了'},
-    {name:'PullToRefresh',                  owner:'leah',        desc:'下拉刷新'},
-    {name:'SVPullToRefresh',                owner:'samvermette', desc:'下拉刷新 扩展了UIScrollView 很方便简单'},
-    {name:'HybridRefreshGestureRecognizer', owner:'dingtianran', desc:'一个类似似TweetBot的下拉刷新样式'},
-    {name:'sspulltorefresh',                owner:'soffes',      desc:'下拉刷新'}
-    ]
-},
 
-{name:'状态栏',
+
+{name:'StatusBar',
 list:[
     {name:'JDStatusBarNotification',owner:'jaydee3',  desc:'状态栏控件,支持iOS6、7'},
     {name:'MTStatusBarOverlay',  owner:'myell0w',     desc:'状态栏的控件,但很久没更新了'},
     {name:'KGStatusBar',         owner:'kevingibbon', desc:'状态栏控件,提醒'}
-    ]
-},
-
-{name:'GridView',
-list:[
-    {name:'AQGridView',         owner:'AlanQuatermain', desc:'类似TableView但有横向分类,就像Android Launcher'},
-    {name:'GMGridView',         owner:'gmoPSTCollectionViewledina',      desc:'又一个GridView 很不错,自带横纵排序编辑等功能'},
-    {name:'KKGridView',         owner:'kolinkrewinkel', desc:'又一个GridView 已经Deperacted 直接用系统的就好'},
-    {name:'A3GridTableView',    owner:'allaboutapps',   desc:'又一个GridView 貌似支持类似图标样的上栏'},
-    {name:'LIExposeController', owner:'linkedin',       desc:'一个类似GridView的东西'}
     ]
 },
 
@@ -565,8 +516,21 @@ list:[
     {name:'JLActionSheet',               owner:'JLoewy',        desc:'另一个自定义AlertSheet'},
     {name:'ASDepthModal',                owner:'autresphere',   desc:'实现简单的3维景深的模态视图 提供背景模糊'},
     {name:'RNBlurModalView',             owner:'rnystrom',      desc:'将后方视图模糊'},
+    {name:'NZAlertView',                 owner:'NZN',           desc:'类似notif风格的Alert，拍扁'},
     {name:'LMAlertView',                 owner:'lmcd',          desc:'iOS7 可自定义内容的AlertView'},
     {name:'SDCAlertView',                owner:'Scott90',       desc:'iOS7 可自定义内容的AlertView'}
+    ]
+},
+
+{name:'Notification',
+list:[
+    {name:'EKNotifView',        owner:'ekdevdes',      desc:'很简单的下方Notif实现'},
+    {name:'MKInfoPanelDemo',    owner:'MugunthKumar',  desc:'一个从上方滑下的Notif控件 类似TwieetBot'},
+    {name:'TSMessages',         owner:'toursprung',    desc:'在导航栏显示一个下拉Notif 效果不错'},
+    {name:'CSNotificationView', owner:'problame',      desc:'透明的导航栏下面，滑下的Notif(iOS7)'},
+    {name:'YRDropdownView',     owner:'onemightyroar', desc:'类似Tweetbot警告的下伸控件'},
+    {name:'NoticeView',         owner:'tciuro',        desc:'类似Tweetbot的下伸控件'},
+    {name:'AJNotificationView', owner:'ajerez',        desc:'效果很不错的上部Notif提示'}
     ]
 },
 
@@ -606,40 +570,6 @@ list:[
     ]
 },
 
-{name:'Scroll/Table',
-list:[
-    {name:'LRSlidingTableViewCell',    owner:'lukeredpath',    desc:'一个简单的左右滑动Cell 类似Twitter'},
-    {name:'TISwipeableTableView',      owner:'thermogl',       desc:'UITable的左右滑动 类似Twitter'},
-    {name:'TDBadgedCell',              owner:'tmdvs',          desc:'在TableCell右侧添加badge 有不同风格'},
-    {name:'UITableViewZoomController', owner:'TomThorpe',      desc:'类似Google+的 滑动Table缩放显示内部图片'},
-    {name:'UITableViewTricks',         owner:'bharath2020',    desc:'TableView的扇形样式'},
-    {name:'iPhoneMK',                 owner:'michaelkamprath', desc:'几个简单的自己实现的View和Cell,提供某些常见功能'},
-    {name:'EasyTableView',             owner:'alekseyn',       desc:'一个支持左右的TableView 不错～'},
-    {name:'ZKRevealingTableViewCell',  owner:'alexzielenski',  desc:'一个简单的可以左右滑动的TableCell'},
-    {name:'ADLivelyTableView',         owner:'applidium',      desc:'非常棒的TableCell显示动画～～～'},
-    {name:'MHLazyTableImages',         owner:'hollance',       desc:'一个简单的Table加载网络图片 从Apple的例子中改的'},
-    {name:'MHPagingScrollView',        owner:'hollance',       desc:'一个可以Page的ScrollView 但可以看到左右的预览 类似WP7'},
-    {name:'KLScrollSelect',            owner:'KieranLafferty', desc:'一个竖屏滚动的选择瀑布流'},
-    {name:'RNRippleTableView',         owner:'rnystrom',       desc:'Cell梳子抖动~ 挺有创意'},
-    {name:'RETableViewManager',        owner:'romaonthego',    desc:'数据驱动的Table 由数据画出Table内容'},
-    {name:'ios-SDNestedTable',         owner:'serverdensity',  desc:'二级菜单的Table'},
-    {name:'SWTableViewCell',           owner:'CEWendel',       desc:'类似iOS7邮件中的Cell,左右滑动出现多个功能键'},
-    {name:'TSUIKit',                   owner:'Viacheslav-Radchenko',desc:'复杂数据表格、tab展示的UI控件，适合复杂数据展示'}
-    ]
-},
-
-
-{name:'Notification',
-list:[
-    {name:'EKNotifView',        owner:'ekdevdes',      desc:'很简单的下方Notif实现'},
-    {name:'MKInfoPanelDemo',    owner:'MugunthKumar',  desc:'一个从上方滑下的Notif控件 类似TwieetBot'},
-    {name:'TSMessages',         owner:'toursprung',    desc:'在导航栏显示一个下拉Notif 效果不错'},
-    {name:'CSNotificationView', owner:'problame',      desc:'透明的导航栏下面，滑下的Notif(iOS7)'},
-    {name:'YRDropdownView',     owner:'onemightyroar', desc:'类似Tweetbot警告的下伸控件'},
-    {name:'NoticeView',         owner:'tciuro',        desc:'类似Tweetbot的下伸控件'},
-    {name:'AJNotificationView', owner:'ajerez',        desc:'效果很不错的上部Notif提示'}
-    ]
-},
 
 {name:'Label/Text',
 list:[
@@ -665,6 +595,76 @@ list:[
     {name:'CMHTMLView',             owner:'mureev',         desc:'用HTML展示富文本,但能有Native类似的体验'}
     ]
 },
+
+{name:'PullToRefresh',
+list:[
+    {name:'MSPullToRefreshController',      owner:'bogardon',    desc:'一个不错的上下拉刷新的控件 里面是彩虹'},
+    {name:'EGOTableViewPullRefresh',        owner:'enormego',    desc:'下拉刷新,很早的一个控件了2年没更新了'},
+    {name:'PullToRefresh',                  owner:'leah',        desc:'下拉刷新'},
+    {name:'SVPullToRefresh',                owner:'samvermette', desc:'下拉刷新 扩展了UIScrollView 很方便简单'},
+    {name:'HybridRefreshGestureRecognizer', owner:'dingtianran', desc:'一个类似似TweetBot的下拉刷新样式'},
+    {name:'sspulltorefresh',                owner:'soffes',      desc:'下拉刷新'},
+    {name:'BOZPongRefreshControl',          owner:'boztalay',    desc:'有趣的下拉刷新：下拉出现ping-pong'},
+    ]
+},
+
+{name:'Scroll/Table',
+list:[
+    {name:'LRSlidingTableViewCell',    owner:'lukeredpath',    desc:'一个简单的左右滑动Cell 类似Twitter'},
+    {name:'TISwipeableTableView',      owner:'thermogl',       desc:'UITable的左右滑动 类似Twitter'},
+    {name:'TDBadgedCell',              owner:'tmdvs',          desc:'在TableCell右侧添加badge 有不同风格'},
+    {name:'UITableViewZoomController', owner:'TomThorpe',      desc:'类似Google+的 滑动Table缩放显示内部图片'},
+    {name:'UITableViewTricks',         owner:'bharath2020',    desc:'TableView的扇形样式'},
+    {name:'iPhoneMK',                 owner:'michaelkamprath', desc:'几个简单的自己实现的View和Cell,提供某些常见功能'},
+    {name:'EasyTableView',             owner:'alekseyn',       desc:'一个支持左右的TableView 不错～'},
+    {name:'ZKRevealingTableViewCell',  owner:'alexzielenski',  desc:'一个简单的可以左右滑动的TableCell'},
+    {name:'ADLivelyTableView',         owner:'applidium',      desc:'非常棒的TableCell显示动画～～～'},
+    {name:'MHLazyTableImages',         owner:'hollance',       desc:'一个简单的Table加载网络图片 从Apple的例子中改的'},
+    {name:'MHPagingScrollView',        owner:'hollance',       desc:'一个可以Page的ScrollView 但可以看到左右的预览 类似WP7'},
+    {name:'KLScrollSelect',            owner:'KieranLafferty', desc:'一个竖屏滚动的选择瀑布流'},
+    {name:'RNRippleTableView',         owner:'rnystrom',       desc:'Cell梳子抖动~ 挺有创意'},
+    {name:'RETableViewManager',        owner:'romaonthego',    desc:'数据驱动的Table 由数据画出Table内容'},
+    {name:'ios-SDNestedTable',         owner:'serverdensity',  desc:'二级菜单的Table'},
+    {name:'SWTableViewCell',           owner:'CEWendel',       desc:'类似iOS7邮件中的Cell,左右滑动出现多个功能键'},
+    {name:'NJKScrollFullScreen',       owner:'ninjinkun',      desc:'Nav内容滑动时，自动隐藏上下两个导航栏'},
+    {name:'TSUIKit',                   owner:'Viacheslav-Radchenko',desc:'复杂数据表格、tab展示的UI控件，适合复杂数据展示'}
+    ]
+},
+
+{name:'Popover',
+list:[
+    {name:'PopoverView',        owner:'runway20',    desc:'CA实现的Popover 可用于iPhone,样式清新'},
+    {name:'WYPopoverController',owner:'nicolaschengdev',desc:'高可定制Popover 样式不错，很棒'},
+    {name:'CMPopTipView',       owner:'chrismiles',  desc:'把PopView带入的iPhone'},
+    {name:'FPPopover',          owner:'50pixels',    desc:'一个PopOver 支持iPhone'},
+    {name:'WEPopover',          owner:'werner77',    desc:'一个仿Popover API库 支持iPhone'},
+    {name:'UAModalPanel',       owner:'UrbanApps',   desc:'一个类似PopView控件 可以比较多的自定义 Demo样式较乱'},
+    {name:'ColorPopover',       owner:'gazolla',     desc:'一个用WEPopover写的单色选择'},
+    {name:'MultiRowCalloutAnnotationView', owner:'grgcombs', desc:'在Map里面弹出带表格的Pop'},
+    {name:'QBPopupMenu',        owner:'questbeat',   desc:'类似iOS文字上的Pop 可以自定义~'},
+    {name:'kxmenu',             owner:'kolyvan',     desc:'一个PopView,动作还可以'},
+    {name:'RNGridMenu',         owner:'rnystrom',    desc:'一个Pop菜单，有背景模糊，效果不错～'},
+    {name:'GIKPopoverBackgroundView', owner:'GiK',   desc:'为PopOver提供无缝背景 很棒'},
+    {name:'AwesomeMenu',        owner:'levey',       desc:'Path的扇形弹出按钮效果(CA)'},
+    {name:'QuadCurveMenu',      owner:'levey',       desc:'上面AwesomeMenu的fork 类似Path的菜单'},
+    {name:'MGTileMenu',         owner:'mattgemmell', desc:'弹出按钮菜单 在四周成方形 效果不错'},
+    {name:'ADPopupView',     owner:'Antondomashnev', desc:'在UIVIew上弹出自己画的界面 挺丑 但可以看看实现'},
+    {name:'KLExpandingSelect',owner:'KieranLafferty',desc:'四叶草风格弹出菜单~'},
+    {name:'StackMenu',          owner:'istsest',     desc:'Mac的Stack弹出菜单'}
+    ]
+},
+
+{name:'GridView',
+list:[
+    {name:'AQGridView',         owner:'AlanQuatermain', desc:'类似TableView但有横向分类,就像Android Launcher'},
+    {name:'GMGridView',         owner:'gmoPSTCollectionViewledina',      desc:'又一个GridView 很不错,自带横纵排序编辑等功能'},
+    {name:'KKGridView',         owner:'kolinkrewinkel', desc:'又一个GridView 已经Deperacted 直接用系统的就好'},
+    {name:'A3GridTableView',    owner:'allaboutapps',   desc:'又一个GridView 貌似支持类似图标样的上栏'},
+    {name:'LIExposeController', owner:'linkedin',       desc:'一个类似GridView的东西'}
+    ]
+},
+
+
 {name:'界面切换/导航',
 list:[
     {name:'APExtendedPageController',      owner:'niktszczegolny', desc:'类似Chrome左右滑动切换视图的控件'},
@@ -686,6 +686,28 @@ list:[
     {name:'HSImageSidebarView',            owner:'bjhomer',        desc:'一个类似Keynote的侧边栏'},
     {name:'RNSwipeViewController',         owner:'rnystrom',       desc:'滑动界面显示另一个界面 类似下拉状态栏查看天气'},
     {name:'RESideMenu',                    owner:'romaonthego',    desc:'iOS7风格侧滑'}
+    ]
+},
+
+{name:'侧滑',
+list:[
+    {name:'ViewDeck',                owner:'Inferis',    desc:'左右侧滑控件'},
+    {name:'MSDynamicsDrawerViewController',owner:'monospacecollective',desc:'iOS7 动态弹性和景深的侧滑～'},
+    {name:'ECSlidingViewController', owner:'edgecase',   desc:'一个很简单的侧滑控件'},
+    {name:'JASidePanels',            owner:'gotosleep',  desc:'一套不错样式的侧滑控件'},
+    {name:'PSStackedView',           owner:'steipete',   desc:'一套侧滑且带Stack的控件,类似Twitter iPad'},
+    {name:'PKRevealController',      owner:'pkluz',      desc:'一个侧滑控件'},
+    {name:'JTRevealSidebarDemo',     owner:'mystcolor',  desc:'一个类似FB侧滑的Demo'},
+    {name:'PPRevealSideViewController', owner:'ipup',    desc:'又一个类似FB的侧滑控件'},
+    {name:'CLCascade',               owner:'appunite',   desc:'类似Twitter iPad版的侧滑控件'},
+    {name:'SlideViewController',owner:'andrewroycarter', desc:'侧滑菜单 类似FB的界面'},
+    {name:'MMDrawerController',    owner:'mutualmobile', desc:'一个侧滑控件'},
+    {name:'MFSideMenu',            owner:'mikefrederick',desc:'Facebook风格侧滑'},
+    {name:'SWRevealViewController',owner:'John-Lluch',   desc:'Facebook风格侧滑'},
+    {name:'DDMenuController',      owner:'devindoty',    desc:'又是一个Facebook风格侧滑'},
+    {name:'REFrostedViewController', owner:'romaonthego',desc:'一个iOS7风格的毛玻璃侧滑菜单'},
+    {name:'AMSlideMenu',            owner:'arturdev',    desc:'类似GoogleMap的侧滑'},
+    {name:'RNFrostedSidebar',       owner:'rnystrom',    desc:'一个由侧面划出的半透明菜单(小圆片),不错的交互效果'}
     ]
 },
 
@@ -716,57 +738,7 @@ list:[
     ]  
 },
 
-{name:'其他',
-list:[
 
-    {name:'SMPageControl',       owner:'Spaceman-Labs',   desc:'一个仿UIPageControl的API类 可以自定义小点点～'},
-    {name:'REActivityViewController',owner:'romaonthego', desc:'开的ActivityView实现'},
-    {name:'DCControls',      owner:'domesticcatsoftware', desc:'不错的扇形滑动控件 平面风格'},
-    {name:'BSKeyboardControls',  owner:'simonbs',         desc:'与键盘相关的控制 控制 上一项下一项'},
-    {name:'OCMapView',           owner:'yinkou',          desc:'一个MapKit标注聚合用的东西～'},
-    {name:'NJKWebViewProgress',  owner:'ninjinkun',       desc:'显示WebView加载进度'},
-    {name:'REMenu',              owner:'romaonthego',     desc:'一个导航栏下拉菜单 不错～'},
-    {name:'action-sheet-blocks', owner:'MugunthKumar',    desc:'为ActionSSheet提供block方法'},
-    {name:'ADClusterMapView',    owner:'applidium',       desc:'Map的地标Cluster 应该不错～'},
-    {name:'TPKeyboardAvoiding',  owner:'michaeltyson',    desc:'一个UIView的 在有键盘时上移'},
-    {name:'calloutview',         owner:'nfarina',         desc:'实现了私有的UICalloutView 类似地图中的弹出控件'},
-    {name:'SVPulsingAnnotationView', owner:'samvermette', desc:'一个自定义MapLocator 动画控件'},
-    {name:'OWActivityViewController', owner:'brantyoung', desc:'一个类似系统的分享控件'},
-    {name:'SYEmojiPopover',      owner:'dvkch',           desc:'显示一个Emoji选择de PopOVer'},
-    {name:'fingertips',          owner:'developmentseed', desc:'在屏幕上显示触摸点 只支持iPad2和iPhone4s以上'},
-    {name:'ASTouchVisualizer',   owner:'autresphere',     desc:'为屏幕触摸添加指示 可用于屏幕录制'},
-    {name:'openspringboard',     owner:'fieldforceapp',   desc:'仿SpringBoard的东西'},
-    {name:'HMLauncherView',      owner:'heikomaass',      desc:'仿SpringBoard的东西'},
-    {name:'CQMFloatingController', owner:'cocopon',       desc:'一个浮动的VC 类似Popover(没有箭头) 可以用在横屏iPhone等'},
-    {name:'WSCoachMarksView',    owner:'workshirt',       desc:'为某个控件加上蒙板 类似Spotlight'},
-    {name:'KLHorizontalSelect',  owner:'KieranLafferty',  desc:'横向扫动选择'},
-    {name:'iOS-StyledPageControl', owner:'honcheng',      desc:'自定义PageControl,多种样式'},
-    {name:'iOS-blur',            owner:'ArcticMinds',     desc:'iOS7的模糊效果 iOS7Only'},
-    {name:'FXBlurView',          owner:'nicklockwood',    desc:'iOS7的模糊效果 可以用在iOS5以上'},
-    {name:'CRGradientNavigationBar',owner:'chroman',      desc:'iOS7状态栏 过渡的颜色'},
-    {name:'MYBlurIntroductionView', owner:'MatthewYork',   desc:'带有模糊背景效果的 Intro'},
-    {name:'Masonry',             owner:'cloudkite',       desc:'AutoLayout框架'},
-    {name:'KeepLayout',          owner:'iMartinKiss',     desc:'AutoLayout框架 貌似比较好用'},
-    {name:'MLPAccessoryBadge',   owner:'EddyBorja',       desc:'一些自定义badge~'},
-    {name:'JSBadgeView',         owner:'JaviSoto',        desc:'数字角标 Badge'},
-    {name:'MSCellAccessory',     owner:'bitmapdata',      desc:'Cell右侧的小箭头~'},
-    {name:'ios-fontawesome',     owner:'alexdrone',       desc:'一套用字体实现的Icon'},
-    {name:'WTGlyphFontSet',      owner:'waterlou',        desc:'另一套用字体实现的Icon'},
-    {name:'DAKeyboardControl',   owner:'danielamitay',    desc:'键盘滑动消逝，就像系统内置的短信界面'},
-    {name:'JWFolders',           owner:'jwilling',        desc:'iOS6以下的文件夹展开效果'},
-    {name:'OCCalendar',          owner:'ocrickard',       desc:'Popover样式的日期选择器'},
-    {name:'IBAForms',            owner:'ittybittydude',   desc:'Form构建。2年前的工程了..'},
-    {name:'ActionSheetPicker',   owner:'TimCinel',        desc:'一个PopOver里面是Picker'},
-    {name:'MSCollectionViewCalendarLayout',owner:'monospacecollective',desc:'日历事件样式 iOS6以上'},
-    {name:'MosaicUI',            owner:'betzerra',        desc:'WP7磁片风格View 自适应大小'},
-    {name:'MosaicLayout',        owner:'TwoTinedFork',    desc:'WP7磁片风格Layout UICollectionView'},
-    {name:'iPhone-IntroductionTutorial',owner:'MatthewYork',desc:'用于创建启动引导界面的...'},
-    {name:'US2FormValidator',    owner:'ustwo',           desc:'一套Table表单验证提示'},
-    {name:'AURosetteView',       owner:'emilwojtaszek',   desc:'玫瑰花瓣似的展开菜单'},
-    {name:'EAIntroView',         owner:'ealeksandrov',    desc:'App启动的介绍界面'},
-    {name:'InformaticToolbar',   owner:'gregwym',         desc:'下边栏显示提示和动作'}
-    ]
-},
 {name:'高级功能',
 list:[
     {name:'PAPasscode',                owner:'dhennessy',   desc:'类似系统的输入密码界面'},
@@ -817,7 +789,60 @@ list:[
     {name:'idev-recipes',    owner:'boctor',     desc:'iDevRecipes博客的代码,演示了如何自定义一些控件,代码比较老..'},
     {name:'AePubReader',     owner:'fedefrappi', desc:'一个阅读epub的'}
     ]
+},
+{name:'其他',
+list:[
+
+    {name:'SMPageControl',       owner:'Spaceman-Labs',   desc:'一个仿UIPageControl的API类 可以自定义小点点～'},
+    {name:'REActivityViewController',owner:'romaonthego', desc:'开的ActivityView实现'},
+    {name:'DCControls',      owner:'domesticcatsoftware', desc:'不错的扇形滑动控件 平面风格'},
+    {name:'BSKeyboardControls',  owner:'simonbs',         desc:'与键盘相关的控制 控制 上一项下一项'},
+    {name:'OCMapView',           owner:'yinkou',          desc:'一个MapKit标注聚合用的东西～'},
+    {name:'NJKWebViewProgress',  owner:'ninjinkun',       desc:'显示WebView加载进度'},
+    {name:'REMenu',              owner:'romaonthego',     desc:'一个导航栏下拉菜单 不错～'},
+    {name:'action-sheet-blocks', owner:'MugunthKumar',    desc:'为ActionSSheet提供block方法'},
+    {name:'ADClusterMapView',    owner:'applidium',       desc:'Map的地标Cluster 应该不错～'},
+    {name:'TPKeyboardAvoiding',  owner:'michaeltyson',    desc:'一个UIView的 在有键盘时上移'},
+    {name:'calloutview',         owner:'nfarina',         desc:'实现了私有的UICalloutView 类似地图中的弹出控件'},
+    {name:'SVPulsingAnnotationView', owner:'samvermette', desc:'一个自定义MapLocator 动画控件'},
+    {name:'OWActivityViewController', owner:'brantyoung', desc:'一个类似系统的分享控件'},
+    {name:'SYEmojiPopover',      owner:'dvkch',           desc:'显示一个Emoji选择de PopOVer'},
+    {name:'fingertips',          owner:'developmentseed', desc:'在屏幕上显示触摸点 只支持iPad2和iPhone4s以上'},
+    {name:'ASTouchVisualizer',   owner:'autresphere',     desc:'为屏幕触摸添加指示 可用于屏幕录制'},
+    {name:'openspringboard',     owner:'fieldforceapp',   desc:'仿SpringBoard的东西'},
+    {name:'HMLauncherView',      owner:'heikomaass',      desc:'仿SpringBoard的东西'},
+    {name:'CQMFloatingController', owner:'cocopon',       desc:'一个浮动的VC 类似Popover(没有箭头) 可以用在横屏iPhone等'},
+    {name:'WSCoachMarksView',    owner:'workshirt',       desc:'为某个控件加上蒙板 类似Spotlight'},
+    {name:'KLHorizontalSelect',  owner:'KieranLafferty',  desc:'横向扫动选择'},
+    {name:'iOS-StyledPageControl', owner:'honcheng',      desc:'自定义PageControl,多种样式'},
+    {name:'iOS-blur',            owner:'ArcticMinds',     desc:'iOS7的模糊效果 iOS7Only'},
+    {name:'FXBlurView',          owner:'nicklockwood',    desc:'iOS7的模糊效果 可以用在iOS5以上'},
+    {name:'LiveFrost',           owner:'radi',            desc:'View动态模糊效果,思路和效果都不错，性能稍差'},
+    {name:'CRGradientNavigationBar',owner:'chroman',      desc:'iOS7状态栏 过渡的颜色'},
+    {name:'MYBlurIntroductionView', owner:'MatthewYork',   desc:'带有模糊背景效果的 Intro'},
+    {name:'Masonry',             owner:'cloudkite',       desc:'AutoLayout框架'},
+    {name:'KeepLayout',          owner:'iMartinKiss',     desc:'AutoLayout框架 貌似比较好用'},
+    {name:'MLPAccessoryBadge',   owner:'EddyBorja',       desc:'一些自定义badge~'},
+    {name:'JSBadgeView',         owner:'JaviSoto',        desc:'数字角标 Badge'},
+    {name:'MSCellAccessory',     owner:'bitmapdata',      desc:'Cell右侧的小箭头~'},
+    {name:'ios-fontawesome',     owner:'alexdrone',       desc:'一套用字体实现的Icon'},
+    {name:'WTGlyphFontSet',      owner:'waterlou',        desc:'另一套用字体实现的Icon'},
+    {name:'DAKeyboardControl',   owner:'danielamitay',    desc:'键盘滑动消逝，就像系统内置的短信界面'},
+    {name:'JWFolders',           owner:'jwilling',        desc:'iOS6以下的文件夹展开效果'},
+    {name:'OCCalendar',          owner:'ocrickard',       desc:'Popover样式的日期选择器'},
+    {name:'IBAForms',            owner:'ittybittydude',   desc:'Form构建。2年前的工程了..'},
+    {name:'ActionSheetPicker',   owner:'TimCinel',        desc:'一个PopOver里面是Picker'},
+    {name:'MSCollectionViewCalendarLayout',owner:'monospacecollective',desc:'日历事件样式 iOS6以上'},
+    {name:'MosaicUI',            owner:'betzerra',        desc:'WP7磁片风格View 自适应大小'},
+    {name:'MosaicLayout',        owner:'TwoTinedFork',    desc:'WP7磁片风格Layout UICollectionView'},
+    {name:'iPhone-IntroductionTutorial',owner:'MatthewYork',desc:'用于创建启动引导界面的...'},
+    {name:'US2FormValidator',    owner:'ustwo',           desc:'一套Table表单验证提示'},
+    {name:'AURosetteView',       owner:'emilwojtaszek',   desc:'玫瑰花瓣似的展开菜单'},
+    {name:'EAIntroView',         owner:'ealeksandrov',    desc:'App启动的介绍界面'},
+    {name:'InformaticToolbar',   owner:'gregwym',         desc:'下边栏显示提示和动作'}
+    ]
 }
+
 ]
 },
 
@@ -830,9 +855,11 @@ list:[
     {name:'Brushes',            owner:'sprang',         desc:'绘画的App,超棒,Appstore上架应用'},
     {name:'Inkpad',             owner:'sprang',         desc:'一个完整的矢量绘图App，很棒，已上架'},
     {name:'modizer',            owner:'yoyofr',         desc:'!!!超强大的App 可以读取和演奏各种mod音乐 midi合成 解压 下载 自带庞大音乐库~ 已上架'},
+    {name:'NOTTaskPaperForIOS', owner:'jessegrosjean',  desc:'TaskPaper源码~'},
     {name:'kxmovie',            owner:'kolyvan',        desc:'一个ffmpeg的播放器 ～～～ 需要先构建ffmpeg'},
     {name:'Sol',                owner:'comyarzaheri',   desc:'漂亮的扁平风格的天气App'},
     {name:'ioctocat',           owner:'dennisreimann',  desc:'一个Github客户端'},
+    {name:'Doppio',             owner:'chroman',        desc:'寻找最近的星巴克'},
     {name:'cheddar-ios',        owner:'nothingmagical', desc:'一个日程管理的App 应该比较知名'},
     {name:'AppSales-Mobile',    owner:'omz',            desc:'基于iTunes Connect来查看App销售状况'},
     {name:'canabalt-ios',       owner:'ericjohnson',    desc:'一个跑步的小游戏～'},
@@ -872,7 +899,7 @@ list:[
     {name:'KIF',              owner:'kif-framework',     desc:'一套用Private API做的调试库,可以以用户的方式测试(touch in xxx)'},
     {name:'gh-unit',          owner:'gabriel',           desc:'一套ObjC的测试框架'},
     {name:'DCIntrospect',    owner:'domesticcatsoftware',desc:'一套iOS调试工具,在iOS界面里显示信息'},
-    {name:'CocoaLumberjack',  owner:'robbiehanson',      desc:'一套类似Log4j的东西,可提供企业级的Log~~~~'},
+    {name:'CocoaLumberjack',  owner:'CocoaLumberjack',   desc:'一套类似Log4j的东西,可提供企业级的Log~~~~'},
     {name:'Frank',            owner:'moredip',           desc:'自动化测试工具？'},
     {name:'superdb',          owner:'Shopify',           desc:'一个Debuger工具 用命令行调试。。'},
     {name:'iOS-Hierarchy-Viewer', owner:'glock45',       desc:'一个调试iOS界面的工具 通过浏览器访问~~ 值得瞅瞅～～'},
@@ -967,7 +994,6 @@ list:[
     {name:'OpenEmu',           owner:'OpenEmu',      desc:'各种游戏机模拟器'},
     {name:'Hacky',             owner:'eliaskg',      desc:'一个完整的Hacker News客户端～～'},
     {name:'WWDCDownloader',    owner:'zadr',         desc:'下载WWDC用，Xcode5 only'},
-    {name:'XVim',              owner:'JugglerShu',   desc:'Xcode的插件 支持绑定VIM快捷键'},
     {name:'QuickCast',         owner:'petetak',      desc:'一个录屏分享的App'},
     {name:'zephyros',          owner:'sdegutis',     desc:'窗口管理 for hackers'},
     {name:'shuttle',           owner:'fitztrev',     desc:'SSH快捷方式 菜单栏插件'},
@@ -982,27 +1008,38 @@ list:[
     {name:'QuickCursor',       owner:'QuickCursor',  desc:'快速启动编辑'},
     {name:'Sonora',            owner:'sonoramac',    desc:'一个小巧的 挺棒的音乐播放器'},
     {name:'SafariOmnibar',     owner:'rs',           desc:'一个Sarari插件'},
-    {name:'HexFiend',          owner:'ridiculousfish',desc:'16进制编辑器'},
+    {name:'HexFiend',          owner:'ridiculousfish',desc:'16进制编辑器'}
 
-
-
-    {name:'Xcode5-Plugin-Template', owner:'kattrali',desc:'Xcode5插件的开发模板'},
-    {name:'cocoapods-xcode-plugin', owner:'kattrali',desc:'cocoapod 插件'},
-    {name:'KFCocoaPodsPlugin',      owner:'ricobeck',desc:'cocoapod 插件, 方便编辑Podfile，显示构建日志'},
-    {name:'VVDocumenter-Xcode',     owner:'onevcat', desc:'Xcode的插件 写注释时自动提醒JavaDoc风格'},
-    {name:'ColorSense-for-Xcode',   owner:'omz',     desc:'Xcode的插件 支持动态调整UIColor'},
-    {name:'KSImageNamed-Xcode',     owner:'ksuther', desc:'Xcode的插件 支持显示工程里的UIImage'},
-    {name:'Lin',                   owner:'questbeat',desc:'Xcode的插件 显示NSLocalizedString的对应字符串'},
-    {name:'nib2objc',               owner:'akosma',  desc:'把xib和nib翻译成m 包括命令、GUI、Service'},
-    {name:'iOS-Framework',          owner:'jverkoey',desc:'编译iOS的Framework的通用模板'},
-    {name:'XToDo',                  owner:'trawor',  desc:'Xcode插件 列出所有TODO FIXME等'},
-    {name:'Alcatraz',               owner:'mneorr',  desc:'管理和发现插件～～'},
-    {name:'UIEffectDesignerView',   owner:'icanzilb',desc:'原生iOS/Mac粒子效果设计'},
-    {name:'SCStringsUtility',       owner:'stefanceriu',desc:'开发工具 制作多语言'},
-    {name:'APNS-Pusher',            owner:'blommegard', desc:'通过APNS发推送～'}
     ]
 },
 
+
+{name:'Xcode插件/开发',
+list:[
+    {name:'ClangFormat-Xcode',      owner:'travisjeffery',desc:'Xcode5插件 clang-format 效果一般'},
+    {name:'BBUncrustifyPlugin-Xcode',owner:'benoitsan',   desc:'Xcode5插件 Uncrustify格式化'},
+    {name:'cocoapods-xcode-plugin', owner:'kattrali',     desc:'Xcode5插件 cocoapod'},
+    {name:'FuzzyAutocompletePlugin',owner:'chendo',       desc:'Xcode5插件 更好的代码自动补全'},
+    {name:'Dash-Plugin-for-Xcode',  owner:'omz',          desc:'Xcode5插件 用Dash替代默认Doc浏览器'},
+    {name:'KFCocoaPodsPlugin',      owner:'ricobeck',     desc:'Xcode5插件 cocoapod, 方便编辑Podfile，显示构建日志'},
+    {name:'VVDocumenter-Xcode',     owner:'onevcat',      desc:'Xcode5插件 写注释时自动提醒JavaDoc风格'},
+    {name:'ColorSense-for-Xcode',   owner:'omz',          desc:'Xcode5插件 支持动态调整UIColor'},
+    {name:'KSImageNamed-Xcode',     owner:'ksuther',      desc:'Xcode5插件 支持显示工程里的UIImage'},
+    {name:'Lin-Xcode5',             owner:'questbeat',    desc:'Xcode5插件 显示NSLocalizedString的对应字符串'},
+    {name:'XToDo',                  owner:'trawor',       desc:'Xcode5插件 列出所有TODO FIXME等 性能差'},
+    {name:'CodePilot',              owner:'macoscope',    desc:'Xcode5插件 快速查找和定位代码'},
+    {name:'XVim',                   owner:'JugglerShu',   desc:'Xcode5插件 支持绑定VIM快捷键'},
+    {name:'Alcatraz',               owner:'mneorr',       desc:'Xcode4插件 管理和发现插件～～'},
+    {name:'nib2objc',               owner:'akosma',       desc:'把xib和nib翻译成m 包括命令、GUI、Service'},
+    {name:'iOS-Universal-Framework',owner:'kstenerud',    desc:'编译iOS的Framework的通用模板 支持armv7s'},
+    {name:'iOS-Framework',          owner:'jverkoey',     desc:'编译iOS的Framework的通用模板'},
+    {name:'Xcode5-Plugin-Template', owner:'kattrali',     desc:'Xcode5插件的开发模板'},
+    {name:'Xcode4-Plugin-Template', owner:'kattrali',     desc:'Xcode4插件的开发模板'},
+    {name:'UIEffectDesignerView',   owner:'icanzilb',     desc:'原生iOS/Mac粒子效果设计'},
+    {name:'SCStringsUtility',       owner:'stefanceriu',  desc:'开发工具 制作多语言'},
+    {name:'APNS-Pusher',            owner:'blommegard',   desc:'通过APNS发推送～'}
+    ]
+},
 
 {name:'非Github',
 list:[
