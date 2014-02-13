@@ -23,6 +23,7 @@ list: [
     {name:'NSArray-Utilities',  owner:'erica',           desc:'如题'},
     {name:'aqtoolkit',          owner:'AlanQuatermain',  desc:'一些常用的东西'},
     {name:'DLIntrospection',    owner:'garnett',         desc:'一些NSObject的扩展'},
+    {name:'YOLOKit',            owner:'mxcl',            desc:'一些方便的快速枚举方法'},
     {name:'NSDate-Extensions',  owner:'erica',           desc:'如题日期'},
     {name:'ALActionBlocks',     owner:'lavoy',           desc:'在UIControl上添加的Block事件'},
     {name:'jrswizzle',          owner:'rentzsch',        desc:'主要是swizzling'},
@@ -45,6 +46,7 @@ list: [
     {name:'MAObjCRuntime',      owner:'mikeash',         desc:'将运行时包装成ObjC'},
     {name:'Objective-C-Generics',owner:'tomersh',        desc:'通过宏定义勉强实现的范型'},
     {name:'TBMacros',           owner:'twobitlabs',      desc:'一些常用的宏定义'},
+    {name:'Bolts-iOS',          owner:'BoltsFramework',  desc:'低层次的，更好的管理异步任务的库，(同时有Android版)'},
     {name:'NSString-Ruby',      owner:'zdavison',        desc:'为Ruby程序员带来的字符串相关功能'},
     {name:'ObjectiveRecord',    owner:'mneorr',          desc:'CoreData包装的活动记录 有RoR风格的API'},
     {name:'FastImageCache',     owner:'path',            desc:'滑动时快速显示图片的库，Path开发'}
@@ -122,8 +124,10 @@ list:[
     {name:'Slash',            owner:'chrisdevereux',  desc:'对AttributeString的封装'},
     {name:'ABContactHelper',  owner:'erica',          desc:'访问联系人'},
     {name:'APAddressBook',    owner:'Alterplay',      desc:'封装了访问通信录/联系人的功能'},
+    {name:'YapDatabase',      owner:'yaptv',          desc:'一个KV库，包装自sqlite，但有更多包装好的功能，比如缓存/全文搜索'},
     {name:'iHasApp',          owner:'danielamitay',   desc:'检测某个App是否安装，集成了常见的URL Scheme'},
-    {name:'UIActivityCollection',owner:'shu223',      desc:'Github上UIActivity项目的集合'}
+    {name:'UIActivityCollection',owner:'shu223',      desc:'Github上UIActivity项目的集合'},
+    {name:'STPTransitions',   owner:'stepanhruda',    desc:'更好的 自定义ViewCtrl 过渡动画API'}
     
 ]
 },
@@ -627,6 +631,7 @@ list:[
     {name:'ios-SDNestedTable',         owner:'serverdensity',  desc:'二级菜单的Table'},
     {name:'SWTableViewCell',           owner:'CEWendel',       desc:'类似iOS7邮件中的Cell,左右滑动出现多个功能键'},
     {name:'NJKScrollFullScreen',       owner:'ninjinkun',      desc:'Nav内容滑动时，自动隐藏上下两个导航栏'},
+    {name:'AMScrollingNavbar',         owner:'andreamazz',     desc:'Nav内容滑动时，自动隐藏上方导航栏'},
     {name:'TSUIKit',                   owner:'Viacheslav-Radchenko',desc:'复杂数据表格、tab展示的UI控件，适合复杂数据展示'}
     ]
 },
@@ -734,7 +739,8 @@ list:[
     {name:'ios-realtimeblur',     owner:'alexdrone',             desc:'iOS7 模糊效果'},
     {name:'GHSidebarNav',         owner:'gresrun',               desc:'新版Facebook 侧滑等UI'},
     {name:'LXReorderableCollectionViewFlowLayout',owner:'lxcid', desc:'iBook中 拖动图书的功能'},
-    {name:'MDCParallaxView',      owner:'modocache',             desc:'景深效果 就像Path的封面那样'}
+    {name:'MDCParallaxView',      owner:'modocache',             desc:'景深效果 就像Path的封面那样'},
+    {name:'CRMotionView',         owner:'chroman',               desc:'Facebook Paper里面，跟随手势左右翻动的图片页面'}
     ]  
 },
 
@@ -771,7 +777,8 @@ list:[
     {name:'DAAppsViewController',      owner:'danielamitay',desc:'一个仿AppStore的列表界面 输入appId集合'},
     {name:'WUEmoticonsKeyboard',       owner:'YuAo',        desc:'输入表情的自定义键盘'},
     {name:'CKCalendar',                owner:'jaykz52',     desc:'一个朴实的日历'},
-    {name:'LBYouTubeView',             owner:'larcus94',    desc:'显示Youtube视频..国内无用'}
+    {name:'LBYouTubeView',             owner:'larcus94',    desc:'显示Youtube视频..国内无用'},
+    {name:'JustType',                  owner:'tonqa',       desc:'Keyboard扩展，手势支持等'}
     ]
 },
 {name:'套装',
@@ -839,7 +846,8 @@ list:[
     {name:'US2FormValidator',    owner:'ustwo',           desc:'一套Table表单验证提示'},
     {name:'AURosetteView',       owner:'emilwojtaszek',   desc:'玫瑰花瓣似的展开菜单'},
     {name:'EAIntroView',         owner:'ealeksandrov',    desc:'App启动的介绍界面'},
-    {name:'InformaticToolbar',   owner:'gregwym',         desc:'下边栏显示提示和动作'}
+    {name:'InformaticToolbar',   owner:'gregwym',         desc:'下边栏显示提示和动作'},
+    {name:'CCHMapClusterController',owner:'choefele',     desc:'自动归类MapKit上面的标记'}
     ]
 }
 
@@ -856,6 +864,7 @@ list:[
     {name:'Inkpad',             owner:'sprang',         desc:'一个完整的矢量绘图App，很棒，已上架'},
     {name:'modizer',            owner:'yoyofr',         desc:'!!!超强大的App 可以读取和演奏各种mod音乐 midi合成 解压 下载 自带庞大音乐库~ 已上架'},
     {name:'NOTTaskPaperForIOS', owner:'jessegrosjean',  desc:'TaskPaper源码~'},
+    {name:'GraphSketcher',      owner:'graphsketcher',  desc:'以OmniGroup为基础，做的类似OneNote的工具，支持Mac和iPad'},
     {name:'kxmovie',            owner:'kolyvan',        desc:'一个ffmpeg的播放器 ～～～ 需要先构建ffmpeg'},
     {name:'Sol',                owner:'comyarzaheri',   desc:'漂亮的扁平风格的天气App'},
     {name:'ioctocat',           owner:'dennisreimann',  desc:'一个Github客户端'},
@@ -1008,7 +1017,9 @@ list:[
     {name:'QuickCursor',       owner:'QuickCursor',  desc:'快速启动编辑'},
     {name:'Sonora',            owner:'sonoramac',    desc:'一个小巧的 挺棒的音乐播放器'},
     {name:'SafariOmnibar',     owner:'rs',           desc:'一个Sarari插件'},
-    {name:'HexFiend',          owner:'ridiculousfish',desc:'16进制编辑器'}
+    {name:'HexFiend',          owner:'ridiculousfish',desc:'16进制编辑器'},
+    {name:'sequelpro',         owner:'sequelpro',    desc:'Sequel Pro 访问MySQL'},
+    {name:'MIDIApps',          owner:'krevis',       desc:'两个App，一个是Midi monitoring，一个是SysEx'}
 
     ]
 },
