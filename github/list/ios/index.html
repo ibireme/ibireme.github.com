@@ -102,7 +102,7 @@ $(document).ready(function(){
             inner += getMajorHTML(major);
         }
         return '<div id="fix-top-header">' + 
-            '<div id="fix-top-inner">- ( ゜- ゜)つロ Github-iOS备忘</div>' + 
+            '<div id="fix-top-inner">' + githubHeaderTitle + '</div>' + 
             '<div id="fix-top-action">' + 
                 '<a href="#" id="action-expand-all">全部展开</a>' + 
                     "&nbsp;&nbsp;" +
@@ -213,7 +213,7 @@ $(document).ready(function(){
         }
         
         if (y < 35) {
-            $("#fix-top-inner")[0].innerHTML = "- ( ゜- ゜)つロ Github-iOS备忘";
+            $("#fix-top-inner")[0].innerHTML = githubHeaderTitle;
             return;
         }
         var curHeader;

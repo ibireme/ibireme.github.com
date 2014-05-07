@@ -1,3 +1,5 @@
+var githubHeaderTitle = "- ( ゜- ゜)つロ Github-iOS备忘  &nbsp;&nbsp;&nbsp; 2014-05-08"
+
 var githubList =  [
 {
 name:'系统基础库',
@@ -31,13 +33,16 @@ list: [
     {name:'QSUtilities',        owner:'mikeho',          desc:'一些基础库 (Instagram有用到)'},
     {name:'libextobjc',         owner:'jspahrsummers',   desc:'一堆oc的扩展'},
     {name:'PrettyTimestamp',    owner:'jonhocking',      desc:'友好时间的扩展'},
+    {name:'DateTools',          owner:'MatthewYork',     desc:'不错的时间处理相关的工具箱'},
     {name:'ios-jail-break-detector',    owner:'diwu',    desc:'检测是否越狱 有上线'},
     {name:'crackify',           owner:'itruf',           desc:'检测App是否被破解'},
     {name:'NSBundle-OBCodeSigningInfo', owner:'ole',     desc:'检查当前签名、Sandbox状态 MacOSX'},
     {name:'UIView-AnimatedProperty',owner:'iMartinKiss', desc:'为UIView添加动画效果的property,有用到swizzle'},
+    {name:'UIView-Positioning', owner:'freak4pc',        desc:'为UIView的frame等添加更多属性，方便设置view'},
     {name:'Block-KVO',          owner:'iMartinKiss',     desc:'Block风格的KVO~'},
     {name:'MTDates',          owner:'mysterioustrousers',desc:'一些Data的category'},
     {name:'CocoaSecurity',      owner:'kelp404',         desc:'常见的哈希、加密解密算法'},
+    {name:'FCFileManager',      owner:'fabiocaccamo',    desc:'更好更方便的访问文件和文件夹'},
     {name:'sskeychain',         owner:'soffes',          desc:'访问keychain 支持iOS Mac'},
     {name:'UISS',               owner:'robertwijas',     desc:'用JSON的风格设置UIKit样式'},
     {name:'Underscore.m',       owner:'robb',            desc:'仿JS的underscore.js来写的,用于访问和处理数据'},
@@ -46,7 +51,6 @@ list: [
     {name:'MAObjCRuntime',      owner:'mikeash',         desc:'将运行时包装成ObjC'},
     {name:'Objective-C-Generics',owner:'tomersh',        desc:'通过宏定义勉强实现的范型'},
     {name:'TBMacros',           owner:'twobitlabs',      desc:'一些常用的宏定义'},
-    {name:'Bolts-iOS',          owner:'BoltsFramework',  desc:'低层次的，更好的管理异步任务的库，(同时有Android版)'},
     {name:'NSString-Ruby',      owner:'zdavison',        desc:'为Ruby程序员带来的字符串相关功能'},
     {name:'ObjectiveRecord',    owner:'mneorr',          desc:'CoreData包装的活动记录 有RoR风格的API'},
     {name:'FastImageCache',     owner:'path',            desc:'滑动时快速显示图片的库，Path开发'}
@@ -64,7 +68,7 @@ list:[
     {name:'Objective-C-RegEx-Categories',owner:'bendytree',desc:'正则表达'},
     {name:'FormatterKit',   owner:'mattt',         desc:'一个NSString的格式化工具'},
     {name:'NanoStore',      owner:'tciuro',        desc:'KV存储 (无模式/NoSQL)'},
-    {name:'TMCache',        owner:'tumblr',        desc:'一个内存Cache'},
+    {name:'TMCache',        owner:'tumblr',        desc:'tumblr开源的一个内存/文件缓存，很棒'},
     {name:'EGOCache',       owner:'enormego',      desc:'EGOImage里面的 Cache功能'},
     {name:'Haneke',         owner:'hpique',        desc:'一个开箱即用的图片Cache'},
     {name:'HJCache',        owner:'markofjohnson', desc:'一个缓存网络内容等的Cache'},
@@ -98,7 +102,9 @@ list:[
     {name:'MagicalRecord',      owner:'magicalpanda',      desc:'CoreData的包装 简化代码'},
     {name:'fmdb',               owner:'ccgus',             desc:'SQLite的封装'},
     {name:'KZPropertyMapper',   owner:'krzysztofzablocki', desc:'一个Model的封装,类JSON'},
-    {name:'BlockInjection',     owner:'tokorom',           desc:'为某个方法注入一个Block 类似AOP'},
+    {name:'BlockInjection',     owner:'tokorom',           desc:'为某个方法前后注入Block，类似AOP'},
+    {name:'Aspects',            owner:'steipete',          desc:'又一个AOP库，用swizzle实现的切面...'},
+    {name:'Bolts-iOS',          owner:'BoltsFramework',    desc:'低层次的，更好的管理异步任务的库，支持Facebook AppLinks(同时有Android版)'},
     {name:'NSObject-ObjectMap', owner:'uacaps',            desc:'JSON和XML包装到Object'},
     {name:'Ejecta',             owner:'phoboslab',         desc:'通过OpenGL OpenAL来实现 WebCanvas JS等,很庞大~'},
     {name:'FCModel',            owner:'marcoarment',       desc:'为SQL程序员包装一下CoreData'}
@@ -109,10 +115,10 @@ list:[
 list:[
     {name:'iOS-System-Services',owner:'Shmoopi',      desc:'获取各种设备信息 包括硬件、网络、内存、进程等等'},
     {name:'iAppInfos',       owner:'leverdeterre',    desc:'简单获取设备信息，例如设备、空间、Provisionning'},
+    {name:'LocationManager', owner:'intuit',          desc:'更好用的获取和追踪设备位置的工具，包括GPS信息'},
     {name:'MKStoreKit',      owner:'MugunthKumar',    desc:'iAP用的库'},
     {name:'CargoBay',        owner:'mattt',           desc:'一个包装iAP StoreKit的库'},
     {name:'RMStore',         owner:'robotmedia',      desc:'很轻量的iAP包装'},
-    {name:'QuincyKit',       owner:'TheRealKerni',    desc:'处理crach信息的库 只有上架应用才能用 支持Mac'},
     {name:'OpenUDID',        owner:'ylechelle',       desc:'系统UDID替代方案'},
     {name:'UIDevice-with-UniqueIdentifier-for-iOS-5',owner:'gekitz', desc:'另一个UUID解决方案 但iOS7不能用了'},
     {name:'uidevice-extension', owner:'erica',        desc:'一系列UIDevice的扩展 有PrivateAPI 最新的工程在cookbook-code里'},
@@ -126,6 +132,7 @@ list:[
     {name:'Slash',            owner:'chrisdevereux',  desc:'对AttributeString的封装'},
     {name:'ABContactHelper',  owner:'erica',          desc:'访问联系人'},
     {name:'APAddressBook',    owner:'Alterplay',      desc:'封装了访问通信录/联系人的功能'},
+    {name:'GVUserDefaults',   owner:'gangverk',       desc:'包装了 NSUserDefaults，只需要声明属性就能用，很方便'},
     {name:'YapDatabase',      owner:'yaptv',          desc:'一个KV库，包装自sqlite，但有更多包装好的功能，比如缓存/全文搜索'},
     {name:'iHasApp',          owner:'danielamitay',   desc:'检测某个App是否安装，集成了常见的URL Scheme'},
     {name:'UIActivityCollection',owner:'shu223',      desc:'Github上UIActivity项目的集合'},
@@ -221,6 +228,7 @@ list:[
     {name:'octokit.objc',         owner:'octokit',        desc:'Github的API'},
     {name:'ParcelKit',            owner:'overcommitted',  desc:'Dropbox封装CoreData'},
     {name:'cocoalibspotify',      owner:'spotify',        desc:'spotify官方SDK'},
+    {name:'DeepBeliefSDK',        owner:'jetpacapp',      desc:'Jetpac 图片识别的SDK'},
     {name:'GDFileManagerKit',     owner:'GrahamDennis',   desc:'访问 dropbox GDrive之类的云存储'}
     ]
 },
@@ -403,6 +411,8 @@ list:[
 },
 {name:'动画曲线',
 list:[
+    {name:'pop',                         owner:'facebook',   desc:'Facebook Paper的动画库，增加了弹簧和减速的曲线，允许动画任意属性'},
+    {name:'POP-MCAnimate',               owner:'matthewcheok',desc:'用属性来配置pop动画，方便开发'},
     {name:'NSBKeyframeAnimation',        owner:'NachoSoto',  desc:'那些jQuery带的动画速率曲线'},
     {name:'CAAnimation-EasingEquations', owner:'bryanoltman',desc:'一些CA没有的动画曲线'},
     {name:'UIView-EasingFunctions',      owner:'zrxq',       desc:'UIView的动画曲线~~'},
@@ -464,6 +474,7 @@ list:[
 {name:'Slider',
 list:[
     {name:'JMSlider',                owner:'jasonmorrissey', desc:'一个很小清新的Slider 用CA画的'},
+    {name:'ASValueTrackingSlider',   owner:'alskipp',        desc:'滑动出pop显示数字、可变颜色的Slider'},
     {name:'iOS-Custom-Controls',     owner:'mneuwert',       desc:'按住可以出Pop的UISlider'},
     {name:'MTZTiltReflectionSlider', owner:'mdznr',          desc:'一个模仿iOS6 Music的Slider'},
     {name:'ASRangeSlider',           owner:'avrahamshuk',    desc:'一个两段式的Slider'},
@@ -490,6 +501,7 @@ list:[
     {name:'MDRadialProgress',owner:'mdinacci',desc:'圆环进度条,多种风格 iOS6+'},
     {name:'PWProgressView', owner:'pwillsey', desc:'饼形进度条，半透明风格,效果不错'},
     {name:'TWRProgressView',owner:'chasseurmic',desc:'自定义形状Mask的进度'},
+    {name:'ASProgressPopUpView',owner:'alskipp',desc:'很简单的，能popup显示进度的条'},
     {name:'M13ProgressSuite',owner:'Marxon13',desc:'一套不同风格的Progress：包括圆形、环形、进度、蒙板等等'},
     {name:'SpinKit-ObjC',   owner:'raymondjavaxx',desc:'由JS版SpinKit模仿得来，几个不错的ActivityIndicator'},
     ]
@@ -520,6 +532,7 @@ list:[
     {name:'SIAlertView',              owner:'Sumi-Interactive', desc:'一个样子不错的自定义AlertView'},
     {name:'MBMenuController',            owner:'MosheBerman',   desc:'一个自定义AlertSheetVC'},
     {name:'JLActionSheet',               owner:'JLoewy',        desc:'另一个自定义AlertSheet'},
+    {name:'AMSmoothAlert',               owner:'mtonio91',      desc:'有夸张弹跳效果的Alert'},
     {name:'ASDepthModal',                owner:'autresphere',   desc:'实现简单的3维景深的模态视图 提供背景模糊'},
     {name:'RNBlurModalView',             owner:'rnystrom',      desc:'将后方视图模糊'},
     {name:'NZAlertView',                 owner:'NZN',           desc:'类似notif风格的Alert，拍扁'},
@@ -543,12 +556,14 @@ list:[
 
 {name:'Segment',
 list:[
+    {name:'NYSegmentedControl',   owner:'nealyoung',   desc:'多种样式和动画的控件，很棒'},
     {name:'SVSegmentedControl',   owner:'samvermette', desc:'一个分段选择控件 类似Mac10.7测试版中的UI 很棒~'},
     {name:'URBSegmentedControl',  owner:'u10int',      desc:'一个灵活的分段控件 可以上下'},
     {name:'MCSegmentedControl',   owner:'oettam',      desc:'一个系统分段的子类 可以自定义颜色'},
     {name:'AKSegmentedControl',   owner:'alikaragoz',  desc:'完全自定义的分段控件 风格不错'},
     {name:'HMSegmentedControl',   owner:'HeshamMegid', desc:'Chrome风格的Tabbar分段'},
     {name:'SDSegmentedControl',   owner:'rs',          desc:'一个离散并且凹陷效果的分段'},
+    {name:'DZNSegmentedControl',  owner:'dzenbot',     desc:'可以显示数字的segment，通常用于profile的顶部'},
     {name:'PPiFlatSegmentedControl',owner:'pepibumur', desc:'扁平风格的Segment (包含iOS7样式)'}
     ]
 },
@@ -609,6 +624,7 @@ list:[
 
 {name:'PullToRefresh',
 list:[
+    {name:'UzysAnimatedGifPullToRefresh',   owner:'uzysjung',    desc:'支持用gif呈现的下拉动画'},
     {name:'MSPullToRefreshController',      owner:'bogardon',    desc:'一个不错的上下拉刷新的控件 里面是彩虹'},
     {name:'EGOTableViewPullRefresh',        owner:'enormego',    desc:'下拉刷新,很早的一个控件了2年没更新了'},
     {name:'PullToRefresh',                  owner:'leah',        desc:'下拉刷新'},
@@ -636,6 +652,7 @@ list:[
     {name:'RNRippleTableView',         owner:'rnystrom',       desc:'Cell梳子抖动~ 挺有创意'},
     {name:'RETableViewManager',        owner:'romaonthego',    desc:'数据驱动的Table 由数据画出Table内容'},
     {name:'FXForms',                   owner:'nicklockwood',   desc:'快速构建Table Based表单/设置界面'},
+    {name:'XLForm',                    owner:'xmartlabs',      desc:'强大的table/表单/设置 的构建工具'},
     {name:'ios-SDNestedTable',         owner:'serverdensity',  desc:'二级菜单的Table'},
     {name:'SWTableViewCell',           owner:'CEWendel',       desc:'类似iOS7邮件中的Cell,左右滑动出现多个功能键'},
     {name:'NJKScrollFullScreen',       owner:'ninjinkun',      desc:'Nav内容滑动时，自动隐藏上下两个导航栏'},
@@ -688,6 +705,7 @@ list:[
     {name:'AKTabBarController',            owner:'alikaragoz',     desc:'自定义Tabbar 样式类似AppStore'},
     {name:'MGSplitViewController',         owner:'mattgemmell',    desc:'类似系统的UISplitVC 但有更多功能'},
     {name:'PSTCollectionView',             owner:'steipete',       desc:'类似系统的UIColloectionView 为了支持iOS4.3'},
+    {name:'AMWaveTransition',              owner:'andreamazz',     desc:'两个TableView之间的导航，果冻抖动效果'},
     {name:'JMTabView',                     owner:'jasonmorrissey', desc:'一个TabView 用CA画的,类似 Mac系统的单选控件'},
     {name:'MWFSlideNavigationViewController', owner:'meiwin',      desc:'一个能左右上下滑动的简单导航栏'},
     {name:'UIScrollSlidingPages',          owner:'TomThorpe',      desc:'一个和Chrome类似的左右滑动Pager'},
@@ -697,6 +715,7 @@ list:[
     {name:'DVSlideViewController',         owner:'dickverbunt',    desc:'类似Safari的滑动切换'},
     {name:'HGPageScrollView',              owner:'100grams',       desc:'类似Safari浏览的分页控件、'},
     {name:'HSImageSidebarView',            owner:'bjhomer',        desc:'一个类似Keynote的侧边栏'},
+    {name:'CBHazeTransitionViewController',owner:'coolbeet',       desc:'类似iOS6的下拉刷新的动画切换，水滴状拖拽'},
     {name:'RNSwipeViewController',         owner:'rnystrom',       desc:'滑动界面显示另一个界面 类似下拉状态栏查看天气'},
     {name:'RESideMenu',                    owner:'romaonthego',    desc:'iOS7风格侧滑'}
     ]
@@ -763,6 +782,7 @@ list:[
     {name:'Kal',                       owner:'klazuka',     desc:'一套日历控件 高仿iOS默认'},
     {name:'objc-TimesSquare',          owner:'square',      desc:'一套日历控件 类似iOS默认 貌似清新一些'},
     {name:'ABCalendarPicker',          owner:'k06a',        desc:'高仿iOS默认日历的DatePicker~'},
+    {name:'EBPhotoPages',              owner:'EddyBorja',   desc:'图片浏览控件，提供类似Facebook browser类似的功能'},
     {name:'MWPhotoBrowser',            owner:'mwaterfall',  desc:'一套图片浏览控件 高仿iOS默认 支持网络图片'},
     {name:'PTImageAlbumViewController',owner:'exalted',     desc:'图片浏览控件 仿iOS默认'},
     {name:'FGallery-iPhone',           owner:'gdavis',      desc:'图片浏览器'},
@@ -829,6 +849,7 @@ list:[
     {name:'HMLauncherView',      owner:'heikomaass',      desc:'仿SpringBoard的东西'},
     {name:'CQMFloatingController', owner:'cocopon',       desc:'一个浮动的VC 类似Popover(没有箭头) 可以用在横屏iPhone等'},
     {name:'WSCoachMarksView',    owner:'workshirt',       desc:'为某个控件加上蒙板 类似Spotlight'},
+    {name:'COSTouchVisualizer',  owner:'conopsys',        desc:'在屏幕上显示手指的触摸事件'},
     {name:'KLHorizontalSelect',  owner:'KieranLafferty',  desc:'横向扫动选择'},
     {name:'iOS-StyledPageControl', owner:'honcheng',      desc:'自定义PageControl,多种样式'},
     {name:'iOS-blur',            owner:'ArcticMinds',     desc:'iOS7的模糊效果 iOS7Only'},
@@ -856,7 +877,8 @@ list:[
     {name:'AURosetteView',       owner:'emilwojtaszek',   desc:'玫瑰花瓣似的展开菜单'},
     {name:'EAIntroView',         owner:'ealeksandrov',    desc:'App启动的介绍界面'},
     {name:'InformaticToolbar',   owner:'gregwym',         desc:'下边栏显示提示和动作'},
-    {name:'CCHMapClusterController',owner:'choefele',     desc:'自动归类MapKit上面的标记'}
+    {name:'CCHMapClusterController',owner:'choefele',     desc:'自动归类MapKit上面的标记'},
+    {name:'JTSImageViewController',owner:'jaredsinclair', desc:'点击弹出图片，双击缩放，再点击缩回原处，这种常见的功能...'}
     ]
 }
 
@@ -871,11 +893,14 @@ list:[
 list:[
     {name:'Brushes',            owner:'sprang',         desc:'绘画的App,超棒,Appstore上架应用'},
     {name:'Inkpad',             owner:'sprang',         desc:'一个完整的矢量绘图App，很棒，已上架'},
+    {name:'viewfinder',         owner:'viewfinderco',   desc:'Square开源了完整的viewfinder源码，包括服务端和客户端(iOS/Android) 赞！'},
     {name:'modizer',            owner:'yoyofr',         desc:'!!!超强大的App 可以读取和演奏各种mod音乐 midi合成 解压 下载 自带庞大音乐库~ 已上架'},
     {name:'NOTTaskPaperForIOS', owner:'jessegrosjean',  desc:'TaskPaper源码~'},
     {name:'GraphSketcher',      owner:'graphsketcher',  desc:'以OmniGroup为基础，做的类似OneNote的工具，支持Mac和iPad'},
     {name:'kxmovie',            owner:'kolyvan',        desc:'一个ffmpeg的播放器 ～～～ 需要先构建ffmpeg'},
     {name:'Sol',                owner:'comyarzaheri',   desc:'漂亮的扁平风格的天气App'},
+    {name:'ChatSecure-iOS',     owner:'chrisballinger', desc:'一个XMPP客户端～ 支持Jabber/GTalk等XMPP协议'},
+    {name:'iOSSF',              owner:'gaosboy',        desc:'SegmentFault官方App ...'},
     {name:'ioctocat',           owner:'dennisreimann',  desc:'一个Github客户端'},
     {name:'trailer',            owner:'HouseTrip',      desc:'保持Github在线～ 包括iOS/OSX客户端'},
     {name:'Doppio',             owner:'chroman',        desc:'寻找最近的星巴克'},
@@ -902,6 +927,7 @@ list:[
     {name:'ClassicMap',        owner:'kishikawakatsumi',desc:'旧版iOS地图'},
     {name:'ntlniph',            owner:'takuma104',      desc:'Twitter客户端 古老的工程了'},
     {name:'lastfm-iphone',      owner:'c99koder',       desc:'Last.fm官方客户端'},
+    {name:'FFCalendar',         owner:'fggeraissate',   desc:'iPad日历，类似iOS7的日历。有些粗糙'},
     {name:'ThatInbox',          owner:'Ink',            desc:'Ink出的邮件客户端'},
     {name:'ThatCloud',          owner:'Ink',            desc:'Ink出的云端文件管理'},
     {name:'ThatPDF',            owner:'Ink',            desc:'Ink出的PDF编辑'},
@@ -910,16 +936,20 @@ list:[
 },
 
 
-{name:'开发/调试工具',
+{name:'开发/调试/统计',
 list:[
-    {name:'xctool',           owner:'facebook',          desc:'iOS工程构建和测试工具,用于替代系统的xcodebuild  (CI)'},
+    {name:'xctool',           owner:'facebook',          desc:'Facebook iOS工程构建和测试工具,用于替代系统的xcodebuild  (CI)'},
     {name:'origami',          owner:'facebook',          desc:'Facebook Paper用到的原型设计工具,是Quartz Composer插件'},
+    {name:'Tweaks',           owner:'facebook',          desc:'Facebook Paper用到的界面调整小工具,可以给产品/开发自己去调整和尝试动画/颜色等'},
+    {name:'plcrashreporter',  owner:'plausiblelabs',     desc:'在客户端捕获、生成crash log并上传的库，很棒！详情去官网看'},
+    {name:'QuincyKit',        owner:'TheRealKerni',      desc:'自动生成和上传crash log，并可以在页面查看。包含Server/Client代码，依赖上面那个库'},
     {name:'PonyDebugger',     owner:'square',            desc:'一套Debugger工具,可以在电脑浏览器上远程调试iOS程序～查看试图层次、网络等'},
     {name:'NSLogger',         owner:'fpillet',           desc:'一套Log工具,可以在电脑上通过client实时查看NSLog,甚至是图片和二进制文件 支持Android'},
     {name:'KIF',              owner:'kif-framework',     desc:'一套用Private API做的调试库,可以以用户的方式测试(touch in xxx)'},
     {name:'gh-unit',          owner:'gabriel',           desc:'一套ObjC的测试框架'},
     {name:'DCIntrospect',    owner:'domesticcatsoftware',desc:'一套iOS调试工具,在iOS界面里显示信息'},
     {name:'CocoaLumberjack',  owner:'CocoaLumberjack',   desc:'一套类似Log4j的东西,可提供企业级的Log~~~~'},
+    {name:'ARAnalytics',      owner:'orta',              desc:'用户行为统计，支持各大App数据平台'},
     {name:'Xtrace',           owner:'johnno1962',        desc:'输出所有的方法调用消息 (可以按instance/class过滤)'},
     {name:'Frank',            owner:'moredip',           desc:'自动化测试工具？'},
     {name:'superdb',          owner:'Shopify',           desc:'一个Debuger工具 用命令行调试。。'},
@@ -1032,6 +1062,8 @@ list:[
     {name:'google-music-mac.git',owner:'kbhomes',    desc:'如题,Google Music客户端'},
     {name:'SafariOmnibar',     owner:'rs',           desc:'一个Sarari插件'},
     {name:'HexFiend',          owner:'ridiculousfish',desc:'16进制编辑器'},
+    {name:'atom',              owner:'atom',         desc:'Github官方的 21世纪开源代码编辑器 :)'},
+    {name:'Cakebrew',          owner:'brunophilipe', desc:'Homebrew图形管理~'},
     {name:'sequelpro',         owner:'sequelpro',    desc:'Sequel Pro 访问MySQL'},
     {name:'MIDIApps',          owner:'krevis',       desc:'两个App，一个是Midi monitoring，一个是SysEx'}
 
@@ -1041,29 +1073,31 @@ list:[
 
 {name:'Xcode插件/开发',
 list:[
-    {name:'Alcatraz',               owner:'mneorr',       desc:'Xcode5插件 管理和发现插件～～'},
-    {name:'ClangFormat-Xcode',      owner:'travisjeffery',desc:'Xcode5插件 clang-format 效果一般'},
-    {name:'BBUncrustifyPlugin-Xcode',owner:'benoitsan',   desc:'Xcode5插件 Uncrustify格式化'},
-    {name:'HOStringSense-for-Xcode',owner:'holtwick',     desc:'Xcode5插件 直接编辑转义字符串'},
-    {name:'cocoapods-xcode-plugin', owner:'kattrali',     desc:'Xcode5插件 cocoapod'},
-    {name:'KFCocoaPodsPlugin',      owner:'ricobeck',     desc:'Xcode5插件 cocoapod, 方便编辑Podfile，显示构建日志'},
-    {name:'FuzzyAutocompletePlugin',owner:'chendo',       desc:'Xcode5插件 更好的代码自动补全'},
-    {name:'Dash-Plugin-for-Xcode',  owner:'omz',          desc:'Xcode5插件 用Dash替代默认Doc浏览器'},
-    {name:'VVDocumenter-Xcode',     owner:'onevcat',      desc:'Xcode5插件 写注释时自动提醒JavaDoc风格'},
-    {name:'ColorSense-for-Xcode',   owner:'omz',          desc:'Xcode5插件 支持动态调整UIColor'},
-    {name:'KSImageNamed-Xcode',     owner:'ksuther',      desc:'Xcode5插件 支持显示工程里的UIImage'},
-    {name:'Lin-Xcode5',             owner:'questbeat',    desc:'Xcode5插件 显示NSLocalizedString的对应字符串'},
-    {name:'XToDo',                  owner:'trawor',       desc:'Xcode5插件 列出所有TODO FIXME等 性能差'},
-    {name:'CodePilot',              owner:'macoscope',    desc:'Xcode5插件 快速查找和定位代码'},
-    {name:'XVim',                   owner:'JugglerShu',   desc:'Xcode5插件 支持绑定VIM快捷键'},
-    {name:'nib2objc',               owner:'akosma',       desc:'把xib和nib翻译成m 包括命令、GUI、Service'},
-    {name:'iOS-Universal-Framework',owner:'kstenerud',    desc:'编译iOS的Framework的通用模板 支持armv7s'},
-    {name:'iOS-Framework',          owner:'jverkoey',     desc:'编译iOS的Framework的通用模板'},
-    {name:'Xcode5-Plugin-Template', owner:'kattrali',     desc:'Xcode5插件的开发模板'},
-    {name:'Xcode4-Plugin-Template', owner:'kattrali',     desc:'Xcode4插件的开发模板'},
-    {name:'UIEffectDesignerView',   owner:'icanzilb',     desc:'原生iOS/Mac粒子效果设计'},
-    {name:'SCStringsUtility',       owner:'stefanceriu',  desc:'开发工具 制作多语言'},
-    {name:'APNS-Pusher',            owner:'blommegard',   desc:'通过APNS发推送～'}
+    {name:'Alcatraz',               owner:'mneorr',         desc:'Xcode5插件 管理和发现插件～～'},
+    {name:'Polychromatic',          owner:'kolinkrewinkel', desc:'Xcode5插件 为不同的变量类型赋予不同的颜色～'},
+    {name:'ClangFormat-Xcode',      owner:'travisjeffery',  desc:'Xcode5插件 clang-format 效果一般'},
+    {name:'BBUncrustifyPlugin-Xcode',owner:'benoitsan',     desc:'Xcode5插件 Uncrustify格式化'},
+    {name:'HOStringSense-for-Xcode',owner:'holtwick',       desc:'Xcode5插件 直接编辑转义字符串'},
+    {name:'cocoapods-xcode-plugin', owner:'kattrali',       desc:'Xcode5插件 cocoapod'},
+    {name:'KFCocoaPodsPlugin',      owner:'ricobeck',       desc:'Xcode5插件 cocoapod, 方便编辑Podfile，显示构建日志'},
+    {name:'FuzzyAutocompletePlugin',owner:'chendo',         desc:'Xcode5插件 更好的代码自动补全'},
+    {name:'Dash-Plugin-for-Xcode',  owner:'omz',            desc:'Xcode5插件 用Dash替代默认Doc浏览器'},
+    {name:'VVDocumenter-Xcode',     owner:'onevcat',        desc:'Xcode5插件 写注释时自动提醒JavaDoc风格'},
+    {name:'SCXcodeSwitchExpander',  owner:'stefanceriu',    desc:'Xcode5插件 在写switch时，自动补全所有选项 (只支持NS_ENUM)'},
+    {name:'ColorSense-for-Xcode',   owner:'omz',            desc:'Xcode5插件 支持动态调整UIColor'},
+    {name:'KSImageNamed-Xcode',     owner:'ksuther',        desc:'Xcode5插件 支持显示工程里的UIImage'},
+    {name:'Lin-Xcode5',             owner:'questbeat',      desc:'Xcode5插件 显示NSLocalizedString的对应字符串'},
+    {name:'XToDo',                  owner:'trawor',         desc:'Xcode5插件 列出所有TODO FIXME等 性能差'},
+    {name:'CodePilot',              owner:'macoscope',      desc:'Xcode5插件 快速查找和定位代码'},
+    {name:'XVim',                   owner:'JugglerShu',     desc:'Xcode5插件 支持绑定VIM快捷键'},
+    {name:'nib2objc',               owner:'akosma',         desc:'把xib和nib翻译成m 包括命令、GUI、Service'},
+    {name:'iOS-Universal-Framework',owner:'kstenerud',      desc:'编译iOS的Framework的通用模板 支持armv7s'},
+    {name:'iOS-Framework',          owner:'jverkoey',       desc:'编译iOS的Framework的通用模板'},
+    {name:'Xcode5-Plugin-Template', owner:'kattrali',       desc:'Xcode5插件的开发模板'},
+    {name:'Xcode4-Plugin-Template', owner:'kattrali',       desc:'Xcode4插件的开发模板'},
+    {name:'UIEffectDesignerView',   owner:'icanzilb',       desc:'原生iOS/Mac粒子效果设计'},
+    {name:'SCStringsUtility',       owner:'stefanceriu',    desc:'开发工具 制作多语言'},
+    {name:'APNS-Pusher',            owner:'blommegard',     desc:'通过APNS发推送～'}
     ]
 },
 
