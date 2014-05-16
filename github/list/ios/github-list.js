@@ -72,7 +72,7 @@ list:[
     {name:'EGOCache',       owner:'enormego',      desc:'EGOImage里面的 Cache功能'},
     {name:'Haneke',         owner:'hpique',        desc:'一个开箱即用的图片Cache'},
     {name:'HJCache',        owner:'markofjohnson', desc:'一个缓存网络内容等的Cache'},
-    {name:'RNCryptor',      owner:'rnapier',       desc:'加密解密相关 貌似更上流, note:去看一下他博客'},
+    {name:'RNCryptor',      owner:'RNCryptor',     desc:'加密解密相关 貌似更上流, note:去看一下他博客,有更详细的文章'},
     {name:'ssziparchive',   owner:'soffes',        desc:'zip压缩 zip解压~'},
     {name:'ZipKit',         owner:'kolpanic',      desc:'一个ZipKit 从bitbucket Mirror过来'},
     {name:'ZipKit',    owner:'FivesquareSoftware', desc:'如同ZipKit 改为ARC了'},
@@ -89,7 +89,7 @@ list:[
 
 {name:'框架/封装',
 list:[
-    {name:'three20',            owner:'facebook',          desc:'一个曾经用得广泛的庞大的iOS开发框架 已不再维护'},
+    {name:'three20',            owner:'facebookarchive',   desc:'一个曾经用得广泛的庞大的iOS开发框架 已不再维护'},
     {name:'nimbus',             owner:'jverkoey',          desc:'three20替代品 又一个庞大的框架'},
     {name:'BeeFramework',       owner:'gavinkwoe',         desc:'一个基于MVC的框架, 比较大..'},
     {name:'OmniGroup',          owner:'omnigroup',         desc:'一套很庞大的库(OmniGroup) 支持Mac和iOS 更新迅速'},
@@ -97,8 +97,8 @@ list:[
     {name:'WebViewJavascriptBridge', owner:'marcuswestin', desc:'WebView和Cocoa之间的事件传递'},
     {name:'KVOController',      owner:'facebook',          desc:'Facebook开源的线程安全KVO'},
     {name:'OCUDL',              owner:'dbachrach',         desc:'自定义literals 有点意思～～'},
-    {name:'Kiwi',               owner:'allending',         desc:'一个Behavior驱动编程框架? (BDD)?'},
-    {name:'Mantle',             owner:'github',            desc:'一个Model层, 替代CoreData 可以生成Model对象~ Github官方出品..'},
+    {name:'Kiwi',               owner:'kiwi-bdd',          desc:'BDD for iOS'},
+    {name:'Mantle',             owner:'Mantle',            desc:'一个Model层, 替代CoreData 可以生成Model对象~ Github官方出品..'},
     {name:'MagicalRecord',      owner:'magicalpanda',      desc:'CoreData的包装 简化代码'},
     {name:'fmdb',               owner:'ccgus',             desc:'SQLite的封装'},
     {name:'KZPropertyMapper',   owner:'krzysztofzablocki', desc:'一个Model的封装,类JSON'},

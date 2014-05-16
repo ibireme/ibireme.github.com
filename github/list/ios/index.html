@@ -64,7 +64,7 @@ $(document).ready(function(){
                     '<div class="list-box-inner-wrap" style="height: auto;">' +
                         '<div class="list-box-inner">' +
                            '<table class="table table-hover">' +
-                                '<colgroup> <col width="26%" /><col width="60%" /><col width="7%" /><col width="7%" />' +
+                                '<colgroup> <col width="26%" /><col width="58%" /><col width="8%" /><col width="8%" />' +
                                 '</colgroup>' +
                                 '<thead>' +
                                 '</thead>' +
@@ -170,36 +170,7 @@ $(document).ready(function(){
 
 
     //获取fork、star数量
-    function getRepoInfo(tr){
-        var owner = $(tr).first().attr("owner");
-        if (!owner || owner=='') {
-            return;
-        }
-        var repo = $(tr).first().attr("repo");
-        var url = "https://api.github.com/repos/" + owner + "/" + repo;
-        $.get(url,function(data){
-            var avatar_url = data.owner.avatar_url;
-            var star = data.watchers_count;
-            var fork = data.forks_count;
-            console.log("star" + star + " fork" + fork);
-            $(tr).first().find(".icon-star-empty").first().parent()[0].innerHTML = '<i class="icon-star-empty"></i> ' + star;
-            $(tr).first().find(".icon-code-fork").first().parent()[0].innerHTML = '<i class="icon-code-fork"></i> ' + fork;
-        });
-    }
-    var trs = $("tr");
-    for (var i=0; i<trs.length; i++){
-       //getRepoInfo(trs[i]);
-       //will ban IP... X_X
-       //github 没有oauth时，每小时60次调用限制..
-    }
-
-
-
-
-
-
     function getStars(page) {
-        console.log("去也书 getpage" + page);
         $.getJSON('https://api.github.com/users/ibiremebot/starred?page=' + page + '&per_page=100',function(result){
             $.each(result, function(i, repo){
                 try {
