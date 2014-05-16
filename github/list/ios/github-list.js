@@ -9,7 +9,7 @@ list: [
 list: [
     {name:'sstoolkit',          owner:'soffes',          desc:'一套Category类型的库,附带很多自定义控件 功能不错～'},
     {name:'QSKit',              owner:'quartermaster',   desc:'又一套Category类型的 Kit'},
-    {name:'BlocksKit',          owner:'pandamonia',      desc:'将Block风格带入UIKit和Founcation'},
+    {name:'BlocksKit',          owner:'zwaldowski',      desc:'将Block风格带入UIKit和Founcation'},
     {name:'cocoa-helpers',      owner:'enormego',        desc:'一些Cocoa的扩展 2年前的工程'},
     {name:'CoconutKit',         owner:'defagos',         desc:'一系列扩展和一些自定组件'},
     {name:'STUtils',            owner:'ldandersen',      desc:'一系列扩展包'},
