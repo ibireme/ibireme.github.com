@@ -32,6 +32,7 @@ $(document).ready(function(){
         return '<tr id="' + repo.owner + '_' + repo.name + '"" repo="' + repo.name + '" owner="' + repo.owner + '">' +
         '<td><i class="icon-link"></i><a href="' + url + '" target="_blank"> ' + repo.name + '</a></td>' + 
         '<td>' + repo.desc + '</td>' + 
+        '<td></td>' +
         '<td><i class="icon-star-empty"></i> </td>' +
         '<td><i class="icon-code-fork"></i> </td>' +
         '</tr>';
@@ -44,7 +45,7 @@ $(document).ready(function(){
         }
         if (!minor.list){
             return '<table class="table table-hover">' +
-                '<colgroup> <col width="26%" /><col width="60%" /><col width="7%" /><col width="7%" />' +
+                '<colgroup> <col width="26%" /><col width="53%" /><col width="8%" /><col width="6%" /><col width="6%" />' +
                 '</colgroup>' +
                 '<thead>' +
                 '</thead>' +
@@ -176,8 +177,11 @@ $(document).ready(function(){
                 try {
                     var repo_id = repo.owner.login + '_' + repo.name;
 
-                    $('#' + repo_id + ' td')[2].innerHTML += repo.stargazers_count;
-                    $('#' + repo_id + ' td')[3].innerHTML += repo.forks_count;
+                    $('#' + repo_id + ' td')[2].innerHTML = repo.updated_at.substring(0,10);
+                    $('#' + repo_id + ' td')[3].innerHTML += repo.stargazers_count;
+                    $('#' + repo_id + ' td')[4].innerHTML += repo.forks_count;
+
+
                 }
                 catch(err) {}
             });
