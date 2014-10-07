@@ -52,7 +52,7 @@ list: [
     {name:'Objective-C-Generics',owner:'tomersh',        desc:'通过宏定义勉强实现的范型'},
     {name:'TBMacros',           owner:'twobitlabs',      desc:'一些常用的宏定义'},
     {name:'NSString-Ruby',      owner:'zdavison',        desc:'为Ruby程序员带来的字符串相关功能'},
-    {name:'ObjectiveRecord',    owner:'mneorr',          desc:'CoreData包装的活动记录 有RoR风格的API'},
+    {name:'ObjectiveRecord',    owner:'supermarin',      desc:'CoreData包装的活动记录 有RoR风格的API'},
     {name:'FastImageCache',     owner:'path',            desc:'滑动时快速显示图片的库，Path开发'}
 ]
 },
@@ -61,7 +61,7 @@ list: [
 list:[
     {name:'mediaextract',   owner:'panzi',         desc:'纯C的一些常用媒体文件的解析读取'},
     {name:'objection',      owner:'atomicobject',  desc:'一个估计是java ee写多了的人搞的。。注解依赖注入xx工厂之类的'},
-    {name:'Typhoon',        owner:'jasperblues',   desc:'IoC容器啊～～'},
+    {name:'Typhoon',        owner:'typhoon-framework', desc:'IoC容器啊～～'},
     {name:'HTKit',          owner:'hoteltonight',  desc:'一票乱七八糟的东西'},
     {name:'StringScore',    owner:'thetron',       desc:'模糊匹配字符串 查找某两个字符串的相似程度'},
     {name:'RegexKitLite',   owner:'samdeane',      desc:'正则表达式库 (从SF.net mirror过来)'},
@@ -83,7 +83,7 @@ list:[
     {name:'CHCSVParser',    owner:'davedelong',    desc:'CVS文件解析'},
     {name:'YLMoment',       owner:'YannickL',      desc:'日期的解析，格式化等，支持多语言'},
     {name:'CMUnistrokeGestureRecognizer',owner:'chrismiles',desc:'各种奇怪的手势检测'},
-    {name:'EKAlgorithms.git',owner:'EvgenyKarkan', desc:'常见算法的ObjC实现，包括排序、查找、数组、字符串、常用数据结构..'}
+    {name:'EKAlgorithms',owner:'EvgenyKarkan', desc:'常见算法的ObjC实现，包括排序、查找、数组、字符串、常用数据结构..'}
 ]
 },
 
@@ -124,7 +124,7 @@ list:[
     {name:'uidevice-extension', owner:'erica',        desc:'一系列UIDevice的扩展 有PrivateAPI 最新的工程在cookbook-code里'},
     {name:'InAppSettingsKit', owner:'futuretap',      desc:'包装了设置、URLScheme、Mail、Icon等东西'},
     {name:'DTWebArchive',     owner:'Cocoanetics',    desc:'允许访问剪贴板中的WebArchive格式富文本'},
-    {name:'routable-ios',     owner:'usepropeller',   desc:'inApp的URL定义 在App内打开自定义URL (解耦)'},
+    {name:'routable-ios',     owner:'clayallsopp',    desc:'inApp的URL定义 在App内打开自定义URL (解耦)'},
     {name:'JLRoutes',         owner:'joeldev',        desc:'复杂的URL Scheme解析和路由'},
     {name:'Emoji',            owner:'limejelly',      desc:'访问Emoji图片的功能'},
     {name:'PDKeychainBindingsController', owner:'carlbrown', desc:'以类似UserDefault的方式访问Keychain'},
@@ -253,7 +253,7 @@ list:[
     {name:'ObjectAL-for-iPhone', owner:'kstenerud',    desc:'一个OpenAL的包装库 比较好用'},
     {name:'SoundBankPlayer',     owner:'hollance',     desc:'一个仿SoundFout的库 但更简单'},
     {name:'Finch',               owner:'zoul',         desc:'对底层的OpenAL包装'},
-    {name:'SoundManager',        owner:'ap4y',         desc:'很简单的Sound播放管理'},
+    {name:'SoundManager',        owner:'nicklockwood', desc:'很简单的Sound播放管理'},
     {name:'OrigamiEngine',       owner:'ap4y',         desc:'音乐播放引擎 支持 flac, cue, mp3, m4a, m3u'},
     {name:'libpd',               owner:'libpd',        desc:'一个用PD来创造音乐的库？ 纯C'},
     {name:'pd-for-ios',          owner:'libpd',        desc:'同libpd'},
@@ -261,7 +261,7 @@ list:[
     {name:'octave',              owner:'scopegate',    desc:'一个免费的音效库 包括48个UI音效'},
     {name:'RBDMuteSwitch',       owner:'Rich2k',       desc:'在iOS5上检测是否静音'},
     {name:'sfArkLib',            owner:'raboof',       desc:'转换sfArk和sf2的库 很简单'},
-    {name:'sfArkXTm',            owner:'raboof',       desc:'简单解压sfArk的一个cpp'},
+    {name:'sfarkxtc',            owner:'raboof',       desc:'简单解压sfArk的一个cpp'},
     {name:'unsfark',             owner:'raboof',       desc:'和上面sfArkXTm一样，是老一点的纯C版本'},
     {name:'MuseScore',           owner:'musescore',    desc:'一个跨平台的音乐软件～ not iOS'},
     {name:'OpenSFZ',             owner:'WhiteNoise',   desc:'一个SF2的处理库(Github上有详细说明) An Open SFZ player & SF2 based on SFZero'},
@@ -293,7 +293,7 @@ list:[
 list:[
     {name:'GPUImage',          owner:'BradLarson',      desc:'基于GPU的实时图像视频处理 '},
     {name:'XBImageFilters',    owner:'xissburg',        desc:'一个GPU实时处理的库 类似GPUImage'},
-    {name:'CeedGL',            owner:'rsebbe',          desc:'一个OpenGL的包装 用起来更方便'},
+    {name:'CeedGL',            owner:'creaceed',        desc:'一个OpenGL的包装 用起来更方便'},
     {name:'rend-ios',          owner:'antonholmquist',  desc:'一个OpenGL的轻量包装 接近UIKit'},
     {name:'GLView',            owner:'nicklockwood',    desc:'在UIView的包装 方便使用OpenGL'},
     {name:'sift-gpu-iphone',   owner:'Moodstocks',      desc:'一个包装GL用的,不知道干毛的'},
@@ -361,7 +361,7 @@ list:[
     {name:'LEColorPicker',        owner:'luisespinoza', desc:'一个ColorPicker可以取到图片的主色调等'},
     {name:'UIColor-converter',    owner:'charlymr',     desc:'一些UIColor的工具～～'},
     {name:'SUColor',              owner:'sumihiro',     desc:'提供2K多的日本色'},
-    {name:'Colours-for-iOS',      owner:'bennyguitar',  desc:'提供不少常用色 和几个方法'},
+    {name:'Colours',              owner:'bennyguitar',  desc:'提供不少常用色 和几个方法'},
     {name:'ColorArt',             owner:'panicinc',     desc:'类似iTunes的 取一幅图画的主要背景颜色等 (这是个Mac功能)'},
     {name:'iOS7Colors',           owner:'claaslange',   desc:'iOS7的几种常用颜色'}
     ]
@@ -383,7 +383,7 @@ list:[
     {name:'SVGKit',                    owner:'SVGKit',         desc:'一个用CA来呈现SVG图片的库'},
     {name:'Smooth-Line-View',          owner:'levinunnink',    desc:'用QuartZ画出平滑的曲线'},
     {name:'Smooth-Line-View',          owner:'yusenhan',       desc:'用上面的库搭建的比较完整的画板功能 有取色器等'},
-    {name:'SignatureDemo',             owner:'jharwig',        desc:'一个QuartZ 触摸画平滑曲线的Demo～～～'},
+    {name:'PPSSignatureView',          owner:'jharwig',        desc:'一个QuartZ 触摸绘制平滑曲线～～～'},
     {name:'DynamicGraphView',          owner:'freshking',      desc:'动态折线图'},
     {name:'XYPieChart',                owner:'xyfeng',         desc:'饼图~有动画'},
     {name:'BEMSimpleLineGraph',        owner:'Boris-Em',       desc:'折线图，有动画，功能一般'},
@@ -466,7 +466,7 @@ list:[
     {name:'MBProgressHUD',            owner:'jdg',               desc:'一个HUD 用得很广泛 无阴影 全屏模态'},
     {name:'MBProgressHUD',            owner:'matej',             desc:'和MBHUD一样 但有更新 添加了BLock iOS6'},
     {name:'ATMHud',                   owner:'atomton',           desc:'很棒的HUD 有阴影和动画~'},
-    {name:'SVProgressHUD',            owner:'samvermette',       desc:'一个HUD 样式类似MB_HUD 有一些进度等'},
+    {name:'SVProgressHUD',            owner:'TransitApp',        desc:'一个HUD 样式类似MB_HUD 有一些进度等'},
     {name:'HTProgressHUD',            owner:'Hardtack',          desc:'又一个HUD'},
     {name:'ETActivityIndicatorView',  owner:'EugeneTrapeznikov', desc:'Windows Phone 7风格风火轮'}
     ]
@@ -537,7 +537,7 @@ list:[
     {name:'RNBlurModalView',             owner:'rnystrom',      desc:'将后方视图模糊'},
     {name:'NZAlertView',                 owner:'NZN',           desc:'类似notif风格的Alert，拍扁'},
     {name:'LMAlertView',                 owner:'lmcd',          desc:'iOS7 可自定义内容的AlertView'},
-    {name:'SDCAlertView',                owner:'Scott90',       desc:'iOS7 可自定义内容的AlertView'}
+    {name:'SDCAlertView',                owner:'sberrevoets',   desc:'iOS7 可自定义内容的AlertView'}
     ]
 },
 
@@ -687,7 +687,7 @@ list:[
 {name:'GridView',
 list:[
     {name:'AQGridView',         owner:'AlanQuatermain', desc:'类似TableView但有横向分类,就像Android Launcher'},
-    {name:'GMGridView',         owner:'gmoPSTCollectionViewledina',      desc:'又一个GridView 很不错,自带横纵排序编辑等功能'},
+    {name:'GMGridView',         owner:'gmoledina',      desc:'又一个GridView 很不错,自带横纵排序编辑等功能'},
     {name:'KKGridView',         owner:'kolinkrewinkel', desc:'又一个GridView 已经Deperacted 直接用系统的就好'},
     {name:'A3GridTableView',    owner:'allaboutapps',   desc:'又一个GridView 貌似支持类似图标样的上栏'},
     {name:'LIExposeController', owner:'linkedin',       desc:'一个类似GridView的东西'}
@@ -725,20 +725,19 @@ list:[
 list:[
     {name:'ViewDeck',                owner:'Inferis',    desc:'左右侧滑控件'},
     {name:'MSDynamicsDrawerViewController',owner:'monospacecollective',desc:'iOS7 动态弹性和景深的侧滑～'},
-    {name:'ECSlidingViewController', owner:'edgecase',   desc:'一个很简单的侧滑控件'},
+    {name:'ECSlidingViewController', owner:'ECSlidingViewController',   desc:'一个很简单的侧滑控件'},
     {name:'JASidePanels',            owner:'gotosleep',  desc:'一套不错样式的侧滑控件'},
     {name:'PSStackedView',           owner:'steipete',   desc:'一套侧滑且带Stack的控件,类似Twitter iPad'},
     {name:'PKRevealController',      owner:'pkluz',      desc:'一个侧滑控件'},
-    {name:'JTRevealSidebarDemo',     owner:'mystcolor',  desc:'一个类似FB侧滑的Demo'},
+    {name:'JTRevealSidebarDemo',     owner:'jamztang',   desc:'一个类似FB侧滑的Demo'},
     {name:'PPRevealSideViewController', owner:'ipup',    desc:'又一个类似FB的侧滑控件'},
     {name:'CLCascade',               owner:'appunite',   desc:'类似Twitter iPad版的侧滑控件'},
-    {name:'SlideViewController',owner:'andrewroycarter', desc:'侧滑菜单 类似FB的界面'},
     {name:'MMDrawerController',    owner:'mutualmobile', desc:'一个侧滑控件'},
     {name:'MFSideMenu',            owner:'mikefrederick',desc:'Facebook风格侧滑'},
     {name:'SWRevealViewController',owner:'John-Lluch',   desc:'Facebook风格侧滑'},
     {name:'DDMenuController',      owner:'devindoty',    desc:'又是一个Facebook风格侧滑'},
     {name:'REFrostedViewController', owner:'romaonthego',desc:'一个iOS7风格的毛玻璃侧滑菜单'},
-    {name:'AMSlideMenu',            owner:'arturdev',    desc:'类似GoogleMap的侧滑'},
+    {name:'AMSlideMenu',            owner:'SocialObjects-Software',    desc:'类似GoogleMap的侧滑'},
     {name:'RNFrostedSidebar',       owner:'rnystrom',    desc:'一个由侧面划出的半透明菜单(小圆片),不错的交互效果'}
     ]
 },
@@ -748,16 +747,16 @@ list:[
     {name:'KLNoteViewController',         owner:'KieranLafferty',desc:'一个类似Evernote旧版的Stack界面 绿色的'},
     {name:'REComposeViewController',      owner:'romaonthego',   desc:'一个类似系统Twitter分享界面~'},
     {name:'DETweetComposeViewController', owner:'doubleencore',  desc:'一个iOS4实现的 类似iOS5的twitter分享'},
-    {name:'JTGestureBasedTableViewDemo',  owner:'mystcolor',     desc:'一个类似Clear的Demo'},
+    {name:'JTGestureBasedTableViewDemo',  owner:'jamztang',     desc:'一个类似Clear的Demo'},
     {name:'Opaque',                       owner:'MassiveHealth', desc:'一个Clear的Demo'},
-    {name:'MCSwipeTableViewCell',         owner:'mystcolor',     desc:'类似Mailbox的控件 和Clear差不多'},
+    {name:'MCSwipeTableViewCell',         owner:'alikaragoz',    desc:'类似Mailbox的控件 和Clear差不多'},
     {name:'CHTCollectionViewWaterfallLayout',owner:'chiahsien',  desc:'瀑布流控件'},
     {name:'PSCollectionView',             owner:'ptshih',        desc:'类似瀑布流式的控件'},
     {name:'IIIThumbFlow',                owner:'sehone',         desc:'瀑布流控件'},
     {name:'WaterflowView',              owner:'aceisScope',      desc:'瀑布流的View 看样子Star挺多'},
     {name:'KNPathTableViewController', owner:'kentnguyen',       desc:'在Table右侧显示类似Path的时间 很简单~'},
     {name:'GSBookShelf',            owner:'ultragtx',            desc:'一个类似iBook书柜的实现'},
-    {name:'M6ParallaxController', owner:'xelvenone',             desc:'类似Path封面的效果'},
+    {name:'M6ParallaxController', owner:'peterpaulis',             desc:'类似Path封面的效果'},
     {name:'ZGParallelView',       owner:'zhigang1992',           desc:'类似Path的封面效果 貌似不错'},
     {name:'TimeScroller',         owner:'andrewroycarter',       desc:'类似Path右侧的时间小滑块'},
     {name:'chatheads',            owner:'brutella',              desc:'Facebook 一个一直最上方的头像 点击可以显示Table'},
@@ -792,14 +791,14 @@ list:[
     {name:'KTPhotoBrowser',            owner:'kirbyt',      desc:'图片浏览控件 3年没更新了'},
     {name:'DLCImagePickerController',  owner:'gobackspaces',desc:'一个用GPUImage实现的 ImagePicker功能,支持拍照和特效'},
     {name:'route-me',                  owner:'route-me',    desc:'一套自定义MapView 高仿系统 但支持不同的数据源'},
-    {name:'GrowingTextView',          owner:'HansPinckaers',desc:'一个高仿短信发送的输入框'},
+    {name:'GrowingTextView',           owner:'HansPinckaers',desc:'一个高仿短信发送的输入框'},
     {name:'PHFComposeBarView',         owner:'fphilipe',    desc:'高仿短信发送输入框'},
-    {name:'MessagesTableViewController',owner:'jessesquires',desc:'高仿短信界面,可定制'},
-    {name:'AcaniChat',                 owner:'acani',       desc:'仿短信App 挺老了'},
+    {name:'JSQMessagesViewController', owner:'jessesquires',desc:'高仿短信界面,可定制'},
+    {name:'Chats',                     owner:'acani',       desc:'仿短信App (Swift)'},
     {name:'UIBubbleTableView',         owner:'AlexBarinov', desc:'iOS短信的泡泡界面,可以支持图片'},
     {name:'ODRefreshControl',          owner:'Sephiroth87', desc:'一个高仿iOS6下拉刷新的控件'},
     {name:'ssmessagesviewcontroller',  owner:'soffes',      desc:'和系统类似的发短信界面 挺粗糙 当然现在系统已经提供了'},
-    {name:'SVWebViewController',       owner:'samvermette', desc:'一个简易的浏览器功能控件'},
+    {name:'SVWebViewController',       owner:'TransitApp',  desc:'一个简易的浏览器功能控件'},
     {name:'TSMiniWebBrowser',          owner:'tonisalae',   desc:'一个简易的内置浏览器'},
     {name:'TITokenField',              owner:'thermogl',    desc:'一个高仿Mail和短信 选择联系人的控件'},
     {name:'DAAppsViewController',      owner:'danielamitay',desc:'一个仿AppStore的列表界面 输入appId集合'},
@@ -813,7 +812,7 @@ list:[
 list:[
     {name:'tapkulibrary',    owner:'devinross',  desc:'一套比较大的自定义控件库 包括不错的HUD,进度条,日历,CoverFlow等'},
     {name:'FlatUIKit',       owner:'Grouper',    desc:'一套完整的扁平风格的UI  (Flat)'},
-    {name:'Weibo',           owner:'piotrbernad',desc:'一套仿iOS7的控件'},
+    {name:'FlatUI',          owner:'piotrbernad',desc:'一套仿iOS7的控件'},
     {name:'UI7Kit',          owner:'youknowone', desc:'一套iOS7风格的控件,可以在iOS5、6上用'},
     {name:'PrettyKit',       owner:'vicpenap',   desc:'一套系统UI的子类 有着平滑渐变和阴影效果'},
     {name:'nui',             owner:'tombenner',  desc:'一套加在UIKit上的Category,允许用类CSS代码来控制样式'},
