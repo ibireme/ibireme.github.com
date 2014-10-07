@@ -1,4 +1,4 @@
-var githubHeaderTitle = "- ( ゜- ゜)つロ Github-iOS备忘  &nbsp;&nbsp;&nbsp; 2014-05-08"
+var githubHeaderTitle = "- ( ゜- ゜)つロ Github-iOS备忘  &nbsp;&nbsp;&nbsp; 2014-10-08"
 
 var githubList =  [
 {
@@ -8,6 +8,7 @@ list: [
 {name:'Category/Util',
 list: [
     {name:'sstoolkit',          owner:'soffes',          desc:'一套Category类型的库,附带很多自定义控件 功能不错～'},
+    {name:'APUtils',            owner:'andrei512',       desc:'又一套Category类型的 Kit'},
     {name:'QSKit',              owner:'quartermaster',   desc:'又一套Category类型的 Kit'},
     {name:'BlocksKit',          owner:'zwaldowski',      desc:'将Block风格带入UIKit和Founcation'},
     {name:'cocoa-helpers',      owner:'enormego',        desc:'一些Cocoa的扩展 2年前的工程'},
@@ -52,8 +53,7 @@ list: [
     {name:'Objective-C-Generics',owner:'tomersh',        desc:'通过宏定义勉强实现的范型'},
     {name:'TBMacros',           owner:'twobitlabs',      desc:'一些常用的宏定义'},
     {name:'NSString-Ruby',      owner:'zdavison',        desc:'为Ruby程序员带来的字符串相关功能'},
-    {name:'ObjectiveRecord',    owner:'supermarin',      desc:'CoreData包装的活动记录 有RoR风格的API'},
-    {name:'FastImageCache',     owner:'path',            desc:'滑动时快速显示图片的库，Path开发'}
+    {name:'ObjectiveRecord',    owner:'supermarin',      desc:'CoreData包装的活动记录 有RoR风格的API'}
 ]
 },
 
@@ -66,11 +66,12 @@ list:[
     {name:'StringScore',    owner:'thetron',       desc:'模糊匹配字符串 查找某两个字符串的相似程度'},
     {name:'RegexKitLite',   owner:'samdeane',      desc:'正则表达式库 (从SF.net mirror过来)'},
     {name:'Objective-C-RegEx-Categories',owner:'bendytree',desc:'正则表达'},
-    {name:'FormatterKit',   owner:'mattt',         desc:'一个NSString的格式化工具'},
+    {name:'FormatterKit',   owner:'mattt',         desc:'一个NSString的格式化工具，支持时间、颜色、地址、名字等等'},
+    {name:'TransformerKit', owner:'mattt',         desc:'NSValueTransformer的封装'},
     {name:'NanoStore',      owner:'tciuro',        desc:'KV存储 (无模式/NoSQL)'},
     {name:'TMCache',        owner:'tumblr',        desc:'tumblr开源的一个内存/文件缓存，很棒'},
     {name:'EGOCache',       owner:'enormego',      desc:'EGOImage里面的 Cache功能'},
-    {name:'Haneke',         owner:'hpique',        desc:'一个开箱即用的图片Cache'},
+    {name:'Haneke',         owner:'Haneke',        desc:'一个开箱即用的图片Cache'},
     {name:'HJCache',        owner:'markofjohnson', desc:'一个缓存网络内容等的Cache'},
     {name:'RNCryptor',      owner:'RNCryptor',     desc:'加密解密相关 貌似更上流, note:去看一下他博客,有更详细的文章'},
     {name:'ssziparchive',   owner:'soffes',        desc:'zip压缩 zip解压~'},
@@ -81,6 +82,14 @@ list:[
     {name:'MTControl',  owner:'mysterioustrousers',desc:'jQuery风格touch事件绑定'},
     {name:'storage',        owner:'thisandagain',  desc:'快速、线程安全的I/O存储操作'},
     {name:'CHCSVParser',    owner:'davedelong',    desc:'CVS文件解析'},
+    {name:'FLAnimatedImage',        owner:'Flipboard',    desc:'GIF的显示，低内存，性能/效果好'},
+    {name:'OLImageView',            owner:'ondalabs',     desc:'GIF的显示，同样不错'},
+    {name:'YLGIFImage',             owner:'liyong03',     desc:'GIF的显示，也同样不错'},
+    {name:'VVeboImageView',               owner:'johnil', desc:'以较低内存显示gif，效果一般'},
+    {name:'uiimage-from-animated-gif',    owner:'mayoff', desc:'显示gif，耗内存'},
+    {name:'AnimatedGIFImageSerialization',owner:'mattt',  desc:'gif的序列化、UIImage的支持'},
+    {name:'WebPImageSerialization',       owner:'mattt',  desc:'webp的序列化、UIImage的支持'},
+    {name:'UIFontSerialization',          owner:'mattt',  desc:'字体文件的序列化、UIFont的支持'},
     {name:'YLMoment',       owner:'YannickL',      desc:'日期的解析，格式化等，支持多语言'},
     {name:'CMUnistrokeGestureRecognizer',owner:'chrismiles',desc:'各种奇怪的手势检测'},
     {name:'EKAlgorithms',owner:'EvgenyKarkan', desc:'常见算法的ObjC实现，包括排序、查找、数组、字符串、常用数据结构..'}
@@ -133,10 +142,16 @@ list:[
     {name:'ABContactHelper',  owner:'erica',          desc:'访问联系人'},
     {name:'APAddressBook',    owner:'Alterplay',      desc:'封装了访问通信录/联系人的功能'},
     {name:'GVUserDefaults',   owner:'gangverk',       desc:'包装了 NSUserDefaults，只需要声明属性就能用，很方便'},
-    {name:'YapDatabase',      owner:'yaptv',          desc:'一个KV库，包装自sqlite，但有更多包装好的功能，比如缓存/全文搜索'},
+    {name:'YapDatabase',      owner:'yapstudios',     desc:'一个KV库，包装自sqlite，但有更多包装好的功能，比如缓存/全文搜索'},
+    {name:'YTKKeyValueStore', owner:'yuantiku',       desc:'又一个KV库，简单包装自sqlite(FMDB)'},
+    {name:'realm-cocoa',      owner:'realm',          desc:'为移动设备专门设计的数据库，旨在替代sqlite/CoreData'},
     {name:'iHasApp',          owner:'danielamitay',   desc:'检测某个App是否安装，集成了常见的URL Scheme'},
     {name:'UIActivityCollection',owner:'shu223',      desc:'Github上UIActivity项目的集合'},
-    {name:'STPTransitions',   owner:'stepanhruda',    desc:'更好的 自定义ViewCtrl 过渡动画API'}
+    {name:'STPTransitions',   owner:'stepanhruda',    desc:'更好的 自定义ViewCtrl 过渡动画API'},
+    {name:'PureLayout',       owner:'smileyborg',     desc:'AutoLayout的封装，支持iOS/Mac，支持swift'},
+    {name:'Masonry',          owner:'cloudkite',      desc:'AutoLayout的封装'},
+    {name:'KeepLayout',       owner:'iMartinKiss',    desc:'AutoLayout的封装 貌似比较好用'},
+    {name:'JTSHardwareInfo',  owner:'jaredsinclair',  desc:'定义enum来获取和判断设备型号'}
     
 ]
 },
@@ -203,8 +218,9 @@ list:[
 },
 {name:'功能性',
 list:[
+    {name:'SDWebImage',       owner:'rs',            desc:'网络图片&缓存,很棒,很多App都在用'},
+    {name:'FastImageCache',   owner:'path',          desc:'网络图片&缓存,Path开发'},
     {name:'EGOImageLoading',  owner:'enormego',      desc:'下载使用网络图片的库'},
-    {name:'SDWebImage',       owner:'rs',            desc:'异步加载网络图片 (UIImage Category)'},
     {name:'TCBlobDownload',   owner:'thibaultCha',   desc:'下载大文件/ 断点续传'},
     {name:'GroundControl',    owner:'mattt',         desc:'一个通过远程plist改变配置的库'},
     {name:'appirater',        owner:'arashpayan',    desc:'提醒用户稍后到AppStore给你评分的功能'},
@@ -330,7 +346,7 @@ list:[
     {name:'KGNoiseColorTester',  owner:'EricEllett',   desc:'上面KGNoise的演示'},
     {name:'SQRiskCursor',        owner:'nst',          desc:'一个用CA和UIControl自定义控件的例子'},
     {name:'AmazeKit',            owner:'detroit-labs', desc:'据说是为PNG加速 或自己画 主要为控件提升性能的'},
-    {name:'UIImage-PDF',         owner:'mindbrix',     desc:'如题 UIImage来显示PDF'},
+    {name:'UIImage-PDF',         owner:'mindbrix',     desc:'如题 用UIImage来显示PDF'},
     {name:'JMNoise',           owner:'jasonmorrissey', desc:'给UIView添加Noise噪音的'},
     {name:'SWSnapshotStackView', owner:'snwau',        desc:'图片加上Stack外框'},
     {name:'RMShapedImageView',   owner:'robotmedia',   desc:'一个UIImageView的子类 能忽略透明地方的点击'},
@@ -399,6 +415,7 @@ list:[
 
 {name:'CA',
 list:[
+    {name:'Shapes',                   owner:'DenHeadless',  desc:'基于CASharpLayer实现的关键帧补间动画，比较方便'},
     {name:'CA360',                    owner:'neror',        desc:'一套完整的CA动画Demo'},
     {name:'Core-Animation-Fun-House', owner:'briancoyner',  desc:'一套CA动画展示Demo'},
     {name:'Core-Animation-Demos',     owner:'tapharmonic',  desc:'一套CA动画Demo'},
@@ -582,6 +599,7 @@ list:[
 list:[
     {name:'CoolButtons',        owner:'jessmartin',     desc:'用CA画的带Glow的button 仿照系统'},
     {name:'FRDLivelyButton',    owner:'sebastienwindal',desc:'用CA实现的补间动画形状按钮'},
+    {name:'VBFPopFlatButton',   owner:'iBaro',          desc:'基于FacebookPop的弹跳形状按钮'},
     {name:'MAConfirmButton',    owner:'mikeahmarani',   desc:'一个类似AppStore下载的按钮 可以动画颜色大小等'},
     {name:'FTWButton',          owner:'FTW',            desc:'一个UIControl实例的Button 可以看到如何自定义控件 有不错的动画效果'},
     {name:'gradientbuttons', owner:'kristopherjohnson', desc:'一个带有不同风格的Button~ 用CA绘制'},
@@ -674,6 +692,7 @@ list:[
     {name:'QBPopupMenu',        owner:'questbeat',   desc:'类似iOS文字上的Pop 可以自定义~'},
     {name:'kxmenu',             owner:'kolyvan',     desc:'一个PopView,动作还可以'},
     {name:'RNGridMenu',         owner:'rnystrom',    desc:'一个Pop菜单，有背景模糊，效果不错～'},
+    {name:'CNPPopupController', owner:'carsonperrotti',desc:'模态弹出框，有很多自定义选项'},
     {name:'GIKPopoverBackgroundView', owner:'GiK',   desc:'为PopOver提供无缝背景 很棒'},
     {name:'AwesomeMenu',        owner:'levey',       desc:'Path的扇形弹出按钮效果(CA)'},
     {name:'QuadCurveMenu',      owner:'levey',       desc:'上面AwesomeMenu的fork 类似Path的菜单'},
@@ -791,9 +810,10 @@ list:[
     {name:'KTPhotoBrowser',            owner:'kirbyt',      desc:'图片浏览控件 3年没更新了'},
     {name:'DLCImagePickerController',  owner:'gobackspaces',desc:'一个用GPUImage实现的 ImagePicker功能,支持拍照和特效'},
     {name:'route-me',                  owner:'route-me',    desc:'一套自定义MapView 高仿系统 但支持不同的数据源'},
+    {name:'SlackTextViewController',   owner:'slackhq',     desc:'类似短信发送的界面'},
     {name:'GrowingTextView',           owner:'HansPinckaers',desc:'一个高仿短信发送的输入框'},
     {name:'PHFComposeBarView',         owner:'fphilipe',    desc:'高仿短信发送输入框'},
-    {name:'JSQMessagesViewController', owner:'jessesquires',desc:'高仿短信界面,可定制'},
+    {name:'JSQMessagesViewController', owner:'jessesquires',desc:'高仿iOS7短信界面,可定制'},
     {name:'Chats',                     owner:'acani',       desc:'仿短信App (Swift)'},
     {name:'UIBubbleTableView',         owner:'AlexBarinov', desc:'iOS短信的泡泡界面,可以支持图片'},
     {name:'ODRefreshControl',          owner:'Sephiroth87', desc:'一个高仿iOS6下拉刷新的控件'},
@@ -804,6 +824,8 @@ list:[
     {name:'DAAppsViewController',      owner:'danielamitay',desc:'一个仿AppStore的列表界面 输入appId集合'},
     {name:'WUEmoticonsKeyboard',       owner:'YuAo',        desc:'输入表情的自定义键盘'},
     {name:'CKCalendar',                owner:'jaykz52',     desc:'一个朴实的日历'},
+    {name:'TGCameraViewController',    owner:'tdginternet', desc:'一个不错的拍照Ctrl'},
+    {name:'SCRecorder',                owner:'rFlex',       desc:'一个不错的录像Ctrl，支持滤镜'},
     {name:'LBYouTubeView',             owner:'larcus94',    desc:'显示Youtube视频..国内无用'},
     {name:'JustType',                  owner:'tonqa',       desc:'Keyboard扩展，手势支持等'}
     ]
@@ -826,12 +848,11 @@ list:[
 },
 {name:'其他',
 list:[
-    {name:'VVeboImageView',      owner:'johnil',          desc:'以较低内存显示gif'},
-    {name:'uiimage-from-animated-gif', owner:'mayoff',    desc:'显示gif'},
     {name:'SMPageControl',       owner:'Spaceman-Labs',   desc:'一个仿UIPageControl的API类 可以自定义小点点～'},
     {name:'REActivityViewController',owner:'romaonthego', desc:'开的ActivityView实现'},
     {name:'DCControls',      owner:'domesticcatsoftware', desc:'不错的扇形滑动控件 平面风格'},
     {name:'BSKeyboardControls',  owner:'simonbs',         desc:'与键盘相关的控制 控制 上一项下一项'},
+    {name:'FBAnnotationClustering',owner:'infinum',       desc:'一个MapKit上显示多个地点自动聚合的东西'},
     {name:'OCMapView',           owner:'yinkou',          desc:'一个MapKit标注聚合用的东西～'},
     {name:'NJKWebViewProgress',  owner:'ninjinkun',       desc:'显示WebView加载进度'},
     {name:'REMenu',              owner:'romaonthego',     desc:'一个导航栏下拉菜单 不错～'},
@@ -856,8 +877,6 @@ list:[
     {name:'LiveFrost',           owner:'radi',            desc:'View动态模糊效果,思路和效果都不错，性能稍差'},
     {name:'CRGradientNavigationBar',owner:'chroman',      desc:'iOS7状态栏 过渡的颜色'},
     {name:'MYBlurIntroductionView', owner:'MatthewYork',   desc:'带有模糊背景效果的 Intro'},
-    {name:'Masonry',             owner:'cloudkite',       desc:'AutoLayout框架'},
-    {name:'KeepLayout',          owner:'iMartinKiss',     desc:'AutoLayout框架 貌似比较好用'},
     {name:'MLPAccessoryBadge',   owner:'EddyBorja',       desc:'一些自定义badge~'},
     {name:'JSBadgeView',         owner:'JaviSoto',        desc:'数字角标 Badge'},
     {name:'MSCellAccessory',     owner:'bitmapdata',      desc:'Cell右侧的小箭头~'},
@@ -867,7 +886,7 @@ list:[
     {name:'JWFolders',           owner:'jwilling',        desc:'iOS6以下的文件夹展开效果'},
     {name:'OCCalendar',          owner:'ocrickard',       desc:'Popover样式的日期选择器'},
     {name:'IBAForms',            owner:'ittybittydude',   desc:'Form构建。2年前的工程了..'},
-    {name:'ActionSheetPicker',   owner:'TimCinel',        desc:'一个PopOver里面是Picker'},
+    {name:'ActionSheetPicker-3.0',owner:'skywinder',      desc:'用Popover显示的Picker'},
     {name:'MSCollectionViewCalendarLayout',owner:'monospacecollective',desc:'日历事件样式 iOS6以上'},
     {name:'MosaicUI',            owner:'betzerra',        desc:'WP7磁片风格View 自适应大小'},
     {name:'MosaicLayout',        owner:'TwoTinedFork',    desc:'WP7磁片风格Layout UICollectionView'},
@@ -875,6 +894,7 @@ list:[
     {name:'US2FormValidator',    owner:'ustwo',           desc:'一套Table表单验证提示'},
     {name:'AURosetteView',       owner:'emilwojtaszek',   desc:'玫瑰花瓣似的展开菜单'},
     {name:'EAIntroView',         owner:'ealeksandrov',    desc:'App启动的介绍界面'},
+    {name:'Onboard',             owner:'mamaral',         desc:'App启动引导'},
     {name:'InformaticToolbar',   owner:'gregwym',         desc:'下边栏显示提示和动作'},
     {name:'CCHMapClusterController',owner:'choefele',     desc:'自动归类MapKit上面的标记'},
     {name:'JTSImageViewController',owner:'jaredsinclair', desc:'点击弹出图片，双击缩放，再点击缩回原处，这种常见的功能...'}
@@ -946,9 +966,12 @@ list:[
     {name:'NSLogger',         owner:'fpillet',           desc:'一套Log工具,可以在电脑上通过client实时查看NSLog,甚至是图片和二进制文件 支持Android'},
     {name:'KIF',              owner:'kif-framework',     desc:'一套用Private API做的调试库,可以以用户的方式测试(touch in xxx)'},
     {name:'gh-unit',          owner:'gabriel',           desc:'一套ObjC的测试框架'},
+    {name:'SimulatorRemoteNotifications',owner:'acoomans',desc:'模拟远程Push的工具，调试APNS用'},
+    {name:'FLEX',             owner:'Flipboard',         desc:'Flipboardc出的一个在App内调试和和实时修改的工具，很棒~'},
     {name:'DCIntrospect',    owner:'domesticcatsoftware',desc:'一套iOS调试工具,在iOS界面里显示信息'},
     {name:'CocoaLumberjack',  owner:'CocoaLumberjack',   desc:'一套类似Log4j的东西,可提供企业级的Log~~~~'},
     {name:'ARAnalytics',      owner:'orta',              desc:'用户行为统计，支持各大App数据平台'},
+    {name:'SkyLab',           owner:'mattt',             desc:'A/B Test工具～'},
     {name:'Xtrace',           owner:'johnno1962',        desc:'输出所有的方法调用消息 (可以按instance/class过滤)'},
     {name:'Frank',            owner:'moredip',           desc:'自动化测试工具？'},
     {name:'superdb',          owner:'Shopify',           desc:'一个Debuger工具 用命令行调试。。'},
@@ -1037,7 +1060,6 @@ list:[
     {name:'visor',             owner:'torsten',      desc:'Terminal的插件'},
     {name:'GoAgentX',          owner:'ohdarling',    desc:'这个不用说了....'},
     {name:'Pixen',             owner:'Pixen',        desc:'像素画 的工具'},
-    {name:'DataKit',           owner:'eaigner',      desc:'不知道什么好想是与数据和网络连接的？'},
     {name:'Color-Picker-Pro',  owner:'oscardelben',  desc:'取色器 状态栏插件'},
     {name:'SNRHUDKit',         owner:'indragiek',    desc:'Mac版的HUD'},
     {name:'ConnectionKit',     owner:'karelia',      desc:'FTP和WebDAV'},
@@ -1061,6 +1083,7 @@ list:[
     {name:'google-music-mac.git',owner:'kbhomes',    desc:'如题,Google Music客户端'},
     {name:'SafariOmnibar',     owner:'rs',           desc:'一个Sarari插件'},
     {name:'HexFiend',          owner:'ridiculousfish',desc:'16进制编辑器'},
+    {name:'macdown',           owner:'uranusjr',     desc:'很棒的Markdown编辑器'},
     {name:'atom',              owner:'atom',         desc:'Github官方的 21世纪开源代码编辑器 :)'},
     {name:'Cakebrew',          owner:'brunophilipe', desc:'Homebrew图形管理~'},
     {name:'sequelpro',         owner:'sequelpro',    desc:'Sequel Pro 访问MySQL'},
