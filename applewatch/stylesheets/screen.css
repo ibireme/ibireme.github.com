@@ -98,12 +98,12 @@ body, html {
   -moz-transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #444;
 }
 /* line 25, ../sass/screen.scss */
 .info .info-text {
   cursor: pointer;
-  background-color: #eee;
+  background-color: #000;
   color: #444;
   width: 56px;
   height: 20px;
