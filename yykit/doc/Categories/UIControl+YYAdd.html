@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>UIControl(YYAdd) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -70,10 +69,6 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Target action added">Target action added</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Block action added">Block action added</a></span></li>
-	
 </ul></li>
 
 
@@ -120,17 +115,17 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">UIControl+YYAdd.h<br />UIControl+YYAdd.m</td>
+	<td class="specification-value">UIControl+YYAdd.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Provide some some common method for <code>UIControl</code>.</p>
+						<p>Provides extensions for <code>UIControl</code>.</p>
 					</div>
 					
 					
@@ -142,55 +137,37 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Target action added" name="task_Target action added"></a>
-						<h3 class="subsubtitle task-title">Target action added</h3>
+						
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeAllTargets">&ndash;&nbsp;removeAllTargets</a></code>
-		<span class="tooltip"><p>Removes all targets and actions for a particular event (or events)
-from an internal dispatch table.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setTarget:action:forControlEvents:">&ndash;&nbsp;setTarget:action:forControlEvents:</a></code>
-		<span class="tooltip"><p>Adds or replaces a target and action for a particular event (or events)
-to an internal dispatch table.</p></span>
 	</span>
 	
 	
-</li>
-						</ul>
-						
-						
-						<a title="Block action added" name="task_Block action added"></a>
-						<h3 class="subsubtitle task-title">Block action added</h3>
-
-						<ul class="task-list">
-							<li>
+</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBlockForControlEvents:block:">&ndash;&nbsp;addBlockForControlEvents:block:</a></code>
-		<span class="tooltip"><p>Adds a block for a particular event (or events)
-to an internal dispatch table.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setBlockForControlEvents:block:">&ndash;&nbsp;setBlockForControlEvents:block:</a></code>
-		<span class="tooltip"><p>Adds or replaces a block for a particular event (or events)
-to an internal dispatch table.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeAllBlocksForControlEvents:">&ndash;&nbsp;removeAllBlocksForControlEvents:</a></code>
-		<span class="tooltip"><p>Removes all blocks for a particular event (or events)
-from an internal dispatch table.</p></span>
 	</span>
 	
 	
@@ -218,8 +195,8 @@ from an internal dispatch table.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Adds a block for a particular event (or events)
-to an internal dispatch table.</p>
+		<p>Adds a block for a particular event (or events) to an internal dispatch table.
+It will cause a strong reference to @a block.</p>
 	</div>		
 	
     
@@ -233,14 +210,14 @@ to an internal dispatch table.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>controlEvents</em></dt>
-			<dd><p>A bitmask specifying the control events
-for which the action message is sent.</p></dd>
+			<dd><p>A bitmask specifying the control events for which the
+                       action message is sent.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>block</em></dt>
-			<dd><p>The block which is invoked then the action message is sent.
-It cannot be nil.</p></dd>
+			<dd><p>The block which is invoked then the action message is
+                       sent  (cannot be nil). The block is retained.</p></dd>
 		</dl>
 		
 	</div>
@@ -272,8 +249,8 @@ It cannot be nil.</p></dd>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Removes all blocks for a particular event (or events)
-from an internal dispatch table.</p>
+		<p>Removes all blocks for a particular event (or events) from an internal
+dispatch table.</p>
 	</div>		
 	
     
@@ -287,8 +264,8 @@ from an internal dispatch table.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>controlEvents</em></dt>
-			<dd><p>A bitmask specifying the control events
-for which the action message is sent.</p></dd>
+			<dd><p>A bitmask specifying the control events for which the
+                       action message is sent.</p></dd>
 		</dl>
 		
 	</div>
@@ -357,8 +334,8 @@ from an internal dispatch table.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Adds or replaces a block for a particular event (or events)
-to an internal dispatch table.</p>
+		<p>Adds or replaces a block for a particular event (or events) to an internal
+dispatch table. It will cause a strong reference to @a block.</p>
 	</div>		
 	
     
@@ -372,14 +349,14 @@ to an internal dispatch table.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>controlEvents</em></dt>
-			<dd><p>A bitmask specifying the control events
-for which the action message is sent.</p></dd>
+			<dd><p>A bitmask specifying the control events for which the
+                       action message is sent.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>block</em></dt>
-			<dd><p>The block which is invoked then the action message is sent.
-It cannot be nil.</p></dd>
+			<dd><p>The block which is invoked then the action message is
+                       sent (cannot be nil). The block is retained.</p></dd>
 		</dl>
 		
 	</div>
@@ -426,10 +403,10 @@ to an internal dispatch table.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>target</em></dt>
-			<dd><p>The target object—that is,
-    the object to which the action message is sent.
-    If this is nil, the responder chain is searched for
-    an object willing to respond to the action message.</p></dd>
+			<dd><p>The target object—that is, the object to which the
+                       action message is sent. If this is nil, the responder
+                       chain is searched for an object willing to respond to the
+                       action message.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -439,8 +416,8 @@ to an internal dispatch table.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>controlEvents</em></dt>
-			<dd><p>A bitmask specifying the control events
-    for which the action message is sent.</p></dd>
+			<dd><p>A bitmask specifying the control events for which the
+                       action message is sent.</p></dd>
 		</dl>
 		
 	</div>
@@ -468,6 +445,11 @@ to an internal dispatch table.</p>
 					</div>
 					
 					
+                    
+                    
+                    
+                    
+
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -478,9 +460,9 @@ to an internal dispatch table.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

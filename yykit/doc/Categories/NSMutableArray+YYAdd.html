@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>NSMutableArray(YYAdd) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -44,9 +43,23 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/addObjectOrNil:">&nbsp;&nbsp;&nbsp;&nbsp;- addObjectOrNil:</option>
+	<option value="//api/name/appendObject:">&nbsp;&nbsp;&nbsp;&nbsp;- appendObject:</option>
+	
+	<option value="//api/name/appendObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- appendObjects:</option>
+	
+	<option value="//api/name/insertObjects:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- insertObjects:atIndex:</option>
+	
+	<option value="//api/name/popFirstObject">&nbsp;&nbsp;&nbsp;&nbsp;- popFirstObject</option>
+	
+	<option value="//api/name/popLastObject">&nbsp;&nbsp;&nbsp;&nbsp;- popLastObject</option>
+	
+	<option value="//api/name/prependObject:">&nbsp;&nbsp;&nbsp;&nbsp;- prependObject:</option>
+	
+	<option value="//api/name/prependObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- prependObjects:</option>
 	
 	<option value="//api/name/removeFirstObject">&nbsp;&nbsp;&nbsp;&nbsp;- removeFirstObject</option>
+	
+	<option value="//api/name/removeLastObject">&nbsp;&nbsp;&nbsp;&nbsp;- removeLastObject</option>
 	
 	<option value="//api/name/reverse">&nbsp;&nbsp;&nbsp;&nbsp;- reverse</option>
 	
@@ -80,9 +93,23 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObjectOrNil:">addObjectOrNil:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendObject:">appendObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendObjects:">appendObjects:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertObjects:atIndex:">insertObjects:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popFirstObject">popFirstObject</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popLastObject">popLastObject</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prependObject:">prependObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prependObjects:">prependObjects:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFirstObject">removeFirstObject</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeLastObject">removeLastObject</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reverse">reverse</a></span></li>
 	
@@ -112,12 +139,12 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSArray+YYAdd.h<br />NSArray+YYAdd.m</td>
+	<td class="specification-value">NSArray+YYAdd.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -140,30 +167,67 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/addObjectOrNil:">&ndash;&nbsp;addObjectOrNil:</a></code>
-		<span class="tooltip"><p>Inserts a given object at the end of the array.
-If the object is nil, it just return and do not throw exception.</p></span>
+		<code><a href="#//api/name/removeFirstObject">&ndash;&nbsp;removeFirstObject</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/removeFirstObject">&ndash;&nbsp;removeFirstObject</a></code>
-		<span class="tooltip"><p>Removes the object with the lowest-valued index in the array.</p></span>
+		<code><a href="#//api/name/removeLastObject">&ndash;&nbsp;removeLastObject</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/popFirstObject">&ndash;&nbsp;popFirstObject</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/popLastObject">&ndash;&nbsp;popLastObject</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendObject:">&ndash;&nbsp;appendObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prependObject:">&ndash;&nbsp;prependObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendObjects:">&ndash;&nbsp;appendObjects:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prependObjects:">&ndash;&nbsp;prependObjects:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertObjects:atIndex:">&ndash;&nbsp;insertObjects:atIndex:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/reverse">&ndash;&nbsp;reverse</a></code>
-		<span class="tooltip"><p>Reverse the index of object in this array.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/shuffle">&ndash;&nbsp;shuffle</a></code>
-		<span class="tooltip"><p>Sort the object in this array randomly.</p></span>
 	</span>
 	
 	
@@ -185,19 +249,18 @@ If the object is nil, it just return and do not throw exception.</p></span>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/addObjectOrNil:" title="addObjectOrNil:"></a>
-	<h3 class="subsubtitle method-title">addObjectOrNil:</h3>
+	<a name="//api/name/appendObject:" title="appendObject:"></a>
+	<h3 class="subsubtitle method-title">appendObject:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Inserts a given object at the end of the array.
-If the object is nil, it just return and do not throw exception.</p>
+		<p>Inserts a given object at the end of the array.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)addObjectOrNil:(id)<em>anObject</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)appendObject:(id)<em>anObject</em></code></div>
 
     
 	
@@ -207,7 +270,289 @@ If the object is nil, it just return and do not throw exception.</p>
 		<dl class="argument-def parameter-def">
 			<dt><em>anObject</em></dt>
 			<dd><p>The object to add to the end of the array&rsquo;s content.
-    When the value is nil, nothing happened.</p></dd>
+This value must not be nil. Raises an NSInvalidArgumentException if anObject is nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendObjects:" title="appendObjects:"></a>
+	<h3 class="subsubtitle method-title">appendObjects:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds the objects contained in another given array to the end of the receiving
+array&rsquo;s content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appendObjects:(NSArray *)<em>objects</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objects</em></dt>
+			<dd><p>An array of objects to add to the end of the receiving array&rsquo;s
+content. Nothing will happen if the objects is empty or nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertObjects:atIndex:" title="insertObjects:atIndex:"></a>
+	<h3 class="subsubtitle method-title">insertObjects:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds the objects contained in another given array at the index of the receiving
+array&rsquo;s content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)insertObjects:(NSArray *)<em>objects</em> atIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objects</em></dt>
+			<dd><p>An array of objects to add to the receiving array&rsquo;s
+content. Nothing will happen if the objects is empty or nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index in the array at which to insert objects. This value must
+not be greater than the count of elements in the array. Raises an
+NSRangeException if index is greater than the number of elements in the array.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/popFirstObject" title="popFirstObject"></a>
+	<h3 class="subsubtitle method-title">popFirstObject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes and returns the object with the lowest-valued index in the array.
+If the array is empty, it just returns nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)popFirstObject</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The first object, or nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/popLastObject" title="popLastObject"></a>
+	<h3 class="subsubtitle method-title">popLastObject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes and returns the object with the highest-valued index in the array.
+If the array is empty, it just returns nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)popLastObject</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The first object, or nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prependObject:" title="prependObject:"></a>
+	<h3 class="subsubtitle method-title">prependObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts a given object at the beginning of the array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prependObject:(id)<em>anObject</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anObject</em></dt>
+			<dd><p>The object to add to the end of the array&rsquo;s content.
+This value must not be nil. Raises an NSInvalidArgumentException if anObject is nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prependObjects:" title="prependObjects:"></a>
+	<h3 class="subsubtitle method-title">prependObjects:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds the objects contained in another given array to the beginnin of the receiving
+array&rsquo;s content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prependObjects:(NSArray *)<em>objects</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objects</em></dt>
+			<dd><p>An array of objects to add to the beginning of the receiving array&rsquo;s
+content. Nothing will happen if the objects is empty or nil.</p></dd>
 		</dl>
 		
 	</div>
@@ -239,7 +584,8 @@ If the object is nil, it just return and do not throw exception.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Removes the object with the lowest-valued index in the array.</p>
+		<p>Removes the object with the lowest-valued index in the array.
+If the array is empty, nothing will happen.</p>
 	</div>		
 	
     
@@ -254,9 +600,47 @@ If the object is nil, it just return and do not throw exception.</p>
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeLastObject" title="removeLastObject"></a>
+	<h3 class="subsubtitle method-title">removeLastObject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes the object with the highest-valued index in the array.
+If the array is empty, nothing will happen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeLastObject</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>If the array is empty, nothing will happen.</p>
+		<p>Apple&rsquo;s implementation said it raises an NSRangeException if the
+array is empty, but in fact nothing will happen. Override for safe.</p>
 	</div>
 	
 	
@@ -280,7 +664,8 @@ If the object is nil, it just return and do not throw exception.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Reverse the index of object in this array.</p>
+		<p>Reverse the index of object in this array.
+Example: Before @[ @1, @2, @3 ], After @[ @3, @2, @1 ].</p>
 	</div>		
 	
     
@@ -294,11 +679,6 @@ If the object is nil, it just return and do not throw exception.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Example: Before @[ @1, @2, @3 ] After @[ @3, @2, @1 ]</p>
-	</div>
 	
 	
 	
@@ -353,6 +733,11 @@ If the object is nil, it just return and do not throw exception.</p>
 					</div>
 					
 					
+                    
+                    
+                    
+                    
+
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -363,9 +748,9 @@ If the object is nil, it just return and do not throw exception.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>NSObject(YYAdd) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -44,30 +43,36 @@
 	
 	<option value="//api/name/className">&nbsp;&nbsp;&nbsp;&nbsp;+ className</option>
 	
-	<option value="//api/name/swizzleClassMethod:withClassMethod:">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleClassMethod:withClassMethod:</option>
+	<option value="//api/name/swizzleClassMethod:with:">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleClassMethod:with:</option>
 	
-	<option value="//api/name/swizzleMethod:withMethod:">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleMethod:withMethod:</option>
+	<option value="//api/name/swizzleInstanceMethod:with:">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleInstanceMethod:with:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/associateValue:withKey:">&nbsp;&nbsp;&nbsp;&nbsp;- associateValue:withKey:</option>
-	
-	<option value="//api/name/associateWeakValue:withKey:">&nbsp;&nbsp;&nbsp;&nbsp;- associateWeakValue:withKey:</option>
-	
-	<option value="//api/name/associatedValueForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- associatedValueForKey:</option>
-	
-	<option value="//api/name/associatedValueRemove:">&nbsp;&nbsp;&nbsp;&nbsp;- associatedValueRemove:</option>
-	
 	<option value="//api/name/className">&nbsp;&nbsp;&nbsp;&nbsp;- className</option>
+	
+	<option value="//api/name/getAssociatedValueForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- getAssociatedValueForKey:</option>
 	
 	<option value="//api/name/performSelector:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:</option>
 	
-	<option value="//api/name/performSelector:afterDelay:withObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:withObjects:</option>
+	<option value="//api/name/performSelectorWithArgs:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorWithArgs:</option>
 	
-	<option value="//api/name/performSelector:withObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:withObjects:</option>
+	<option value="//api/name/performSelectorWithArgs:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorWithArgs:afterDelay:</option>
+	
+	<option value="//api/name/performSelectorWithArgs:onThread:waitUntilDone:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorWithArgs:onThread:waitUntilDone:</option>
+	
+	<option value="//api/name/performSelectorWithArgsInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorWithArgsInBackground:</option>
+	
+	<option value="//api/name/performSelectorWithArgsOnMainThread:waitUntilDone:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorWithArgsOnMainThread:waitUntilDone:</option>
+	
+	<option value="//api/name/removeAssociatedValues">&nbsp;&nbsp;&nbsp;&nbsp;- removeAssociatedValues</option>
+	
+	<option value="//api/name/setAssociateValue:withKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setAssociateValue:withKey:</option>
+	
+	<option value="//api/name/setAssociateWeakValue:withKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setAssociateWeakValue:withKey:</option>
 	
 	
 	
@@ -85,7 +90,7 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sending Messages with variable params.">Sending Messages with variable params.</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sending messages with variable parameters">Sending messages with variable parameters</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Swap method (Swizzling)">Swap method (Swizzling)</a></span></li>
 	
@@ -105,9 +110,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/className">className</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleClassMethod:withClassMethod:">swizzleClassMethod:withClassMethod:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleClassMethod:with:">swizzleClassMethod:with:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleMethod:withMethod:">swizzleMethod:withMethod:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleInstanceMethod:with:">swizzleInstanceMethod:with:</a></span></li>
 	
 </ul></li>
 
@@ -115,21 +120,27 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associateValue:withKey:">associateValue:withKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associateWeakValue:withKey:">associateWeakValue:withKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associatedValueForKey:">associatedValueForKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associatedValueRemove:">associatedValueRemove:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/className">className</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAssociatedValueForKey:">getAssociatedValueForKey:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:">performSelector:afterDelay:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:withObjects:">performSelector:afterDelay:withObjects:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorWithArgs:">performSelectorWithArgs:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:withObjects:">performSelector:withObjects:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorWithArgs:afterDelay:">performSelectorWithArgs:afterDelay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorWithArgs:onThread:waitUntilDone:">performSelectorWithArgs:onThread:waitUntilDone:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorWithArgsInBackground:">performSelectorWithArgsInBackground:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorWithArgsOnMainThread:waitUntilDone:">performSelectorWithArgsOnMainThread:waitUntilDone:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAssociatedValues">removeAssociatedValues</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAssociateValue:withKey:">setAssociateValue:withKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAssociateWeakValue:withKey:">setAssociateWeakValue:withKey:</a></span></li>
 	
 </ul></li>
 
@@ -155,12 +166,12 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSObject+YYAdd.h<br />NSObject+YYAdd.m</td>
+	<td class="specification-value">NSObject+YYAdd.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -177,29 +188,43 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Sending Messages with variable params." name="task_Sending Messages with variable params."></a>
-						<h3 class="subsubtitle task-title">Sending Messages with variable params.</h3>
+						<a title="Sending messages with variable parameters" name="task_Sending messages with variable parameters"></a>
+						<h3 class="subsubtitle task-title">Sending messages with variable parameters</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/performSelector:withObjects:">&ndash;&nbsp;performSelector:withObjects:</a></code>
-		<span class="tooltip"><p>Invokes a method of the receiver on the current thread with variable params.</p></span>
+		<code><a href="#//api/name/performSelectorWithArgs:">&ndash;&nbsp;performSelectorWithArgs:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/performSelector:afterDelay:withObjects:">&ndash;&nbsp;performSelector:afterDelay:withObjects:</a></code>
-		<span class="tooltip"><p>Invokes a method of the receiver on the current thread
-with variable params after a delay.</p></span>
+		<code><a href="#//api/name/performSelectorWithArgs:afterDelay:">&ndash;&nbsp;performSelectorWithArgs:afterDelay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelectorWithArgsOnMainThread:waitUntilDone:">&ndash;&nbsp;performSelectorWithArgsOnMainThread:waitUntilDone:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelectorWithArgs:onThread:waitUntilDone:">&ndash;&nbsp;performSelectorWithArgs:onThread:waitUntilDone:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelectorWithArgsInBackground:">&ndash;&nbsp;performSelectorWithArgsInBackground:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/performSelector:afterDelay:">&ndash;&nbsp;performSelector:afterDelay:</a></code>
-		<span class="tooltip"><p>Invokes a method of the receiver on the current thread after a delay.</p></span>
 	</span>
 	
 	
@@ -213,17 +238,13 @@ with variable params after a delay.</p></span>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/swizzleMethod:withMethod:">+&nbsp;swizzleMethod:withMethod:</a></code>
-		<span class="tooltip"><p>Swap two method&rsquo;s implementation in one class.
-It`s very dangerous,be careful.</p></span>
+		<code><a href="#//api/name/swizzleInstanceMethod:with:">+&nbsp;swizzleInstanceMethod:with:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/swizzleClassMethod:withClassMethod:">+&nbsp;swizzleClassMethod:withClassMethod:</a></code>
-		<span class="tooltip"><p>Swap two class method&rsquo;s implementation in one class.
-It`s very dangerous,be careful.</p></span>
+		<code><a href="#//api/name/swizzleClassMethod:with:">+&nbsp;swizzleClassMethod:with:</a></code>
 	</span>
 	
 	
@@ -237,29 +258,25 @@ It`s very dangerous,be careful.</p></span>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/associateValue:withKey:">&ndash;&nbsp;associateValue:withKey:</a></code>
-		<span class="tooltip"><p>Associate one object to <code>self</code>,as if it was a strong property (strong,nonatomic).</p></span>
+		<code><a href="#//api/name/setAssociateValue:withKey:">&ndash;&nbsp;setAssociateValue:withKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/associateWeakValue:withKey:">&ndash;&nbsp;associateWeakValue:withKey:</a></code>
-		<span class="tooltip"><p>Associate one object to <code>self</code>,as if it was a weak property (week,nonatomic).</p></span>
+		<code><a href="#//api/name/setAssociateWeakValue:withKey:">&ndash;&nbsp;setAssociateWeakValue:withKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/associatedValueForKey:">&ndash;&nbsp;associatedValueForKey:</a></code>
-		<span class="tooltip"><p>Get the associated value from <code>self</code>.</p></span>
+		<code><a href="#//api/name/getAssociatedValueForKey:">&ndash;&nbsp;getAssociatedValueForKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/associatedValueRemove:">&ndash;&nbsp;associatedValueRemove:</a></code>
-		<span class="tooltip"><p>Remove associate between value and <code>self</code>.</p></span>
+		<code><a href="#//api/name/removeAssociatedValues">&ndash;&nbsp;removeAssociatedValues</a></code>
 	</span>
 	
 	
@@ -274,14 +291,12 @@ It`s very dangerous,be careful.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/className">+&nbsp;className</a></code>
-		<span class="tooltip"><p>Get the class name use NSString.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/className">&ndash;&nbsp;className</a></code>
-		<span class="tooltip"><p>Get the class name use NSString.</p></span>
 	</span>
 	
 	
@@ -307,7 +322,7 @@ It`s very dangerous,be careful.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Get the class name use NSString.</p>
+		<p>Returns the class name in NSString.</p>
 	</div>		
 	
     
@@ -337,19 +352,18 @@ It`s very dangerous,be careful.</p></span>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/swizzleClassMethod:withClassMethod:" title="swizzleClassMethod:withClassMethod:"></a>
-	<h3 class="subsubtitle method-title">swizzleClassMethod:withClassMethod:</h3>
+	<a name="//api/name/swizzleClassMethod:with:" title="swizzleClassMethod:with:"></a>
+	<h3 class="subsubtitle method-title">swizzleClassMethod:with:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Swap two class method&rsquo;s implementation in one class.
-It`s very dangerous,be careful.</p>
+		<p>Swap two class method&rsquo;s implementation in one class. Dangerous, be careful.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (BOOL)swizzleClassMethod:(SEL)<em>originalSel</em> withClassMethod:(SEL)<em>newSel</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (BOOL)swizzleClassMethod:(SEL)<em>originalSel</em> with:(SEL)<em>newSel</em></code></div>
 
     
 	
@@ -372,7 +386,7 @@ It`s very dangerous,be careful.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>if success.</p>
+		<p>YES if swizzling succeed; otherwize, NO.</p>
 	</div>
 	
 	
@@ -394,19 +408,18 @@ It`s very dangerous,be careful.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/swizzleMethod:withMethod:" title="swizzleMethod:withMethod:"></a>
-	<h3 class="subsubtitle method-title">swizzleMethod:withMethod:</h3>
+	<a name="//api/name/swizzleInstanceMethod:with:" title="swizzleInstanceMethod:with:"></a>
+	<h3 class="subsubtitle method-title">swizzleInstanceMethod:with:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Swap two method&rsquo;s implementation in one class.
-It`s very dangerous,be careful.</p>
+		<p>Swap two instance method&rsquo;s implementation in one class. Dangerous, be careful.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (BOOL)swizzleMethod:(SEL)<em>originalSel</em> withMethod:(SEL)<em>newSel</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (BOOL)swizzleInstanceMethod:(SEL)<em>originalSel</em> with:(SEL)<em>newSel</em></code></div>
 
     
 	
@@ -429,7 +442,7 @@ It`s very dangerous,be careful.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>if success</p>
+		<p>YES if swizzling succeed; otherwize, NO.</p>
 	</div>
 	
 	
@@ -459,46 +472,26 @@ It`s very dangerous,be careful.</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/associateValue:withKey:" title="associateValue:withKey:"></a>
-	<h3 class="subsubtitle method-title">associateValue:withKey:</h3>
+	<a name="//api/name/className" title="className"></a>
+	<h3 class="subsubtitle method-title">className</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Associate one object to <code>self</code>,as if it was a strong property (strong,nonatomic).</p>
+		<p>Returns the class name in NSString.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)associateValue:(id)<em>value</em> withKey:(void *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)className</code></div>
 
     
 	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>value</em></dt>
-			<dd><p>The object to associate.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The pointer to get value from <code>self</code>.</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
 	
 	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> Do not copy this object, or you cannot get the associated value.</p></div>
-	</div>
 	
 	
 	
@@ -515,64 +508,8 @@ It`s very dangerous,be careful.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/associateWeakValue:withKey:" title="associateWeakValue:withKey:"></a>
-	<h3 class="subsubtitle method-title">associateWeakValue:withKey:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Associate one object to <code>self</code>,as if it was a weak property (week,nonatomic).</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)associateWeakValue:(id)<em>value</em> withKey:(void *)<em>key</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>value</em></dt>
-			<dd><p>The object to associate.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The pointer to get value from <code>self</code>.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> Do not copy this object, or you cannot get the associated value.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/associatedValueForKey:" title="associatedValueForKey:"></a>
-	<h3 class="subsubtitle method-title">associatedValueForKey:</h3>
+	<a name="//api/name/getAssociatedValueForKey:" title="getAssociatedValueForKey:"></a>
+	<h3 class="subsubtitle method-title">getAssociatedValueForKey:</h3>
 	
 	
 	
@@ -582,7 +519,7 @@ It`s very dangerous,be careful.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)associatedValueForKey:(void *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)getAssociatedValueForKey:(void *)<em>key</em></code></div>
 
     
 	
@@ -595,88 +532,6 @@ It`s very dangerous,be careful.</p>
 		</dl>
 		
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/associatedValueRemove:" title="associatedValueRemove:"></a>
-	<h3 class="subsubtitle method-title">associatedValueRemove:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Remove associate between value and <code>self</code>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)associatedValueRemove:(id)<em>value</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>value</em></dt>
-			<dd><p>The value which associated.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/className" title="className"></a>
-	<h3 class="subsubtitle method-title">className</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the class name use NSString.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (NSString *)className</code></div>
-
-    
 	
 	
 	
@@ -710,7 +565,7 @@ It`s very dangerous,be careful.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)performSelector:(SEL)<em>aSelector</em> afterDelay:(NSTimeInterval)<em>delay</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)performSelector:(SEL)<em>sel</em> afterDelay:(NSTimeInterval)<em>delay</em></code></div>
 
     
 	
@@ -718,21 +573,524 @@ It`s very dangerous,be careful.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>aSelector</em></dt>
-			<dd><p>A selector that identifies the method to invoke.
-The method should not have a significant return value and
-should take no argument.</p></dd>
+			<dt><em>sel</em></dt>
+			<dd><p>A selector that identifies the method to invoke. The method should
+              not have a significant return value and should take no argument.
+              If the selector is NULL or unrecognized,
+              an NSInvalidArgumentException is raised after the delay.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>delay</em></dt>
-			<dd><p>The minimum time before which the message is sent.
-Specifying a delay of 0 does not necessarily
-cause the selector to be performed immediately.
-The selector is still queued on the thread’s run loop
-and performed as soon as possible.</p>
+			<dd><p>The minimum time before which the message is sent. Specifying a
+              delay of 0 does not necessarily cause the selector to be performed
+              immediately. The selector is still queued on the thread&rsquo;s run loop
+              and performed as soon as possible.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> arc-performSelector-leaks</p></div><p>This method sets up a timer to perform the aSelector message on
+              the current thread&rsquo;s run loop. The timer is configured to run in
+              the default mode (NSDefaultRunLoopMode). When the timer fires, the
+              thread attempts to dequeue the message from the run loop and
+              perform the selector. It succeeds if the run loop is running and
+              in the default mode; otherwise, the timer waits until the run loop
+              is in the default mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelectorWithArgs:" title="performSelectorWithArgs:"></a>
+	<h3 class="subsubtitle method-title">performSelectorWithArgs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a specified message to the receiver and returns the result of the message.</p>
+	</div>		
+	
+    
 
-<p>@throw NSInvalidArgumentException</p></dd>
+	<div class="method-subsection method-declaration"><code>- (id)performSelectorWithArgs:(SEL)<em>sel</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sel</em></dt>
+			<dd><p>A selector identifying the message to send. If the selector is
+               NULL or unrecognized, an NSInvalidArgumentException is raised.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>Variable parameter list. Parameters type must correspond to the
+               selector&rsquo;s method declaration, or unexpected results may occur.
+               It doesn&rsquo;t support union or struct which is larger than 256 bytes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An object that is the result of the message.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The selector&rsquo;s return value will be wrap as NSNumber or NSValue
+               if the selector&rsquo;s <code>return type</code> is not object. It always returns nil
+               if the selector&rsquo;s <code>return type</code> is void.</p>
+
+<p>Sample Code:</p>
+
+<pre><code> // no variable args
+ [view performSelectorWithArgs:@selector(removeFromSuperView)];
+
+ // variable arg is not object
+ [view performSelectorWithArgs:@selector(setCenter:), CGPointMake(0, 0)];
+
+ // perform and return object
+ UIImage *image = [UIImage.class performSelectorWithArgs:@selector(imageWithData:scale:), data, 2.0];
+
+ // perform and return wrapped number
+ NSNumber *lengthValue = [@"hello" performSelectorWithArgs:@selector(length)];
+ NSUInteger length = lengthValue.unsignedIntegerValue;
+
+ // perform and return wrapped struct
+ NSValue *frameValue = [view performSelectorWithArgs:@selector(frame)];
+ CGRect frame = frameValue.CGRectValue;
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelectorWithArgs:afterDelay:" title="performSelectorWithArgs:afterDelay:"></a>
+	<h3 class="subsubtitle method-title">performSelectorWithArgs:afterDelay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a method of the receiver on the current thread using the default mode after a delay.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)performSelectorWithArgs:(SEL)<em>sel</em> afterDelay:(NSTimeInterval)<em>delay</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sel</em></dt>
+			<dd><p>A selector identifying the message to send. If the selector is
+               NULL or unrecognized, an NSInvalidArgumentException is raised immediately.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delay</em></dt>
+			<dd><p>The minimum time before which the message is sent. Specifying
+               a delay of 0 does not necessarily cause the selector to be
+               performed immediately. The selector is still queued on the
+               thread&rsquo;s run loop and performed as soon as possible.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>Variable parameter list. Parameters type must correspond to the
+               selector&rsquo;s method declaration, or unexpected results may occur.
+               It doesn&rsquo;t support union or struct which is larger than 256 bytes.</p>
+
+<p>Sample Code:</p>
+
+<pre><code> // no variable args
+ [view performSelectorWithArgs:@selector(removeFromSuperView) afterDelay:2.0];
+
+ // variable arg is not object
+ [view performSelectorWithArgs:@selector(setCenter:), CGPointMake(0, 0) afterDelay:0];
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> It can&rsquo;t canceled by previous request.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelectorWithArgs:onThread:waitUntilDone:" title="performSelectorWithArgs:onThread:waitUntilDone:"></a>
+	<h3 class="subsubtitle method-title">performSelectorWithArgs:onThread:waitUntilDone:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a method of the receiver on the specified thread using the default mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)performSelectorWithArgs:(SEL)<em>sel</em> onThread:(NSThread *)<em>thread</em> waitUntilDone:(BOOL)<em>wait</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sel</em></dt>
+			<dd><p>A selector identifying the message to send. If the selector is
+               NULL or unrecognized, an NSInvalidArgumentException is raised.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>thread</em></dt>
+			<dd><p>The thread on which to execute aSelector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wait</em></dt>
+			<dd><p>A Boolean that specifies whether the current thread blocks until
+               after the specified selector is performed on the receiver on the
+               specified thread. Specify YES to block this thread; otherwise,
+               specify NO to have this method return immediately.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>Variable parameter list. Parameters type must correspond to the
+               selector&rsquo;s method declaration, or unexpected results may occur.
+               It doesn&rsquo;t support union or struct which is larger than 256 bytes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>While @a wait is YES, it returns object that is the result of
+               the message. Otherwise return nil;</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The selector&rsquo;s return value will be wrap as NSNumber or NSValue
+               if the selector&rsquo;s <code>return type</code> is not object. It always returns nil
+               if the selector&rsquo;s <code>return type</code> is void, or @a wait is YES.</p>
+
+<p>Sample Code:</p>
+
+<pre><code> [view performSelectorWithArgs:@selector(removeFromSuperView) onThread:mainThread waitUntilDone:NO];
+
+ [array  performSelectorWithArgs:@selector(sortUsingComparator:)
+                        onThread:backgroundThread
+                   waitUntilDone:NO, ^NSComparisonResult(NSNumber *num1, NSNumber *num2) {
+     return [num2 compare:num2];
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelectorWithArgsInBackground:" title="performSelectorWithArgsInBackground:"></a>
+	<h3 class="subsubtitle method-title">performSelectorWithArgsInBackground:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a method of the receiver on a new background thread.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)performSelectorWithArgsInBackground:(SEL)<em>sel</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sel</em></dt>
+			<dd><p>A selector identifying the message to send. If the selector is
+               NULL or unrecognized, an NSInvalidArgumentException is raised.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>Variable parameter list. Parameters type must correspond to the
+               selector&rsquo;s method declaration, or unexpected results may occur.
+               It doesn&rsquo;t support union or struct which is larger than 256 bytes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method creates a new thread in your application, putting
+               your application into multithreaded mode if it was not already.
+               The method represented by sel must set up the thread environment
+               just as you would for any other new thread in your program.</p>
+
+<p>Sample Code:</p>
+
+<pre><code> [array  performSelectorWithArgsInBackground:@selector(sortUsingComparator:),
+            ^NSComparisonResult(NSNumber *num1, NSNumber *num2) {
+    return [num2 compare:num2];
+ }];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelectorWithArgsOnMainThread:waitUntilDone:" title="performSelectorWithArgsOnMainThread:waitUntilDone:"></a>
+	<h3 class="subsubtitle method-title">performSelectorWithArgsOnMainThread:waitUntilDone:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a method of the receiver on the main thread using the default mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)performSelectorWithArgsOnMainThread:(SEL)<em>sel</em> waitUntilDone:(BOOL)<em>wait</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sel</em></dt>
+			<dd><p>A selector identifying the message to send. If the selector is
+               NULL or unrecognized, an NSInvalidArgumentException is raised.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wait</em></dt>
+			<dd><p>A Boolean that specifies whether the current thread blocks until
+               after the specified selector is performed on the receiver on the
+               specified thread. Specify YES to block this thread; otherwise,
+               specify NO to have this method return immediately.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>Variable parameter list. Parameters type must correspond to the
+               selector&rsquo;s method declaration, or unexpected results may occur.
+               It doesn&rsquo;t support union or struct which is larger than 256 bytes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>While @a wait is YES, it returns object that is the result of
+               the message. Otherwise return nil;</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The selector&rsquo;s return value will be wrap as NSNumber or NSValue
+               if the selector&rsquo;s <code>return type</code> is not object. It always returns nil
+               if the selector&rsquo;s <code>return type</code> is void, or @a wait is YES.</p>
+
+<p>Sample Code:</p>
+
+<pre><code> // no variable args
+ [view performSelectorWithArgsOnMainThread:@selector(removeFromSuperView), waitUntilDone:NO];
+
+ // variable arg is not object
+ [view performSelectorWithArgsOnMainThread:@selector(setCenter:), waitUntilDone:NO, CGPointMake(0, 0)];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAssociatedValues" title="removeAssociatedValues"></a>
+	<h3 class="subsubtitle method-title">removeAssociatedValues</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove all associated values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAssociatedValues</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAssociateValue:withKey:" title="setAssociateValue:withKey:"></a>
+	<h3 class="subsubtitle method-title">setAssociateValue:withKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Associate one object to <code>self</code>, as if it was a strong property (strong, nonatomic).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAssociateValue:(id)<em>value</em> withKey:(void *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The object to associate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The pointer to get value from <code>self</code>.</p></dd>
 		</dl>
 		
 	</div>
@@ -758,19 +1116,18 @@ and performed as soon as possible.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/performSelector:afterDelay:withObjects:" title="performSelector:afterDelay:withObjects:"></a>
-	<h3 class="subsubtitle method-title">performSelector:afterDelay:withObjects:</h3>
+	<a name="//api/name/setAssociateWeakValue:withKey:" title="setAssociateWeakValue:withKey:"></a>
+	<h3 class="subsubtitle method-title">setAssociateWeakValue:withKey:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Invokes a method of the receiver on the current thread
-with variable params after a delay.</p>
+		<p>Associate one object to <code>self</code>, as if it was a weak property (week, nonatomic).</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)performSelector:(SEL)<em>aSelector</em> afterDelay:(NSTimeInterval)<em>delay</em> withObjects:(id)<em>firstObj</em>, <em>...</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setAssociateWeakValue:(id)<em>value</em> withKey:(void *)<em>key</em></code></div>
 
     
 	
@@ -778,32 +1135,13 @@ with variable params after a delay.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>aSelector</em></dt>
-			<dd><p>A selector that identifies the method to invoke.
-The method should not have a significant return value and
-should take at lest one argument of type id.</p></dd>
+			<dt><em>value</em></dt>
+			<dd><p>The object to associate.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>delay</em></dt>
-			<dd><p>The minimum time before which the message is sent.
-Specifying a delay of 0 does not necessarily
-cause the selector to be performed immediately.
-The selector is still queued on the thread&rsquo;s run loop
-and performed as soon as possible.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>firstObj</em></dt>
-			<dd><p>The first argument to pass to the method when it is invoked.
-Pass nil if the method does not take an argument.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>...</em></dt>
-			<dd><p>The variable arguments.</p>
-
-<p>@throw NSInvalidArgumentException</p></dd>
+			<dt><em>key</em></dt>
+			<dd><p>The pointer to get value from <code>self</code>.</p></dd>
 		</dl>
 		
 	</div>
@@ -813,87 +1151,6 @@ Pass nil if the method does not take an argument.</p></dd>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>example code:</p>
-
-<pre>
-[self performSelector:@selector(test::::) afterDelay:1.0 withObjects:@"a",@"b",@"c",@"d"];
-</pre>
-
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSObject+YYAdd.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/performSelector:withObjects:" title="performSelector:withObjects:"></a>
-	<h3 class="subsubtitle method-title">performSelector:withObjects:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Invokes a method of the receiver on the current thread with variable params.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)performSelector:(SEL)<em>aSelector</em> withObjects:(id)<em>firstObj</em>, <em>...</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>aSelector</em></dt>
-			<dd><p>A selector that identifies the method to invoke.
-The method should not have a significant return value and
-should take at lest one argument of type id.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>firstObj</em></dt>
-			<dd><p>The first argument to pass to the method when it is invoked.
-Pass nil if the method does not take an argument.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>...</em></dt>
-			<dd><p>The variable arguments.</p>
-
-<p>@throw NSInvalidArgumentException</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>example code:</p>
-
-<pre>
-[self performSelector:@selector(test::::) withObjects:@"a",@"b",@"c",@"d"];
-</pre>
-
-	</div>
 	
 	
 	
@@ -912,6 +1169,11 @@ Pass nil if the method does not take an argument.</p></dd>
 					</div>
 					
 					
+                    
+                    
+                    
+                    
+
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -922,9 +1184,9 @@ Pass nil if the method does not take an argument.</p></dd>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

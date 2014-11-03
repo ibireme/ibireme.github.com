@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>NSData(YYAdd) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -61,23 +60,39 @@
 	
 	<option value="//api/name/crc32String">&nbsp;&nbsp;&nbsp;&nbsp;- crc32String</option>
 	
+	<option value="//api/name/dataNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- dataNamed:</option>
+	
 	<option value="//api/name/gzipDeflate">&nbsp;&nbsp;&nbsp;&nbsp;- gzipDeflate</option>
 	
 	<option value="//api/name/gzipInflate">&nbsp;&nbsp;&nbsp;&nbsp;- gzipInflate</option>
 	
 	<option value="//api/name/hexString">&nbsp;&nbsp;&nbsp;&nbsp;- hexString</option>
 	
+	<option value="//api/name/hmacMD5DataWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacMD5DataWithKey:</option>
+	
 	<option value="//api/name/hmacMD5StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacMD5StringWithKey:</option>
+	
+	<option value="//api/name/hmacSHA1DataWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA1DataWithKey:</option>
 	
 	<option value="//api/name/hmacSHA1StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA1StringWithKey:</option>
 	
+	<option value="//api/name/hmacSHA224DataWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA224DataWithKey:</option>
+	
 	<option value="//api/name/hmacSHA224StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA224StringWithKey:</option>
+	
+	<option value="//api/name/hmacSHA256DataWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA256DataWithKey:</option>
 	
 	<option value="//api/name/hmacSHA256StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA256StringWithKey:</option>
 	
+	<option value="//api/name/hmacSHA384DataWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA384DataWithKey:</option>
+	
 	<option value="//api/name/hmacSHA384StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA384StringWithKey:</option>
 	
+	<option value="//api/name/hmacSHA512DataWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA512DataWithKey:</option>
+	
 	<option value="//api/name/hmacSHA512StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA512StringWithKey:</option>
+	
+	<option value="//api/name/jsonValueDecoded">&nbsp;&nbsp;&nbsp;&nbsp;- jsonValueDecoded</option>
 	
 	<option value="//api/name/md2Data">&nbsp;&nbsp;&nbsp;&nbsp;- md2Data</option>
 	
@@ -111,6 +126,8 @@
 	
 	<option value="//api/name/sha512String">&nbsp;&nbsp;&nbsp;&nbsp;- sha512String</option>
 	
+	<option value="//api/name/utf8String">&nbsp;&nbsp;&nbsp;&nbsp;- utf8String</option>
+	
 	<option value="//api/name/zlibDeflate">&nbsp;&nbsp;&nbsp;&nbsp;- zlibDeflate</option>
 	
 	<option value="//api/name/zlibInflate">&nbsp;&nbsp;&nbsp;&nbsp;- zlibInflate</option>
@@ -138,6 +155,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Encode and decode">Encode and decode</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Inflate and deflate">Inflate and deflate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Others">Others</a></span></li>
 	
 </ul></li>
 
@@ -169,23 +188,39 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/crc32String">crc32String</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataNamed:">dataNamed:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gzipDeflate">gzipDeflate</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gzipInflate">gzipInflate</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hexString">hexString</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacMD5DataWithKey:">hmacMD5DataWithKey:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacMD5StringWithKey:">hmacMD5StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA1DataWithKey:">hmacSHA1DataWithKey:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA1StringWithKey:">hmacSHA1StringWithKey:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA224DataWithKey:">hmacSHA224DataWithKey:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA224StringWithKey:">hmacSHA224StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA256DataWithKey:">hmacSHA256DataWithKey:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA256StringWithKey:">hmacSHA256StringWithKey:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA384DataWithKey:">hmacSHA384DataWithKey:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA384StringWithKey:">hmacSHA384StringWithKey:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA512DataWithKey:">hmacSHA512DataWithKey:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA512StringWithKey:">hmacSHA512StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonValueDecoded">jsonValueDecoded</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/md2Data">md2Data</a></span></li>
 	
@@ -219,6 +254,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sha512String">sha512String</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/utf8String">utf8String</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zlibDeflate">zlibDeflate</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zlibInflate">zlibInflate</a></span></li>
@@ -247,17 +284,17 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSData+YYAdd.h<br />NSData+YYAdd.m</td>
+	<td class="specification-value">NSData+YYAdd.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Provide hash and encode method for <code>NSData</code>.</p>
+						<p>Provide hash, encrypt, encode and some common method for <code>NSData</code>.</p>
 					</div>
 					
 					
@@ -276,168 +313,180 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/md2String">&ndash;&nbsp;md2String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for md2 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/md2Data">&ndash;&nbsp;md2Data</a></code>
-		<span class="tooltip"><p>Return an NSData for md2 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/md4String">&ndash;&nbsp;md4String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for md4 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/md4Data">&ndash;&nbsp;md4Data</a></code>
-		<span class="tooltip"><p>Return an NSData for md4 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/md5String">&ndash;&nbsp;md5String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for md5 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/md5Data">&ndash;&nbsp;md5Data</a></code>
-		<span class="tooltip"><p>Return an NSData for md5 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha1String">&ndash;&nbsp;sha1String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for sha1 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha1Data">&ndash;&nbsp;sha1Data</a></code>
-		<span class="tooltip"><p>Return an NSData for sha1 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha224String">&ndash;&nbsp;sha224String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for sha224 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha224Data">&ndash;&nbsp;sha224Data</a></code>
-		<span class="tooltip"><p>Return an NSData for sha224 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha256String">&ndash;&nbsp;sha256String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for sha256 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha256Data">&ndash;&nbsp;sha256Data</a></code>
-		<span class="tooltip"><p>Return an NSData for sha256 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha384String">&ndash;&nbsp;sha384String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for sha384 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha384Data">&ndash;&nbsp;sha384Data</a></code>
-		<span class="tooltip"><p>Return an NSData for sha384 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha512String">&ndash;&nbsp;sha512String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for sha512 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sha512Data">&ndash;&nbsp;sha512Data</a></code>
-		<span class="tooltip"><p>Return an NSData for sha512 hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hmacMD5StringWithKey:">&ndash;&nbsp;hmacMD5StringWithKey:</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for hmac using algorithm md5 with key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacMD5DataWithKey:">&ndash;&nbsp;hmacMD5DataWithKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hmacSHA1StringWithKey:">&ndash;&nbsp;hmacSHA1StringWithKey:</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for hmac using algorithm sha1 with key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA1DataWithKey:">&ndash;&nbsp;hmacSHA1DataWithKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hmacSHA224StringWithKey:">&ndash;&nbsp;hmacSHA224StringWithKey:</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for hmac using algorithm sha224 with key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA224DataWithKey:">&ndash;&nbsp;hmacSHA224DataWithKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hmacSHA256StringWithKey:">&ndash;&nbsp;hmacSHA256StringWithKey:</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for hmac using algorithm sha256 with key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA256DataWithKey:">&ndash;&nbsp;hmacSHA256DataWithKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hmacSHA384StringWithKey:">&ndash;&nbsp;hmacSHA384StringWithKey:</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for hmac using algorithm sha384 with key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA384DataWithKey:">&ndash;&nbsp;hmacSHA384DataWithKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hmacSHA512StringWithKey:">&ndash;&nbsp;hmacSHA512StringWithKey:</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for hmac using algorithm sha512 with key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA512DataWithKey:">&ndash;&nbsp;hmacSHA512DataWithKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/crc32String">&ndash;&nbsp;crc32String</a></code>
-		<span class="tooltip"><p>Return a lowercase NSString for <a href="#//api/name/crc32">crc32</a> hash.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/crc32">&ndash;&nbsp;crc32</a></code>
-		<span class="tooltip"><p>Return crc32 hash.</p></span>
 	</span>
 	
 	
@@ -452,14 +501,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/aes256EncryptWithKey:iv:">&ndash;&nbsp;aes256EncryptWithKey:iv:</a></code>
-		<span class="tooltip"><p>Return an encrypted NSData using AES.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/aes256DecryptWithkey:iv:">&ndash;&nbsp;aes256DecryptWithkey:iv:</a></code>
-		<span class="tooltip"><p>Return an decrypted NSData using AES.</p></span>
 	</span>
 	
 	
@@ -473,29 +520,37 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/utf8String">&ndash;&nbsp;utf8String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/hexString">&ndash;&nbsp;hexString</a></code>
-		<span class="tooltip"><p>Return a uppercase NSString for HEX.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/dataWithHexString:">+&nbsp;dataWithHexString:</a></code>
-		<span class="tooltip"><p>Return an NSData from hex string.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/base64Encoding">&ndash;&nbsp;base64Encoding</a></code>
-		<span class="tooltip"><p>Return an NSString for base64 encoded.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/dataWithBase64Encoding:">+&nbsp;dataWithBase64Encoding:</a></code>
-		<span class="tooltip"><p>Return an NSData from base64 encoded string.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/jsonValueDecoded">&ndash;&nbsp;jsonValueDecoded</a></code>
 	</span>
 	
 	
@@ -510,28 +565,38 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gzipInflate">&ndash;&nbsp;gzipInflate</a></code>
-		<span class="tooltip"><p>Decompress data from gzip data.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gzipDeflate">&ndash;&nbsp;gzipDeflate</a></code>
-		<span class="tooltip"><p>Comperss data to gzip in default compresssion level.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/zlibInflate">&ndash;&nbsp;zlibInflate</a></code>
-		<span class="tooltip"><p>Decompress data from zlib-compressed data.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/zlibDeflate">&ndash;&nbsp;zlibDeflate</a></code>
-		<span class="tooltip"><p>Comperss data to zlib-compressed in default compresssion level.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Others" name="task_Others"></a>
+						<h3 class="subsubtitle task-title">Others</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataNamed:">&ndash;&nbsp;dataNamed:</a></code>
 	</span>
 	
 	
@@ -557,7 +622,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData from base64 encoded string.</p>
+		<p>Returns an NSData from base64 encoded string.</p>
 	</div>		
 	
     
@@ -608,7 +673,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData from hex string.</p>
+		<p>Returns an NSData from hex string.</p>
 	</div>		
 	
     
@@ -631,7 +696,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>a new NSData, or nil when error occured.</p>
+		<p>a new NSData, or nil if an error occurs.</p>
 	</div>
 	
 	
@@ -667,7 +732,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an decrypted NSData using AES.</p>
+		<p>Returns an decrypted NSData using AES.</p>
 	</div>		
 	
     
@@ -687,7 +752,7 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>iv</em></dt>
 			<dd><p>An initialization vector length of 16(128bits).
-    Pass nil when you don&rsquo;t want to use iv.</p></dd>
+              Pass nil when you don&rsquo;t want to use iv.</p></dd>
 		</dl>
 		
 	</div>
@@ -696,7 +761,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>An NSData decrypted, or nil when error occured.</p>
+		<p>An NSData decrypted, or nil if an error occurs.</p>
 	</div>
 	
 	
@@ -724,7 +789,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an encrypted NSData using AES.</p>
+		<p>Returns an encrypted NSData using AES.</p>
 	</div>		
 	
     
@@ -744,7 +809,7 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>iv</em></dt>
 			<dd><p>An initialization vector length of 16(128bits).
-    Pass nil when you don&rsquo;t want to use iv.</p></dd>
+              Pass nil when you don&rsquo;t want to use iv.</p></dd>
 		</dl>
 		
 	</div>
@@ -753,7 +818,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>An NSData encrypted, or nil when error occured.</p>
+		<p>An NSData encrypted, or nil if an error occurs.</p>
 	</div>
 	
 	
@@ -781,7 +846,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSString for base64 encoded.</p>
+		<p>Returns an NSString for base64 encoded.</p>
 	</div>		
 	
     
@@ -822,7 +887,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return crc32 hash.</p>
+		<p>Returns crc32 hash.</p>
 	</div>		
 	
     
@@ -858,7 +923,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for <a href="#//api/name/crc32">crc32</a> hash.</p>
+		<p>Returns a lowercase NSString for <a href="#//api/name/crc32">crc32</a> hash.</p>
 	</div>		
 	
     
@@ -868,6 +933,57 @@
     
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataNamed:" title="dataNamed:"></a>
+	<h3 class="subsubtitle method-title">dataNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create data from the file in main bundle (similar to [UIImage imageNamed:]).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataNamed:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The file name (in main bundle).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new data create from the file.</p>
+	</div>
 	
 	
 	
@@ -976,7 +1092,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a uppercase NSString for HEX.</p>
+		<p>Returns a uppercase NSString in HEX.</p>
 	</div>		
 	
     
@@ -1006,18 +1122,110 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/hmacMD5DataWithKey:" title="hmacMD5DataWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacMD5DataWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSData for hmac using algorithm md5 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)hmacMD5DataWithKey:(NSData *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/hmacMD5StringWithKey:" title="hmacMD5StringWithKey:"></a>
 	<h3 class="subsubtitle method-title">hmacMD5StringWithKey:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for hmac using algorithm md5 with key.</p>
+		<p>Returns a lowercase NSString for hmac using algorithm md5 with key.</p>
 	</div>		
 	
     
 
 	<div class="method-subsection method-declaration"><code>- (NSString *)hmacMD5StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA1DataWithKey:" title="hmacSHA1DataWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA1DataWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSData for hmac using algorithm sha1 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)hmacSHA1DataWithKey:(NSData *)<em>key</em></code></div>
 
     
 	
@@ -1058,12 +1266,58 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for hmac using algorithm sha1 with key.</p>
+		<p>Returns a lowercase NSString for hmac using algorithm sha1 with key.</p>
 	</div>		
 	
     
 
 	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA1StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA224DataWithKey:" title="hmacSHA224DataWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA224DataWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSData for hmac using algorithm sha224 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)hmacSHA224DataWithKey:(NSData *)<em>key</em></code></div>
 
     
 	
@@ -1104,12 +1358,58 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for hmac using algorithm sha224 with key.</p>
+		<p>Returns a lowercase NSString for hmac using algorithm sha224 with key.</p>
 	</div>		
 	
     
 
 	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA224StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA256DataWithKey:" title="hmacSHA256DataWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA256DataWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSData for hmac using algorithm sha256 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)hmacSHA256DataWithKey:(NSData *)<em>key</em></code></div>
 
     
 	
@@ -1150,12 +1450,58 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for hmac using algorithm sha256 with key.</p>
+		<p>Returns a lowercase NSString for hmac using algorithm sha256 with key.</p>
 	</div>		
 	
     
 
 	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA256StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA384DataWithKey:" title="hmacSHA384DataWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA384DataWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSData for hmac using algorithm sha384 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)hmacSHA384DataWithKey:(NSData *)<em>key</em></code></div>
 
     
 	
@@ -1196,12 +1542,58 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for hmac using algorithm sha384 with key.</p>
+		<p>Returns a lowercase NSString for hmac using algorithm sha384 with key.</p>
 	</div>		
 	
     
 
 	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA384StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA512DataWithKey:" title="hmacSHA512DataWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA512DataWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSData for hmac using algorithm sha512 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)hmacSHA512DataWithKey:(NSData *)<em>key</em></code></div>
 
     
 	
@@ -1242,7 +1634,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for hmac using algorithm sha512 with key.</p>
+		<p>Returns a lowercase NSString for hmac using algorithm sha512 with key.</p>
 	</div>		
 	
     
@@ -1282,13 +1674,50 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/jsonValueDecoded" title="jsonValueDecoded"></a>
+	<h3 class="subsubtitle method-title">jsonValueDecoded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSDictionary or NSArray for decoded self.
+Returns nil if an error occurs.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)jsonValueDecoded</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/md2Data" title="md2Data"></a>
 	<h3 class="subsubtitle method-title">md2Data</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for md2 hash.</p>
+		<p>Returns an NSData for md2 hash.</p>
 	</div>		
 	
     
@@ -1324,7 +1753,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for md2 hash.</p>
+		<p>Returns a lowercase NSString for md2 hash.</p>
 	</div>		
 	
     
@@ -1360,7 +1789,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for md4 hash.</p>
+		<p>Returns an NSData for md4 hash.</p>
 	</div>		
 	
     
@@ -1396,7 +1825,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for md4 hash.</p>
+		<p>Returns a lowercase NSString for md4 hash.</p>
 	</div>		
 	
     
@@ -1432,7 +1861,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for md5 hash.</p>
+		<p>Returns an NSData for md5 hash.</p>
 	</div>		
 	
     
@@ -1468,7 +1897,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for md5 hash.</p>
+		<p>Returns a lowercase NSString for md5 hash.</p>
 	</div>		
 	
     
@@ -1504,7 +1933,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for sha1 hash.</p>
+		<p>Returns an NSData for sha1 hash.</p>
 	</div>		
 	
     
@@ -1540,7 +1969,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for sha1 hash.</p>
+		<p>Returns a lowercase NSString for sha1 hash.</p>
 	</div>		
 	
     
@@ -1576,7 +2005,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for sha224 hash.</p>
+		<p>Returns an NSData for sha224 hash.</p>
 	</div>		
 	
     
@@ -1612,7 +2041,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for sha224 hash.</p>
+		<p>Returns a lowercase NSString for sha224 hash.</p>
 	</div>		
 	
     
@@ -1648,7 +2077,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for sha256 hash.</p>
+		<p>Returns an NSData for sha256 hash.</p>
 	</div>		
 	
     
@@ -1684,7 +2113,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for sha256 hash.</p>
+		<p>Returns a lowercase NSString for sha256 hash.</p>
 	</div>		
 	
     
@@ -1720,7 +2149,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for sha384 hash.</p>
+		<p>Returns an NSData for sha384 hash.</p>
 	</div>		
 	
     
@@ -1756,7 +2185,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for sha384 hash.</p>
+		<p>Returns a lowercase NSString for sha384 hash.</p>
 	</div>		
 	
     
@@ -1792,7 +2221,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return an NSData for sha512 hash.</p>
+		<p>Returns an NSData for sha512 hash.</p>
 	</div>		
 	
     
@@ -1828,12 +2257,48 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Return a lowercase NSString for sha512 hash.</p>
+		<p>Returns a lowercase NSString for sha512 hash.</p>
 	</div>		
 	
     
 
 	<div class="method-subsection method-declaration"><code>- (NSString *)sha512String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/utf8String" title="utf8String"></a>
+	<h3 class="subsubtitle method-title">utf8String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns string decoded in UTF8.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)utf8String</code></div>
 
     
 	
@@ -1942,6 +2407,11 @@
 					</div>
 					
 					
+                    
+                    
+                    
+                    
+
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1952,9 +2422,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

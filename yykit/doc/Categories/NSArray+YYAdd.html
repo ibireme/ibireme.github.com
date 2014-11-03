@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>NSArray(YYAdd) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -44,7 +43,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/firstObject">&nbsp;&nbsp;&nbsp;&nbsp;- firstObject</option>
+	<option value="//api/name/jsonPrettyStringEncoded">&nbsp;&nbsp;&nbsp;&nbsp;- jsonPrettyStringEncoded</option>
+	
+	<option value="//api/name/jsonStringEncoded">&nbsp;&nbsp;&nbsp;&nbsp;- jsonStringEncoded</option>
 	
 	<option value="//api/name/objectOrNilAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- objectOrNilAtIndex:</option>
 	
@@ -78,7 +79,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/firstObject">firstObject</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonPrettyStringEncoded">jsonPrettyStringEncoded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonStringEncoded">jsonStringEncoded</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectOrNilAtIndex:">objectOrNilAtIndex:</a></span></li>
 	
@@ -108,12 +111,12 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSArray+YYAdd.h<br />NSArray+YYAdd.m</td>
+	<td class="specification-value">NSArray+YYAdd.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -136,22 +139,25 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/firstObject">&ndash;&nbsp;firstObject</a></code>
-		<span class="tooltip"><p>Returns the object in the array with the lowest index value.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/randomObject">&ndash;&nbsp;randomObject</a></code>
-		<span class="tooltip"><p>Returns the object located at a random index.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectOrNilAtIndex:">&ndash;&nbsp;objectOrNilAtIndex:</a></code>
-		<span class="tooltip"><p>Returns the object located at index, or return nil when out of bounds.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/jsonStringEncoded">&ndash;&nbsp;jsonStringEncoded</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/jsonPrettyStringEncoded">&ndash;&nbsp;jsonPrettyStringEncoded</a></code>
 	</span>
 	
 	
@@ -173,37 +179,63 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/firstObject" title="firstObject"></a>
-	<h3 class="subsubtitle method-title">firstObject</h3>
+	<a name="//api/name/jsonPrettyStringEncoded" title="jsonPrettyStringEncoded"></a>
+	<h3 class="subsubtitle method-title">jsonPrettyStringEncoded</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the object in the array with the lowest index value.</p>
+		<p>Convert object to json string formatted. return nil if an error occurs.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)firstObject</code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)jsonPrettyStringEncoded</code></div>
 
     
 	
 	
 	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The object in the array with the lowest index value.
-   If the array is empty, returns nil.</p>
-	</div>
 	
 	
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> This method has been implemented in iOS7.</p></div>
-	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/jsonStringEncoded" title="jsonStringEncoded"></a>
+	<h3 class="subsubtitle method-title">jsonStringEncoded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convert object to json string. return nil if an error occurs.
+NSString/NSNumber/NSDictionary/NSArray</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)jsonStringEncoded</code></div>
+
+    
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -226,7 +258,8 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the object located at index, or return nil when out of bounds.</p>
+		<p>Returns the object located at index, or return nil when out of bounds.
+It&rsquo;s similar to <code>objectAtIndex:</code>, but it never throw exception.</p>
 	</div>		
 	
     
@@ -250,11 +283,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>It&rsquo;s similar to <code>objectAtIndex:</code>, but it never throw exception.</p>
-	</div>
 	
 	
 	
@@ -291,7 +319,7 @@
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
 		<p>The object in the array with a random index value.
-    If the array is empty, returns nil.</p>
+If the array is empty, returns nil.</p>
 	</div>
 	
 	
@@ -315,6 +343,11 @@
 					</div>
 					
 					
+                    
+                    
+                    
+                    
+
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -325,9 +358,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

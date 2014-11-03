@@ -5,7 +5,7 @@
 		<title>YYKit Reference</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -34,38 +34,123 @@
 					<div class="section section-overview index-overview">
 						
 						
-						<h1>YYKit</h1>
+						<h1><a href="https://github.com/ibireme/YYKit">YYKit</a></h1>
 
-<p>YYKit contains some utilities that I use in my project.</p>
+<p>YYKit contains some utilities that I used in my project.</p>
 
-<h2>Documentation</h2>
+<h1>Documentation</h1>
 
-<p>You can build and install docset use <code>Docset</code> scheme.
+<p>You can build and install docset use <code>Docset</code> scheme in Xcode, <code>appledoc</code> need to be pre-installed.
 Or your can read the <a href="http://github.ibireme.com/yykit/doc/">Documentation</a> online.</p>
 
-<h2>How to use</h2>
-
-<ol>
-<li><p>Build this project and you will get <code>YYKit.framework</code>.</p></li>
-<li><p>Add <code>YYKit.framework</code> to your project,
-then add <code>-ObjC</code> to your project&rsquo;s <code>Other Compiler Flags</code></p></li>
-<li><p>Add required frameworks:</p>
+<h1>Installation</h1>
 
 <ul>
-<li>UIKit.framework</li>
-<li>CoreGraphics.framework</li>
-<li>CoreImage.framework</li>
-<li>QuartzCore.framework</li>
-<li>libz.dylib</li>
+<li>Download YYKit source code.</li>
+<li>Select <code>YYKit</code> scheme, and run <code>Archive</code> in Xcode, you will get <code>YYKit.framework</code>.</li>
+<li>Drag the <code>YYKit.framwork</code> to your project and linked the required Frameworks below.</li>
+<li>Add <code>-ObjC</code> to your project&rsquo;s <code>Other Linker Flags</code>.</li>
+<li>Import <code>&lt;YYKit/YYKit.h&gt;</code> as you need.</li>
 </ul>
-</li>
-<li><p>(Optional) Add <code>YYKit.framework</code> to your .pch file.</p></li>
-</ol>
 
+
+<h1>Require Frameworks</h1>
+
+<pre><code>* UIKit.framework
+* QuartzCore.framework
+* CoreGraphics.framework
+* CoreImage.framework
+* CoreText.framework
+* ImageIO.framework
+* Accelerate.framework
+* Security.framework
+* MobileCoreServices.framework
+* libz.dylib
+</code></pre>
+
+<h1>About</h1>
+
+<p>This library support iOS 6.0 and later.</p>
+
+<p>I want to use my API as if it was provided by system, so I don&rsquo;t add prefix in
+these categories. I know this is not good, so if you just need some pieces of code
+in this project, pick them out and don&rsquo;t import the whole library.</p>
 
 <hr />
 
-<p>I knew too many categories are not good for an app, but I&rsquo;m lazy :-)</p>
+<p>Category for Foundation</p>
+
+<p><a href="Categories/NSObject+YYAdd.html"><code>NSObject(YYAdd)</code></a><br/>
+<a href="Categories/NSObject+YYAddForKVO.html"><code>NSObject(YYAddForKVO)</code></a><br/>
+<a href="Categories/NSObject+YYAddForARC.html"><code>NSObject(YYAddForARC)</code></a><br/>
+<a href="Categories/NSData+YYAdd.html"><code>NSData(YYAdd)</code></a><br/>
+<a href="Categories/NSString+YYAdd.html"><code>NSString(YYAdd)</code></a><br/>
+<a href="Categories/NSArray+YYAdd.html"><code>NSArray(YYAdd)</code></a><br/>
+<a href="Categories/NSMutableArray+YYAdd.html"><code>NSMutableArray(YYAdd)</code></a><br/>
+<a href="Categories/NSDictionary+YYAdd.html"><code>NSDictionary(YYAdd)</code></a><br/>
+<a href="Categories/NSMutableDictionary+YYAdd.html"><code>NSMutableDictionary(YYAdd)</code></a><br/>
+<a href="Categories/NSDate+YYAdd.html"><code>NSDate(YYAdd)</code></a><br/>
+<a href="Categories/NSNumber+YYAdd.html"><code>NSNumber(YYAdd)</code></a><br/>
+<a href="Categories/NSCharacterSet+YYAdd.html"><code>NSCharacterSet(YYAdd)</code></a><br/>
+<a href="Categories/NSMutableCharacterSet+YYAdd.html"><code>NSMutableCharacterSet(YYAdd)</code></a><br/>
+<a href="Categories/NSNotificationCenter+YYAdd.html"><code>NSNotificationCenter(YYAdd)</code></a><br/>
+<a href="Categories/NSKeyedUnarchiver+YYAdd.html"><code>NSKeyedUnarchiver(YYAdd)</code></a><br/>
+<a href="Categories/NSTimer+YYAdd.html"><code>NSTimer(YYAdd)</code></a><br/>
+<a href="Categories/NSBundle+YYAdd.html"><code>NSBundle(YYAdd)</code></a></p>
+
+<hr />
+
+<p>Category for UIKit</p>
+
+<p><a href="Categories/UIColor+YYAdd.html"><code>UIColor(YYAdd)</code></a><br/>
+<a href="Categories/UIImage+YYAdd.html"><code>UIImage(YYAdd)</code></a><br/>
+<a href="Categories/UIControl+YYAdd.html"><code>UIControl(YYAdd)</code></a><br/>
+<a href="Categories/UIBarButtonItem+YYAdd.html"><code>UIBarButtonItem(YYAdd)</code></a><br/>
+<a href="Categories/UIGestureRecognizer+YYAdd.html"><code>UIGestureRecognizer(YYAdd)</code></a><br/>
+<a href="Categories/UIView+YYAdd.html"><code>UIView(YYAdd)</code></a><br/>
+<a href="Categories/UIScrollView+YYAdd.html"><code>UIScrollView(YYAdd)</code></a><br/>
+<a href="Categories/UITableView+YYAdd.html"><code>UITableView(YYAdd)</code></a><br/>
+<a href="Categories/UITextField+YYAdd.html"><code>UITextField(YYAdd)</code></a><br/>
+<a href="Categories/UIScreen+YYAdd.html"><code>UIScreen(YYAdd)</code></a><br/>
+<a href="Categories/UIDevice+YYAdd.html"><code>UIDevice(YYAdd)</code></a><br/>
+<a href="Categories/UIApplication+YYAdd.html"><code>UIApplication(YYAdd)</code></a><br/>
+<a href="Categories/UIFont+YYAdd.html"><code>UIFont(YYAdd)</code></a><br/>
+<a href="Categories/UIBezierPath+YYAdd.html"><code>UIBezierPath(YYAdd)</code></a></p>
+
+<hr />
+
+<p>Category for Quartz</p>
+
+<p><a href="Categories/CALayer+YYAdd.html"><code>CALayer(YYAdd)</code></a></p>
+
+<hr />
+
+<p>Text</p>
+
+<p><a href="Categories/NSMutableAttributedString+YYAdd.html"><code>NSMutableAttributedString(YYAdd)</code></a><br/>
+<a href="Categories/NSParagraphStyle+YYAdd.html"><code>NSParagraphStyle(YYAdd)</code></a><br/>
+<a href="Classes/YYTextRunDelegate.html"><code>YYTextRunDelegate</code></a></p>
+
+<hr />
+
+<p>Image</p>
+
+<p><a href="Classes/YYGIFImage.html"><code>YYGIFImage</code></a><br/>
+<a href="Protocols/YYAnimatedImage.html"><code>YYAnimatedImage</code></a><br/>
+<a href="Classes/YYAnimatedImageView.html"><code>YYAnimatedImageView</code></a></p>
+
+<hr />
+
+<p>Util</p>
+
+<p><a href="Classes/YYProcessStatus.html"><code>YYProcessStatus</code></a><br/>
+<a href="Classes/YYGestureRecognizer.html"><code>YYGestureRecognizer</code></a><br/>
+<a href="Classes/YYFileHash.html"><code>YYFileHash</code></a><br/>
+<a href="Classes/YYKeychain.html"><code>YYKeychain</code></a><br/>
+<a href="Classes/YYKeychainItem.html"><code>YYKeychainItem</code></a><br/>
+<a href="Classes/YYWeakProxy.html"><code>YYWeakProxy</code></a><br/>
+<a href="Classes/YYThreadSafeArray.html"><code>YYThreadSafeArray</code></a><br/>
+<a href="Classes/YYThreadSafeDictionary.html"><code>YYThreadSafeDictionary</code></a></p>
 						
 						
 					</div>
@@ -73,56 +158,7 @@ then add <code>-ObjC</code> to your project&rsquo;s <code>Other Compiler Flags</
                         
                     
 					
-					
-					
-						
-					<div class="index-column">
-						
-						
-						<h2 class="index-title">Category References</h2>
-						<ul>
-							
-							<li><a href="Categories/NSArray+YYAdd.html">NSArray(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSData+YYAdd.html">NSData(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSDate+YYAdd.html">NSDate(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSDictionary+YYAdd.html">NSDictionary(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSMutableArray+YYAdd.html">NSMutableArray(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSMutableDictionary+YYAdd.html">NSMutableDictionary(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSNotificationCenter+YYAdd.html">NSNotificationCenter(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSNumber+YYAdd.html">NSNumber(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSObject+YYAdd.html">NSObject(YYAdd)</a></li>
-							
-							<li><a href="Categories/NSString+YYAdd.html">NSString(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIAlertView+YYAdd.html">UIAlertView(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIApplication+YYAdd.html">UIApplication(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIColor+YYAdd.html">UIColor(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIControl+YYAdd.html">UIControl(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIDevice+YYAdd.html">UIDevice(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIImage+YYAdd.html">UIImage(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIScreen+YYAdd.html">UIScreen(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIScrollView+YYAdd.html">UIScrollView(YYAdd)</a></li>
-							
-							<li><a href="Categories/UIView+YYAdd.html">UIView(YYAdd)</a></li>
-							
-						</ul>
-						
-					</div>
+
 					
 				</div>
 				<div class="main-navigation navigation-bottom">
@@ -131,9 +167,9 @@ then add <code>-ObjC</code> to your project&rsquo;s <code>Other Compiler Flags</
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 	
 					</div>

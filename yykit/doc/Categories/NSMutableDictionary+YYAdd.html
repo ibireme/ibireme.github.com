@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>NSMutableDictionary(YYAdd) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -44,11 +43,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/setPoint:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setPoint:forKey:</option>
+	<option value="//api/name/popEntriesForKeys:">&nbsp;&nbsp;&nbsp;&nbsp;- popEntriesForKeys:</option>
 	
-	<option value="//api/name/setRect:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setRect:forKey:</option>
-	
-	<option value="//api/name/setSize:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setSize:forKey:</option>
+	<option value="//api/name/popObjectForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- popObjectForKey:</option>
 	
 	
 	
@@ -78,11 +75,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPoint:forKey:">setPoint:forKey:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popEntriesForKeys:">popEntriesForKeys:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRect:forKey:">setRect:forKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSize:forKey:">setSize:forKey:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popObjectForKey:">popObjectForKey:</a></span></li>
 	
 </ul></li>
 
@@ -108,12 +103,12 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSDictionary+YYAdd.h<br />NSDictionary+YYAdd.m</td>
+	<td class="specification-value">NSDictionary+YYAdd.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -136,22 +131,13 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setPoint:forKey:">&ndash;&nbsp;setPoint:forKey:</a></code>
-		<span class="tooltip"><p>Adds a given key-value pair to the dictionary.</p></span>
+		<code><a href="#//api/name/popObjectForKey:">&ndash;&nbsp;popObjectForKey:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setSize:forKey:">&ndash;&nbsp;setSize:forKey:</a></code>
-		<span class="tooltip"><p>Adds a given key-value pair to the dictionary.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setRect:forKey:">&ndash;&nbsp;setRect:forKey:</a></code>
-		<span class="tooltip"><p>Adds a given key-value pair to the dictionary.</p></span>
+		<code><a href="#//api/name/popEntriesForKeys:">&ndash;&nbsp;popEntriesForKeys:</a></code>
 	</span>
 	
 	
@@ -173,18 +159,20 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/setPoint:forKey:" title="setPoint:forKey:"></a>
-	<h3 class="subsubtitle method-title">setPoint:forKey:</h3>
+	<a name="//api/name/popEntriesForKeys:" title="popEntriesForKeys:"></a>
+	<h3 class="subsubtitle method-title">popEntriesForKeys:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Adds a given key-value pair to the dictionary.</p>
+		<p>Returns a new dictionary containing the entries for keys, and remove these
+entries from reciever. If the keys is empty or nil, it just returns an
+empty dictionary.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setPoint:(CGPoint)<em>value</em> forKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)popEntriesForKeys:(NSArray *)<em>keys</em></code></div>
 
     
 	
@@ -192,27 +180,22 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>value</em></dt>
-			<dd><p>An CGPoint. this CGPoint struct will be copied as an object.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The key for value.</p></dd>
+			<dt><em>keys</em></dt>
+			<dd><p>The keys.</p></dd>
 		</dl>
 		
 	</div>
 	
 	
 	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The value must be a CGPoint.</p>
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entries for the keys.</p>
 	</div>
+	
+	
+	
+	
 	
 	
 	
@@ -229,18 +212,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setRect:forKey:" title="setRect:forKey:"></a>
-	<h3 class="subsubtitle method-title">setRect:forKey:</h3>
+	<a name="//api/name/popObjectForKey:" title="popObjectForKey:"></a>
+	<h3 class="subsubtitle method-title">popObjectForKey:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Adds a given key-value pair to the dictionary.</p>
+		<p>Removes and returns the value associated with a given key.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setRect:(CGRect)<em>value</em> forKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)popObjectForKey:(id)<em>aKey</em></code></div>
 
     
 	
@@ -248,83 +231,22 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>value</em></dt>
-			<dd><p>An CGRect. this CGRect struct will be copied as an object.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The key for value.</p></dd>
+			<dt><em>aKey</em></dt>
+			<dd><p>The key for which to return and remove the corresponding value.</p></dd>
 		</dl>
 		
 	</div>
 	
 	
 	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The value must be a CGRect.</p>
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The value associated with aKey, or nil if no value is associated with aKey.</p>
 	</div>
 	
 	
 	
 	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSDictionary+YYAdd.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setSize:forKey:" title="setSize:forKey:"></a>
-	<h3 class="subsubtitle method-title">setSize:forKey:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Adds a given key-value pair to the dictionary.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)setSize:(CGSize)<em>value</em> forKey:(NSString *)<em>key</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>value</em></dt>
-			<dd><p>An CGSize. this CGSize struct will be copied as an object.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The key for value.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The value must be a CGSize.</p>
-	</div>
 	
 	
 	
@@ -343,6 +265,11 @@
 					</div>
 					
 					
+                    
+                    
+                    
+                    
+
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -353,9 +280,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

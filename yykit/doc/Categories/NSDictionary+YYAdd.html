@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>NSDictionary(YYAdd) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -40,6 +39,11 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/dictionaryWithXML:">&nbsp;&nbsp;&nbsp;&nbsp;+ dictionaryWithXML:</option>
+	
+	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
@@ -50,11 +54,11 @@
 	
 	<option value="//api/name/containsObjectForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- containsObjectForKey:</option>
 	
-	<option value="//api/name/pointForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- pointForKey:</option>
+	<option value="//api/name/entriesForKeys:">&nbsp;&nbsp;&nbsp;&nbsp;- entriesForKeys:</option>
 	
-	<option value="//api/name/rectForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- rectForKey:</option>
+	<option value="//api/name/jsonPrettyStringEncoded">&nbsp;&nbsp;&nbsp;&nbsp;- jsonPrettyStringEncoded</option>
 	
-	<option value="//api/name/sizeForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- sizeForKey:</option>
+	<option value="//api/name/jsonStringEncoded">&nbsp;&nbsp;&nbsp;&nbsp;- jsonStringEncoded</option>
 	
 	
 	
@@ -80,6 +84,12 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dictionaryWithXML:">dictionaryWithXML:</a></span></li>
+	
+</ul></li>
+
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
@@ -90,11 +100,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containsObjectForKey:">containsObjectForKey:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointForKey:">pointForKey:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entriesForKeys:">entriesForKeys:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rectForKey:">rectForKey:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonPrettyStringEncoded">jsonPrettyStringEncoded</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sizeForKey:">sizeForKey:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonStringEncoded">jsonStringEncoded</a></span></li>
 	
 </ul></li>
 
@@ -120,12 +130,12 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSDictionary+YYAdd.h<br />NSDictionary+YYAdd.m</td>
+	<td class="specification-value">NSDictionary+YYAdd.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -149,42 +159,42 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/allKeysSorted">&ndash;&nbsp;allKeysSorted</a></code>
-		<span class="tooltip"><p>Returns a new array containing the dictionary’s keys sorted.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/allValuesSortedByKeys">&ndash;&nbsp;allValuesSortedByKeys</a></code>
-		<span class="tooltip"><p>Returns a new array containing the dictionary&rsquo;s values sorted by keys.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/containsObjectForKey:">&ndash;&nbsp;containsObjectForKey:</a></code>
-		<span class="tooltip"><p>Returns a BOOL value tells if the dictionary has an object for key.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/pointForKey:">&ndash;&nbsp;pointForKey:</a></code>
-		<span class="tooltip"><p>Returns the CGPoint associated with a given key.</p></span>
+		<code><a href="#//api/name/entriesForKeys:">&ndash;&nbsp;entriesForKeys:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/sizeForKey:">&ndash;&nbsp;sizeForKey:</a></code>
-		<span class="tooltip"><p>Returns the CGSize associated with a given key.</p></span>
+		<code><a href="#//api/name/jsonStringEncoded">&ndash;&nbsp;jsonStringEncoded</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/rectForKey:">&ndash;&nbsp;rectForKey:</a></code>
-		<span class="tooltip"><p>Returns the CGRect associated with a given key.</p></span>
+		<code><a href="#//api/name/jsonPrettyStringEncoded">&ndash;&nbsp;jsonPrettyStringEncoded</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dictionaryWithXML:">+&nbsp;dictionaryWithXML:</a></code>
 	</span>
 	
 	
@@ -199,6 +209,70 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dictionaryWithXML:" title="dictionaryWithXML:"></a>
+	<h3 class="subsubtitle method-title">dictionaryWithXML:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Try to parse an XML and wrap it into a dictionary.
+If you just want to get some value from a small xml, try this.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)dictionaryWithXML:(id)<em>xmlDataOrPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>xmlDataOrPath</em></dt>
+			<dd><p>XML in NSData or NSString format.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return a new dictionary, or nil if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>example XML: &ldquo;<config><a href="test.com">link</a></config>&rdquo;
+example Return: @{@&ldquo;<em>name&rdquo;:@&ldquo;config&rdquo;, @&ldquo;a&rdquo;:{@&ldquo;</em>text&rdquo;:@&ldquo;link&rdquo;,@&ldquo;href&rdquo;:@&ldquo;test.com&rdquo;}}</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDictionary+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
 					
 					
 					<div class="section section-methods">
@@ -212,7 +286,8 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a new array containing the dictionary’s keys sorted.</p>
+		<p>Returns a new array containing the dictionary&rsquo;s keys sorted.
+The keys should be NSString, and they will be sorted ascending.</p>
 	</div>		
 	
     
@@ -225,18 +300,13 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A new array containing the dictionary’s keys,
-    or an empty array if the dictionary has no entries.</p>
+		<p>A new array containing the dictionary&rsquo;s keys,
+or an empty array if the dictionary has no entries.</p>
 	</div>
 	
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The keys should be NSString, and they will be sorted ascending.</p>
-	</div>
 	
 	
 	
@@ -272,7 +342,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A new array containing the dictionary’s values sorted by keys,
+		<p>A new array containing the dictionary&rsquo;s values sorted by keys,
 or an empty array if the dictionary has no entries.</p>
 	</div>
 	
@@ -347,18 +417,19 @@ The keys should be NSString, and they will be sorted ascending.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/pointForKey:" title="pointForKey:"></a>
-	<h3 class="subsubtitle method-title">pointForKey:</h3>
+	<a name="//api/name/entriesForKeys:" title="entriesForKeys:"></a>
+	<h3 class="subsubtitle method-title">entriesForKeys:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the CGPoint associated with a given key.</p>
+		<p>Returns a new dictionary containing the entries for keys.
+If the keys is empty or nil, it just returns an empty dictionary.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (CGPoint)pointForKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)entriesForKeys:(NSArray *)<em>keys</em></code></div>
 
     
 	
@@ -366,8 +437,8 @@ The keys should be NSString, and they will be sorted ascending.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The key for which to return the corresponding CGPoint.</p></dd>
+			<dt><em>keys</em></dt>
+			<dd><p>The keys.</p></dd>
 		</dl>
 		
 	</div>
@@ -376,8 +447,7 @@ The keys should be NSString, and they will be sorted ascending.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The point associated with aKey,
-    or nil if no value is associated with key.</p>
+		<p>The entries for the keys.</p>
 	</div>
 	
 	
@@ -387,15 +457,6 @@ The keys should be NSString, and they will be sorted ascending.</p>
 	
 	
 	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Categories/NSMutableDictionary+YYAdd.html">NSMutableDictionary(YYAdd)</a></p></code></li>
-			
-		</ul>
-	</div>
 	
 	
 	
@@ -408,38 +469,21 @@ The keys should be NSString, and they will be sorted ascending.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/rectForKey:" title="rectForKey:"></a>
-	<h3 class="subsubtitle method-title">rectForKey:</h3>
+	<a name="//api/name/jsonPrettyStringEncoded" title="jsonPrettyStringEncoded"></a>
+	<h3 class="subsubtitle method-title">jsonPrettyStringEncoded</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the CGRect associated with a given key.</p>
+		<p>Convert dictionary to json string formatted. return nil if an error occurs.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (CGRect)rectForKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)jsonPrettyStringEncoded</code></div>
 
     
 	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The key for which to return the corresponding CGRect.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The rect associated with aKey,
-or nil if no value is associated with key.</p>
-	</div>
 	
 	
 	
@@ -449,14 +493,6 @@ or nil if no value is associated with key.</p>
 	
 	
 	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Categories/NSMutableDictionary+YYAdd.html">NSMutableDictionary(YYAdd)</a></p></code></li>
-			
-		</ul>
-	</div>
 	
 	
 	
@@ -469,38 +505,21 @@ or nil if no value is associated with key.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/sizeForKey:" title="sizeForKey:"></a>
-	<h3 class="subsubtitle method-title">sizeForKey:</h3>
+	<a name="//api/name/jsonStringEncoded" title="jsonStringEncoded"></a>
+	<h3 class="subsubtitle method-title">jsonStringEncoded</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the CGSize associated with a given key.</p>
+		<p>Convert dictionary to json string. return nil if an error occurs.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (CGSize)sizeForKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)jsonStringEncoded</code></div>
 
     
 	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>The key for which to return the corresponding CGSize.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The size associated with aKey,
-or nil if no value is associated with key.</p>
-	</div>
 	
 	
 	
@@ -510,14 +529,6 @@ or nil if no value is associated with key.</p>
 	
 	
 	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Categories/NSMutableDictionary+YYAdd.html">NSMutableDictionary(YYAdd)</a></p></code></li>
-			
-		</ul>
-	</div>
 	
 	
 	
@@ -532,6 +543,11 @@ or nil if no value is associated with key.</p>
 					</div>
 					
 					
+                    
+                    
+                    
+                    
+
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -542,9 +558,9 @@ or nil if no value is associated with key.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 ibireme. All rights reserved. (Last updated: 2013-09-09)</span><br />
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>

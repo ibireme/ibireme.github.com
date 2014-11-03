@@ -1,0 +1,1475 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSMutableAttributedString(YYAdd) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">YYKit </a></h1>
+				<a id="developerHome" href="../index.html">ibireme</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSMutableAttributedString(YYAdd) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/removeAllAttributesInRange:">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllAttributesInRange:</option>
+	
+	<option value="//api/name/setAttributeKey:value:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setAttributeKey:value:range:</option>
+	
+	<option value="//api/name/setColor:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setColor:range:</option>
+	
+	<option value="//api/name/setColorFromContext:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setColorFromContext:range:</option>
+	
+	<option value="//api/name/setFont:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setFont:range:</option>
+	
+	<option value="//api/name/setGlyphInfo:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setGlyphInfo:range:</option>
+	
+	<option value="//api/name/setKern:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setKern:range:</option>
+	
+	<option value="//api/name/setLanguage:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setLanguage:range:</option>
+	
+	<option value="//api/name/setLigature:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setLigature:range:</option>
+	
+	<option value="//api/name/setParaStyle:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setParaStyle:range:</option>
+	
+	<option value="//api/name/setRunDelegate:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setRunDelegate:range:</option>
+	
+	<option value="//api/name/setStrokeColor:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setStrokeColor:range:</option>
+	
+	<option value="//api/name/setStrokeWidth:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setStrokeWidth:range:</option>
+	
+	<option value="//api/name/setSubscript:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setSubscript:range:</option>
+	
+	<option value="//api/name/setSuperscript:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setSuperscript:range:</option>
+	
+	<option value="//api/name/setUnderlineColor:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setUnderlineColor:range:</option>
+	
+	<option value="//api/name/setUnderlineStyle:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setUnderlineStyle:range:</option>
+	
+	<option value="//api/name/setVerticalForms:range:">&nbsp;&nbsp;&nbsp;&nbsp;- setVerticalForms:range:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Set Any Attributes">Set Any Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Set Character Attributes">Set Character Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Set Paragraph Attributes">Set Paragraph Attributes</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllAttributesInRange:">removeAllAttributesInRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAttributeKey:value:range:">setAttributeKey:value:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setColor:range:">setColor:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setColorFromContext:range:">setColorFromContext:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFont:range:">setFont:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGlyphInfo:range:">setGlyphInfo:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKern:range:">setKern:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLanguage:range:">setLanguage:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLigature:range:">setLigature:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setParaStyle:range:">setParaStyle:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRunDelegate:range:">setRunDelegate:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStrokeColor:range:">setStrokeColor:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStrokeWidth:range:">setStrokeWidth:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSubscript:range:">setSubscript:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSuperscript:range:">setSuperscript:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUnderlineColor:range:">setUnderlineColor:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUnderlineStyle:range:">setUnderlineStyle:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setVerticalForms:range:">setVerticalForms:range:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSMutableAttributedString(YYAdd) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSMutableAttributedString(YYAdd) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSAttributedString+YYAdd.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Wrapper methods for CoreText.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Set Any Attributes" name="task_Set Any Attributes"></a>
+						<h3 class="subsubtitle task-title">Set Any Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAttributeKey:value:range:">&ndash;&nbsp;setAttributeKey:value:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllAttributesInRange:">&ndash;&nbsp;removeAllAttributesInRange:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Set Character Attributes" name="task_Set Character Attributes"></a>
+						<h3 class="subsubtitle task-title">Set Character Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFont:range:">&ndash;&nbsp;setFont:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setColor:range:">&ndash;&nbsp;setColor:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setColorFromContext:range:">&ndash;&nbsp;setColorFromContext:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKern:range:">&ndash;&nbsp;setKern:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLigature:range:">&ndash;&nbsp;setLigature:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStrokeWidth:range:">&ndash;&nbsp;setStrokeWidth:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStrokeColor:range:">&ndash;&nbsp;setStrokeColor:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUnderlineColor:range:">&ndash;&nbsp;setUnderlineColor:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUnderlineStyle:range:">&ndash;&nbsp;setUnderlineStyle:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSuperscript:range:">&ndash;&nbsp;setSuperscript:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSubscript:range:">&ndash;&nbsp;setSubscript:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setVerticalForms:range:">&ndash;&nbsp;setVerticalForms:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLanguage:range:">&ndash;&nbsp;setLanguage:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGlyphInfo:range:">&ndash;&nbsp;setGlyphInfo:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRunDelegate:range:">&ndash;&nbsp;setRunDelegate:range:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Set Paragraph Attributes" name="task_Set Paragraph Attributes"></a>
+						<h3 class="subsubtitle task-title">Set Paragraph Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setParaStyle:range:">&ndash;&nbsp;setParaStyle:range:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllAttributesInRange:" title="removeAllAttributesInRange:"></a>
+	<h3 class="subsubtitle method-title">removeAllAttributesInRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove all attribltes in range.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAllAttributesInRange:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAttributeKey:value:range:" title="setAttributeKey:value:range:"></a>
+	<h3 class="subsubtitle method-title">setAttributeKey:value:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the attributes for the characters.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAttributeKey:(NSString *)<em>key</em> value:(id)<em>value</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The attribute key.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The attribute value, pass nil or NSNullto remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setColor:range:" title="setColor:range:"></a>
+	<h3 class="subsubtitle method-title">setColor:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The foreground color of the text to which this attribute applies.
+Default is black.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setColor:(UIColor *)<em>color</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>The color. Pass nil to remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setColorFromContext:range:" title="setColorFromContext:range:"></a>
+	<h3 class="subsubtitle method-title">setColorFromContext:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Weather sets a foreground color using the context&rsquo;s fill color.
+Default is NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setColorFromContext:(BOOL)<em>value</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Whether the font color is from context.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The reason this exists is because an NSAttributedString object
+defaults to a black color if no color attribute is set. This forces Core Text
+to set the color in the context. This attribute allows developers to sidestep
+this, making Core Text set nothing but font information in the CGContext.
+If set, this attribute also determines the color used by
+UnderlineStyleAttributeName, in which case it overrides the foreground color.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFont:range:" title="setFont:range:"></a>
+	<h3 class="subsubtitle method-title">setFont:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The font of the text to which this attribute applies.
+Default is Helvetica 12.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setFont:(UIFont *)<em>font</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>The font. Pass nil to remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGlyphInfo:range:" title="setGlyphInfo:range:"></a>
+	<h3 class="subsubtitle method-title">setGlyphInfo:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The glyph info object to apply to the text associated with this attribute.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setGlyphInfo:(CTGlyphInfoRef)<em>glyphInfo</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>glyphInfo</em></dt>
+			<dd><p>The glyphInfo. Pass nil to remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The glyph specified by this CTGlyphInfo object is assigned to the
+entire attribute range, provided that its contents match the specified base
+string and that the specified glyph is available in the font specified by
+FontAttributeName. See CTGlyphInfo Reference for more information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKern:range:" title="setKern:range:"></a>
+	<h3 class="subsubtitle method-title">setKern:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The amount to kern the next character.. Default is 0pt.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setKern:(CGFloat)<em>kern</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>kern</em></dt>
+			<dd><p>Positive to add kern, negative to reduce kern.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The Range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The kerning attribute indicates how many points the following
+character should be shifted from its default offset as defined by the current
+character&rsquo;s font in points: a positive kern indicates a shift farther away from
+and a negative kern indicates a shift closer to the current character. If this
+attribute is not present, standard kerning is used. If this attribute is set
+to 0.0, no kerning is done at all.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLanguage:range:" title="setLanguage:range:"></a>
+	<h3 class="subsubtitle method-title">setLanguage:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies text language. Default is unset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setLanguage:(NSString *)<em>language</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>language</em></dt>
+			<dd><p>An NSString containing a locale identifier.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>When this attribute is set to a valid identifier, it will
+be used to select localized glyphs (if supported by the font) and
+locale-specific line breaking rules.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLigature:range:" title="setLigature:range:"></a>
+	<h3 class="subsubtitle method-title">setLigature:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The type of ligatures to use. Default is LigatureStandard.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setLigature:(YYTextLigature)<em>ligature</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ligature</em></dt>
+			<dd><p>The ligature enum.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Which ligatures are standard depends on the script and possibly the
+font. Arabic text, for example, requires ligatures for many character sequences
+but has a rich set of additional ligatures that combine characters. English
+text has no essential ligatures, and typically has only two standard ligatures,
+those for &ldquo;fi&rdquo; and &ldquo;fl"—all others are considered more advanced or fancy.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setParaStyle:range:" title="setParaStyle:range:"></a>
+	<h3 class="subsubtitle method-title">setParaStyle:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The paragraph style of the text to which this attribute applies.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setParaStyle:(id)<em>style</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>style</em></dt>
+			<dd><p>a NSParagraphStyle or CTParagraphStyleRef object.
+Pass nil to remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A paragraph style object is used to specify things like line
+alignment, tab rulers, writing direction, and so on. Default is an empty
+ParagraphStyle object. When use CoreText, pass a CTParagraphStyleRef object,
+When use NSText, pass an NSParagraphStyle object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRunDelegate:range:" title="setRunDelegate:range:"></a>
+	<h3 class="subsubtitle method-title">setRunDelegate:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The run-delegate object to apply to an attribute range of the string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setRunDelegate:(CTRunDelegateRef)<em>runDelegate</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>runDelegate</em></dt>
+			<dd><p>The RunDelegate. Pass nil to remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The run delegate controls such typographic traits as glyph ascent,
+descent, and width. The values returned by the embedded run delegate apply to
+each glyph resulting from the text in that range. Because an embedded object is
+only a display-time modification, you should avoid applying this attribute to a
+range of text with complex behavior, such as text having a change of writing
+direction or having combining marks. It is thus recommended you apply this
+attribute to a range containing the single character U+FFFC. See CTRunDelegate
+Reference for more information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStrokeColor:range:" title="setStrokeColor:range:"></a>
+	<h3 class="subsubtitle method-title">setStrokeColor:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The stroke color. Default is the foreground color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setStrokeColor:(UIColor *)<em>color</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>The color. Pass nil to remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStrokeWidth:range:" title="setStrokeWidth:range:"></a>
+	<h3 class="subsubtitle method-title">setStrokeWidth:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The stroke width. Default value is 0.0.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setStrokeWidth:(CGFloat)<em>width</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>Positive make the text hollow, negative make fill and stroke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This attribute, interpreted as a percentage of font point size,
+controls the text drawing mode: positive values effect drawing with stroke only;
+negative values are for stroke and fill. A typical value for outlined text is 3.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSubscript:range:" title="setSubscript:range:"></a>
+	<h3 class="subsubtitle method-title">setSubscript:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Controls vertical text positioning. Default value is NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSubscript:(BOOL)<em>value</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>YES or NO.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If supported by the specified font, a value of YES enables
+subscripting. This valud is conflict with <a href="#//api/name/setSuperscript:range:">setSuperscript:range:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSuperscript:range:" title="setSuperscript:range:"></a>
+	<h3 class="subsubtitle method-title">setSuperscript:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Controls vertical text positioning. Default value is NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSuperscript:(BOOL)<em>value</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>YES or NO.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If supported by the specified font, a value of YES enables
+superscripting. This valud is conflict with <a href="#//api/name/setSubscript:range:">setSubscript:range:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUnderlineColor:range:" title="setUnderlineColor:range:"></a>
+	<h3 class="subsubtitle method-title">setUnderlineColor:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The underline color. Default is the foreground color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setUnderlineColor:(UIColor *)<em>color</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>The color. Pass nil to remove the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUnderlineStyle:range:" title="setUnderlineStyle:range:"></a>
+	<h3 class="subsubtitle method-title">setUnderlineStyle:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The style of underlining, to be applied at render time, for the text to which
+this attribute applies. Default is UnderlineStyleNone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setUnderlineStyle:(YYTextUnderlineStyle)<em>style</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>style</em></dt>
+			<dd><p>The style option.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set a value of something other than UnderlineStyleNone to draw an
+underline. The underline color is determined by the text&rsquo;s foreground color.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setVerticalForms:range:" title="setVerticalForms:range:"></a>
+	<h3 class="subsubtitle method-title">setVerticalForms:range:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The orientation of the glyphs in the text to which this attribute applies.
+Default value is NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setVerticalForms:(BOOL)<em>value</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>NO indicates that horizontal glyph forms are to be used;
+YES indicates that vertical glyph forms are to be used (left rotate 90°).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range. Raises an NSRangeException if the range is invalid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAttributedString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 ibireme. All rights reserved. (Last updated: 2014-11-04)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
