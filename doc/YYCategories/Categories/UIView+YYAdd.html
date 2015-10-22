@@ -1,0 +1,1352 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UIView(YYAdd) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2.1 (build 1333)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">YYCategories </a></h1>
+				<a id="developerHome" href="../index.html">ibireme</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UIView(YYAdd) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/bottom">&nbsp;&nbsp;&nbsp;&nbsp;bottom</option>
+	
+	<option value="//api/name/centerX">&nbsp;&nbsp;&nbsp;&nbsp;centerX</option>
+	
+	<option value="//api/name/centerY">&nbsp;&nbsp;&nbsp;&nbsp;centerY</option>
+	
+	<option value="//api/name/height">&nbsp;&nbsp;&nbsp;&nbsp;height</option>
+	
+	<option value="//api/name/left">&nbsp;&nbsp;&nbsp;&nbsp;left</option>
+	
+	<option value="//api/name/origin">&nbsp;&nbsp;&nbsp;&nbsp;origin</option>
+	
+	<option value="//api/name/right">&nbsp;&nbsp;&nbsp;&nbsp;right</option>
+	
+	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
+	
+	<option value="//api/name/top">&nbsp;&nbsp;&nbsp;&nbsp;top</option>
+	
+	<option value="//api/name/viewController">&nbsp;&nbsp;&nbsp;&nbsp;viewController</option>
+	
+	<option value="//api/name/visibleAlpha">&nbsp;&nbsp;&nbsp;&nbsp;visibleAlpha</option>
+	
+	<option value="//api/name/width">&nbsp;&nbsp;&nbsp;&nbsp;width</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/convertPoint:fromViewOrWindow:">&nbsp;&nbsp;&nbsp;&nbsp;- convertPoint:fromViewOrWindow:</option>
+	
+	<option value="//api/name/convertPoint:toViewOrWindow:">&nbsp;&nbsp;&nbsp;&nbsp;- convertPoint:toViewOrWindow:</option>
+	
+	<option value="//api/name/convertRect:fromViewOrWindow:">&nbsp;&nbsp;&nbsp;&nbsp;- convertRect:fromViewOrWindow:</option>
+	
+	<option value="//api/name/convertRect:toViewOrWindow:">&nbsp;&nbsp;&nbsp;&nbsp;- convertRect:toViewOrWindow:</option>
+	
+	<option value="//api/name/removeAllSubviews">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllSubviews</option>
+	
+	<option value="//api/name/setLayerShadow:offset:radius:">&nbsp;&nbsp;&nbsp;&nbsp;- setLayerShadow:offset:radius:</option>
+	
+	<option value="//api/name/snapshotImage">&nbsp;&nbsp;&nbsp;&nbsp;- snapshotImage</option>
+	
+	<option value="//api/name/snapshotImageAfterScreenUpdates:">&nbsp;&nbsp;&nbsp;&nbsp;- snapshotImageAfterScreenUpdates:</option>
+	
+	<option value="//api/name/snapshotPDF">&nbsp;&nbsp;&nbsp;&nbsp;- snapshotPDF</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bottom">bottom</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerX">centerX</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerY">centerY</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/height">height</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/left">left</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/origin">origin</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/right">right</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/top">top</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewController">viewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/visibleAlpha">visibleAlpha</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/width">width</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/convertPoint:fromViewOrWindow:">convertPoint:fromViewOrWindow:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/convertPoint:toViewOrWindow:">convertPoint:toViewOrWindow:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/convertRect:fromViewOrWindow:">convertRect:fromViewOrWindow:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/convertRect:toViewOrWindow:">convertRect:toViewOrWindow:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllSubviews">removeAllSubviews</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLayerShadow:offset:radius:">setLayerShadow:offset:radius:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapshotImage">snapshotImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapshotImageAfterScreenUpdates:">snapshotImageAfterScreenUpdates:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapshotPDF">snapshotPDF</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UIView(YYAdd) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UIView(YYAdd) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UIView+YYAdd.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides extensions for <code>UIView</code>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/snapshotImage">&ndash;&nbsp;snapshotImage</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/snapshotImageAfterScreenUpdates:">&ndash;&nbsp;snapshotImageAfterScreenUpdates:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/snapshotPDF">&ndash;&nbsp;snapshotPDF</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLayerShadow:offset:radius:">&ndash;&nbsp;setLayerShadow:offset:radius:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllSubviews">&ndash;&nbsp;removeAllSubviews</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewController">&nbsp;&nbsp;viewController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/visibleAlpha">&nbsp;&nbsp;visibleAlpha</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/convertPoint:toViewOrWindow:">&ndash;&nbsp;convertPoint:toViewOrWindow:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/convertPoint:fromViewOrWindow:">&ndash;&nbsp;convertPoint:fromViewOrWindow:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/convertRect:toViewOrWindow:">&ndash;&nbsp;convertRect:toViewOrWindow:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/convertRect:fromViewOrWindow:">&ndash;&nbsp;convertRect:fromViewOrWindow:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/left">&nbsp;&nbsp;left</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/top">&nbsp;&nbsp;top</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/right">&nbsp;&nbsp;right</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bottom">&nbsp;&nbsp;bottom</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/width">&nbsp;&nbsp;width</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/height">&nbsp;&nbsp;height</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centerX">&nbsp;&nbsp;centerX</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centerY">&nbsp;&nbsp;centerY</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/origin">&nbsp;&nbsp;origin</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bottom" title="bottom"></a>
+	<h3 class="subsubtitle method-title">bottom</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.<a href="#//api/name/origin">origin</a>.y + frame.<a href="#//api/name/size">size</a>.<a href="#//api/name/height">height</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat bottom</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/centerX" title="centerX"></a>
+	<h3 class="subsubtitle method-title">centerX</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for center.x</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat centerX</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/centerY" title="centerY"></a>
+	<h3 class="subsubtitle method-title">centerY</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for center.y</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat centerY</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/height" title="height"></a>
+	<h3 class="subsubtitle method-title">height</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.<a href="#//api/name/size">size</a>.height.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat height</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/left" title="left"></a>
+	<h3 class="subsubtitle method-title">left</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.<a href="#//api/name/origin">origin</a>.x.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat left</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/origin" title="origin"></a>
+	<h3 class="subsubtitle method-title">origin</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.origin.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint origin</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/right" title="right"></a>
+	<h3 class="subsubtitle method-title">right</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.<a href="#//api/name/origin">origin</a>.x + frame.<a href="#//api/name/size">size</a>.<a href="#//api/name/width">width</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat right</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="subsubtitle method-title">size</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.size.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGSize size</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/top" title="top"></a>
+	<h3 class="subsubtitle method-title">top</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.<a href="#//api/name/origin">origin</a>.y</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat top</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewController" title="viewController"></a>
+	<h3 class="subsubtitle method-title">viewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the view&rsquo;s view controller (may be nil).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIViewController *viewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/visibleAlpha" title="visibleAlpha"></a>
+	<h3 class="subsubtitle method-title">visibleAlpha</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the visible alpha on screen, taking into account superview and window.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CGFloat visibleAlpha</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/width" title="width"></a>
+	<h3 class="subsubtitle method-title">width</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut for frame.<a href="#//api/name/size">size</a>.width.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat width</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/convertPoint:fromViewOrWindow:" title="convertPoint:fromViewOrWindow:"></a>
+	<h3 class="subsubtitle method-title">convertPoint:fromViewOrWindow:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converts a point from the coordinate system of a given view or window to that of the receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPoint)convertPoint:(CGPoint)<em>point</em> fromViewOrWindow:(UIView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>A point specified in the local coordinate system (bounds) of view.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The view or window with point in its coordinate system.
+    If view is nil, this method instead converts from window base coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The point converted to the local coordinate system (bounds) of the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/convertPoint:toViewOrWindow:" title="convertPoint:toViewOrWindow:"></a>
+	<h3 class="subsubtitle method-title">convertPoint:toViewOrWindow:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converts a point from the receiver&rsquo;s coordinate system to that of the specified view or window.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPoint)convertPoint:(CGPoint)<em>point</em> toViewOrWindow:(UIView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>A point specified in the local coordinate system (bounds) of the receiver.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The view or window into whose coordinate system point is to be converted.
+    If view is nil, this method instead converts to window base coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The point converted to the coordinate system of view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/convertRect:fromViewOrWindow:" title="convertRect:fromViewOrWindow:"></a>
+	<h3 class="subsubtitle method-title">convertRect:fromViewOrWindow:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converts a rectangle from the coordinate system of another view or window to that of the receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGRect)convertRect:(CGRect)<em>rect</em> fromViewOrWindow:(UIView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>A rectangle specified in the local coordinate system (bounds) of view.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The view or window with rect in its coordinate system.
+    If view is nil, this method instead converts from window base coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The converted rectangle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/convertRect:toViewOrWindow:" title="convertRect:toViewOrWindow:"></a>
+	<h3 class="subsubtitle method-title">convertRect:toViewOrWindow:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converts a rectangle from the receiver&rsquo;s coordinate system to that of another view or window.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGRect)convertRect:(CGRect)<em>rect</em> toViewOrWindow:(UIView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>A rectangle specified in the local coordinate system (bounds) of the receiver.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The view or window that is the target of the conversion operation. If view is nil, this method instead converts to window base coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The converted rectangle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllSubviews" title="removeAllSubviews"></a>
+	<h3 class="subsubtitle method-title">removeAllSubviews</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove all subviews.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAllSubviews</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Never call this method inside your view&rsquo;s drawRect: method.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLayerShadow:offset:radius:" title="setLayerShadow:offset:radius:"></a>
+	<h3 class="subsubtitle method-title">setLayerShadow:offset:radius:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shortcut to set the view.layer&rsquo;s shadow</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setLayerShadow:(UIColor *)<em>color</em> offset:(CGSize)<em>offset</em> radius:(CGFloat)<em>radius</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>Shadow Color</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>Shadow offset</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radius</em></dt>
+			<dd><p>Shadow radius</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/snapshotImage" title="snapshotImage"></a>
+	<h3 class="subsubtitle method-title">snapshotImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a snapshot image of the complete view hierarchy.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)snapshotImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/snapshotImageAfterScreenUpdates:" title="snapshotImageAfterScreenUpdates:"></a>
+	<h3 class="subsubtitle method-title">snapshotImageAfterScreenUpdates:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a snapshot image of the complete view hierarchy.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)snapshotImageAfterScreenUpdates:(BOOL)<em>afterUpdates</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>It&rsquo;s faster than &ldquo;snapshotImage&rdquo;, but may cause screen updates.
+See [UIView drawViewHierarchyInRect:afterScreenUpdates:] for more information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/snapshotPDF" title="snapshotPDF"></a>
+	<h3 class="subsubtitle method-title">snapshotPDF</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a snapshot PDF of the complete view hierarchy.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)snapshotPDF</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 ibireme. All rights reserved. (Last updated: 2015-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

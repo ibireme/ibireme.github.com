@@ -1,0 +1,1912 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSDate(YYAdd) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2.1 (build 1333)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">YYCategories </a></h1>
+				<a id="developerHome" href="../index.html">ibireme</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSDate(YYAdd) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/day">&nbsp;&nbsp;&nbsp;&nbsp;day</option>
+	
+	<option value="//api/name/hour">&nbsp;&nbsp;&nbsp;&nbsp;hour</option>
+	
+	<option value="//api/name/isLeapMonth">&nbsp;&nbsp;&nbsp;&nbsp;isLeapMonth</option>
+	
+	<option value="//api/name/isLeapYear">&nbsp;&nbsp;&nbsp;&nbsp;isLeapYear</option>
+	
+	<option value="//api/name/isToday">&nbsp;&nbsp;&nbsp;&nbsp;isToday</option>
+	
+	<option value="//api/name/isYesterday">&nbsp;&nbsp;&nbsp;&nbsp;isYesterday</option>
+	
+	<option value="//api/name/minute">&nbsp;&nbsp;&nbsp;&nbsp;minute</option>
+	
+	<option value="//api/name/month">&nbsp;&nbsp;&nbsp;&nbsp;month</option>
+	
+	<option value="//api/name/nanosecond">&nbsp;&nbsp;&nbsp;&nbsp;nanosecond</option>
+	
+	<option value="//api/name/quarter">&nbsp;&nbsp;&nbsp;&nbsp;quarter</option>
+	
+	<option value="//api/name/second">&nbsp;&nbsp;&nbsp;&nbsp;second</option>
+	
+	<option value="//api/name/weekOfMonth">&nbsp;&nbsp;&nbsp;&nbsp;weekOfMonth</option>
+	
+	<option value="//api/name/weekOfYear">&nbsp;&nbsp;&nbsp;&nbsp;weekOfYear</option>
+	
+	<option value="//api/name/weekday">&nbsp;&nbsp;&nbsp;&nbsp;weekday</option>
+	
+	<option value="//api/name/weekdayOrdinal">&nbsp;&nbsp;&nbsp;&nbsp;weekdayOrdinal</option>
+	
+	<option value="//api/name/year">&nbsp;&nbsp;&nbsp;&nbsp;year</option>
+	
+	<option value="//api/name/yearForWeekOfYear">&nbsp;&nbsp;&nbsp;&nbsp;yearForWeekOfYear</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/dateWithISOFormatString:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateWithISOFormatString:</option>
+	
+	<option value="//api/name/dateWithString:format:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateWithString:format:</option>
+	
+	<option value="//api/name/dateWithString:format:timeZone:locale:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateWithString:format:timeZone:locale:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/dateByAddingDays:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAddingDays:</option>
+	
+	<option value="//api/name/dateByAddingHours:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAddingHours:</option>
+	
+	<option value="//api/name/dateByAddingMinutes:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAddingMinutes:</option>
+	
+	<option value="//api/name/dateByAddingMonths:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAddingMonths:</option>
+	
+	<option value="//api/name/dateByAddingSeconds:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAddingSeconds:</option>
+	
+	<option value="//api/name/dateByAddingWeeks:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAddingWeeks:</option>
+	
+	<option value="//api/name/dateByAddingYears:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAddingYears:</option>
+	
+	<option value="//api/name/stringWithFormat:">&nbsp;&nbsp;&nbsp;&nbsp;- stringWithFormat:</option>
+	
+	<option value="//api/name/stringWithFormat:timeZone:locale:">&nbsp;&nbsp;&nbsp;&nbsp;- stringWithFormat:timeZone:locale:</option>
+	
+	<option value="//api/name/stringWithISOFormat">&nbsp;&nbsp;&nbsp;&nbsp;- stringWithISOFormat</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Component Properties">Component Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Date modify">Date modify</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Date Format">Date Format</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/day">day</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hour">hour</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLeapMonth">isLeapMonth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLeapYear">isLeapYear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isToday">isToday</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isYesterday">isYesterday</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minute">minute</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/month">month</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nanosecond">nanosecond</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/quarter">quarter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/second">second</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/weekOfMonth">weekOfMonth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/weekOfYear">weekOfYear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/weekday">weekday</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/weekdayOrdinal">weekdayOrdinal</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/year">year</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yearForWeekOfYear">yearForWeekOfYear</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateWithISOFormatString:">dateWithISOFormatString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateWithString:format:">dateWithString:format:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateWithString:format:timeZone:locale:">dateWithString:format:timeZone:locale:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAddingDays:">dateByAddingDays:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAddingHours:">dateByAddingHours:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAddingMinutes:">dateByAddingMinutes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAddingMonths:">dateByAddingMonths:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAddingSeconds:">dateByAddingSeconds:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAddingWeeks:">dateByAddingWeeks:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAddingYears:">dateByAddingYears:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithFormat:">stringWithFormat:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithFormat:timeZone:locale:">stringWithFormat:timeZone:locale:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithISOFormat">stringWithISOFormat</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSDate(YYAdd) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSDate(YYAdd) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSDate+YYAdd.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides extensions for <code>NSDate</code>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Component Properties" name="task_Component Properties"></a>
+						<h3 class="subsubtitle task-title">Component Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/year">&nbsp;&nbsp;year</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/month">&nbsp;&nbsp;month</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/day">&nbsp;&nbsp;day</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hour">&nbsp;&nbsp;hour</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minute">&nbsp;&nbsp;minute</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/second">&nbsp;&nbsp;second</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nanosecond">&nbsp;&nbsp;nanosecond</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/weekday">&nbsp;&nbsp;weekday</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/weekdayOrdinal">&nbsp;&nbsp;weekdayOrdinal</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/weekOfMonth">&nbsp;&nbsp;weekOfMonth</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/weekOfYear">&nbsp;&nbsp;weekOfYear</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yearForWeekOfYear">&nbsp;&nbsp;yearForWeekOfYear</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/quarter">&nbsp;&nbsp;quarter</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLeapMonth">&nbsp;&nbsp;isLeapMonth</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLeapYear">&nbsp;&nbsp;isLeapYear</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isToday">&nbsp;&nbsp;isToday</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isYesterday">&nbsp;&nbsp;isYesterday</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Date modify" name="task_Date modify"></a>
+						<h3 class="subsubtitle task-title">Date modify</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAddingYears:">&ndash;&nbsp;dateByAddingYears:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAddingMonths:">&ndash;&nbsp;dateByAddingMonths:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAddingWeeks:">&ndash;&nbsp;dateByAddingWeeks:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAddingDays:">&ndash;&nbsp;dateByAddingDays:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAddingHours:">&ndash;&nbsp;dateByAddingHours:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAddingMinutes:">&ndash;&nbsp;dateByAddingMinutes:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAddingSeconds:">&ndash;&nbsp;dateByAddingSeconds:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Date Format" name="task_Date Format"></a>
+						<h3 class="subsubtitle task-title">Date Format</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithFormat:">&ndash;&nbsp;stringWithFormat:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithFormat:timeZone:locale:">&ndash;&nbsp;stringWithFormat:timeZone:locale:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithISOFormat">&ndash;&nbsp;stringWithISOFormat</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateWithString:format:">+&nbsp;dateWithString:format:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateWithString:format:timeZone:locale:">+&nbsp;dateWithString:format:timeZone:locale:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateWithISOFormatString:">+&nbsp;dateWithISOFormatString:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/day" title="day"></a>
+	<h3 class="subsubtitle method-title">day</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Day component (1~31)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger day</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hour" title="hour"></a>
+	<h3 class="subsubtitle method-title">hour</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Hour component (0~23)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger hour</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLeapMonth" title="isLeapMonth"></a>
+	<h3 class="subsubtitle method-title">isLeapMonth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Weather the <a href="#//api/name/month">month</a> is leap <a href="#//api/name/month">month</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isLeapMonth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLeapYear" title="isLeapYear"></a>
+	<h3 class="subsubtitle method-title">isLeapYear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Weather the <a href="#//api/name/year">year</a> is leap <a href="#//api/name/year">year</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isLeapYear</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isToday" title="isToday"></a>
+	<h3 class="subsubtitle method-title">isToday</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Weather date is to<a href="#//api/name/day">day</a> (based on current locale)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isToday</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isYesterday" title="isYesterday"></a>
+	<h3 class="subsubtitle method-title">isYesterday</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Weather date is yester<a href="#//api/name/day">day</a> (based on current locale)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isYesterday</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minute" title="minute"></a>
+	<h3 class="subsubtitle method-title">minute</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Minute component (0~59)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger minute</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/month" title="month"></a>
+	<h3 class="subsubtitle method-title">month</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Month component (1~12)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger month</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nanosecond" title="nanosecond"></a>
+	<h3 class="subsubtitle method-title">nanosecond</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Nano<a href="#//api/name/second">second</a> component</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger nanosecond</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/quarter" title="quarter"></a>
+	<h3 class="subsubtitle method-title">quarter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Quarter component</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger quarter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/second" title="second"></a>
+	<h3 class="subsubtitle method-title">second</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Second component (0~59)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger second</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/weekOfMonth" title="weekOfMonth"></a>
+	<h3 class="subsubtitle method-title">weekOfMonth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>WeekOfMonth component (1~5)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger weekOfMonth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/weekOfYear" title="weekOfYear"></a>
+	<h3 class="subsubtitle method-title">weekOfYear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>WeekOfYear component (1~53)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger weekOfYear</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/weekday" title="weekday"></a>
+	<h3 class="subsubtitle method-title">weekday</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Week<a href="#//api/name/day">day</a> component (1~7, first <a href="#//api/name/day">day</a> is based on user setting)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger weekday</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/weekdayOrdinal" title="weekdayOrdinal"></a>
+	<h3 class="subsubtitle method-title">weekdayOrdinal</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>WeekdayOrdinal component</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger weekdayOrdinal</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/year" title="year"></a>
+	<h3 class="subsubtitle method-title">year</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Year component</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger year</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yearForWeekOfYear" title="yearForWeekOfYear"></a>
+	<h3 class="subsubtitle method-title">yearForWeekOfYear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>YearForWeekOfYear component</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger yearForWeekOfYear</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dateWithISOFormatString:" title="dateWithISOFormatString:"></a>
+	<h3 class="subsubtitle method-title">dateWithISOFormatString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date parsed from given string interpreted using the ISO8601 format.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dateWithISOFormatString:(NSString *)<em>dateString</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dateString</em></dt>
+			<dd><p>The date string in ISO8601 format. e.g. &ldquo;2010-07-09T16:13:30+12:00&rdquo;</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A date representation of string interpreted using the format.
+If can not parse the string, returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateWithString:format:" title="dateWithString:format:"></a>
+	<h3 class="subsubtitle method-title">dateWithString:format:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date parsed from given string interpreted using the format.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dateWithString:(NSString *)<em>dateString</em> format:(NSString *)<em>format</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dateString</em></dt>
+			<dd><p>The string to parse.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>The string&rsquo;s date format.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A date representation of string interpreted using the format.
+If can not parse the string, returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateWithString:format:timeZone:locale:" title="dateWithString:format:timeZone:locale:"></a>
+	<h3 class="subsubtitle method-title">dateWithString:format:timeZone:locale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date parsed from given string interpreted using the format.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dateWithString:(NSString *)<em>dateString</em> format:(NSString *)<em>format</em> timeZone:(NSTimeZone *)<em>timeZone</em> locale:(NSLocale *)<em>locale</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dateString</em></dt>
+			<dd><p>The string to parse.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>The string&rsquo;s date format.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeZone</em></dt>
+			<dd><p>The time zone, can be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>The locale, can be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A date representation of string interpreted using the format.
+If can not parse the string, returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAddingDays:" title="dateByAddingDays:"></a>
+	<h3 class="subsubtitle method-title">dateByAddingDays:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date representing the receiver date shifted later by the provided number of days.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAddingDays:(NSInteger)<em>days</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>days</em></dt>
+			<dd><p>Number of days to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date modified by the number of desired days.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAddingHours:" title="dateByAddingHours:"></a>
+	<h3 class="subsubtitle method-title">dateByAddingHours:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date representing the receiver date shifted later by the provided number of hours.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAddingHours:(NSInteger)<em>hours</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hours</em></dt>
+			<dd><p>Number of hours to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date modified by the number of desired hours.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAddingMinutes:" title="dateByAddingMinutes:"></a>
+	<h3 class="subsubtitle method-title">dateByAddingMinutes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date representing the receiver date shifted later by the provided number of minutes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAddingMinutes:(NSInteger)<em>minutes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minutes</em></dt>
+			<dd><p>Number of minutes to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date modified by the number of desired minutes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAddingMonths:" title="dateByAddingMonths:"></a>
+	<h3 class="subsubtitle method-title">dateByAddingMonths:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date representing the receiver date shifted later by the provided number of months.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAddingMonths:(NSInteger)<em>months</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>months</em></dt>
+			<dd><p>Number of months to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date modified by the number of desired months.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAddingSeconds:" title="dateByAddingSeconds:"></a>
+	<h3 class="subsubtitle method-title">dateByAddingSeconds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date representing the receiver date shifted later by the provided number of seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAddingSeconds:(NSInteger)<em>seconds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seconds</em></dt>
+			<dd><p>Number of seconds to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date modified by the number of desired seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAddingWeeks:" title="dateByAddingWeeks:"></a>
+	<h3 class="subsubtitle method-title">dateByAddingWeeks:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date representing the receiver date shifted later by the provided number of weeks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAddingWeeks:(NSInteger)<em>weeks</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>weeks</em></dt>
+			<dd><p>Number of weeks to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date modified by the number of desired weeks.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAddingYears:" title="dateByAddingYears:"></a>
+	<h3 class="subsubtitle method-title">dateByAddingYears:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a date representing the receiver date shifted later by the provided number of years.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAddingYears:(NSInteger)<em>years</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>years</em></dt>
+			<dd><p>Number of years to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date modified by the number of desired years.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithFormat:" title="stringWithFormat:"></a>
+	<h3 class="subsubtitle method-title">stringWithFormat:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a formatted string representing this date.
+see <a href="http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html">http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html</a>#Date_Format_Patterns
+for format description.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringWithFormat:(NSString *)<em>format</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>String representing the desired date format.
+e.g. @&ldquo;yyyy-MM-dd HH:mm:ss&rdquo;</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSString representing the formatted date string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithFormat:timeZone:locale:" title="stringWithFormat:timeZone:locale:"></a>
+	<h3 class="subsubtitle method-title">stringWithFormat:timeZone:locale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a formatted string representing this date.
+see <a href="http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html">http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html</a>#Date_Format_Patterns
+for format description.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringWithFormat:(NSString *)<em>format</em> timeZone:(NSTimeZone *)<em>timeZone</em> locale:(NSLocale *)<em>locale</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>String representing the desired date format.
+e.g. @&ldquo;yyyy-MM-dd HH:mm:ss&rdquo;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeZone</em></dt>
+			<dd><p>Desired time zone.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>Desired locale.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSString representing the formatted date string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithISOFormat" title="stringWithISOFormat"></a>
+	<h3 class="subsubtitle method-title">stringWithISOFormat</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a string representing this date in ISO8601 format.
+e.g. &ldquo;2010-07-09T16:13:30+12:00&rdquo;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringWithISOFormat</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSString representing the formatted date string in ISO8601.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 ibireme. All rights reserved. (Last updated: 2015-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

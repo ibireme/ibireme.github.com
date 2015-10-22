@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSBundle(YYAdd) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2.1 (build 1333)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">YYCategories </a></h1>
+				<a id="developerHome" href="../index.html">ibireme</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSBundle(YYAdd) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/pathForScaledResource:ofType:inDirectory:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForScaledResource:ofType:inDirectory:</option>
+	
+	<option value="//api/name/preferredScales">&nbsp;&nbsp;&nbsp;&nbsp;+ preferredScales</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/pathForScaledResource:ofType:">&nbsp;&nbsp;&nbsp;&nbsp;- pathForScaledResource:ofType:</option>
+	
+	<option value="//api/name/pathForScaledResource:ofType:inDirectory:">&nbsp;&nbsp;&nbsp;&nbsp;- pathForScaledResource:ofType:inDirectory:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForScaledResource:ofType:inDirectory:">pathForScaledResource:ofType:inDirectory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preferredScales">preferredScales</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForScaledResource:ofType:">pathForScaledResource:ofType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForScaledResource:ofType:inDirectory:">pathForScaledResource:ofType:inDirectory:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSBundle(YYAdd) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSBundle(YYAdd) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSBundle+YYAdd.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides extensions for <code>NSBundle</code> to get resource by @2x or @3x&hellip;</p>
+
+<p>Example: ico.png, ico@2x.png, ico@3x.png. Call scaledResource:@&ldquo;ico&rdquo; ofType:@&ldquo;png&rdquo;
+on iPhone6 will return &ldquo;ico@2x.png&rdquo;&rsquo;s path.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preferredScales">+&nbsp;preferredScales</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathForScaledResource:ofType:inDirectory:">+&nbsp;pathForScaledResource:ofType:inDirectory:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathForScaledResource:ofType:">&ndash;&nbsp;pathForScaledResource:ofType:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathForScaledResource:ofType:inDirectory:">&ndash;&nbsp;pathForScaledResource:ofType:inDirectory:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/pathForScaledResource:ofType:inDirectory:" title="pathForScaledResource:ofType:inDirectory:"></a>
+	<h3 class="subsubtitle method-title">pathForScaledResource:ofType:inDirectory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the full pathname for the resource file identified by the specified
+name and extension and residing in a given bundle directory. It first search
+the file with current screen&rsquo;s scale (such as @2x), then search from higher
+scale to lower scale.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)pathForScaledResource:(NSString *)<em>name</em> ofType:(NSString *)<em>ext</em> inDirectory:(NSString *)<em>bundlePath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of a resource file contained in the directory
+specified by bundlePath.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ext</em></dt>
+			<dd><p>If extension is an empty string or nil, the extension is
+assumed not to exist and the file is the first file encountered that exactly matches name.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bundlePath</em></dt>
+			<dd><p>The path of a top-level bundle directory. This must be a
+valid path. For example, to specify the bundle directory for a Mac app, you
+might specify the path /Applications/MyApp.app.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The full pathname for the resource file or nil if the file could not be
+located. This method also returns nil if the bundle specified by the bundlePath
+parameter does not exist or is not a readable directory.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSBundle+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preferredScales" title="preferredScales"></a>
+	<h3 class="subsubtitle method-title">preferredScales</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of NSNumber objects, shows the best order for path scale search.
+e.g. iPhone3GS:@[@1,@2,@3] iPhone5:@[@2,@3,@1]  iPhone6 Plus:@[@3,@2,@1]</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)preferredScales</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSBundle+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/pathForScaledResource:ofType:" title="pathForScaledResource:ofType:"></a>
+	<h3 class="subsubtitle method-title">pathForScaledResource:ofType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the full pathname for the resource identified by the specified name and
+file extension. It first search the file with current screen&rsquo;s scale (such as @2x),
+then search from higher scale to lower scale.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)pathForScaledResource:(NSString *)<em>name</em> ofType:(NSString *)<em>ext</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the resource file. If name is an empty string or
+nil, returns the first file encountered of the supplied type.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ext</em></dt>
+			<dd><p>If extension is an empty string or nil, the extension is
+assumed not to exist and the file is the first file encountered that exactly matches name.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The full pathname for the resource file or nil if the file could not be located.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSBundle+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathForScaledResource:ofType:inDirectory:" title="pathForScaledResource:ofType:inDirectory:"></a>
+	<h3 class="subsubtitle method-title">pathForScaledResource:ofType:inDirectory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the full pathname for the resource identified by the specified name and
+file extension and located in the specified bundle subdirectory. It first search
+the file with current screen&rsquo;s scale (such as @2x), then search from higher
+scale to lower scale.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)pathForScaledResource:(NSString *)<em>name</em> ofType:(NSString *)<em>ext</em> inDirectory:(NSString *)<em>subpath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the resource file.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ext</em></dt>
+			<dd><p>If extension is an empty string or nil, all the files in
+subpath and its subdirectories are returned. If an extension is provided the
+subdirectories are not searched.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subpath</em></dt>
+			<dd><p>The name of the bundle subdirectory. Can be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The full pathname for the resource file or nil if the file could not be located.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSBundle+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 ibireme. All rights reserved. (Last updated: 2015-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,2837 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSString(YYAdd) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2.1 (build 1333)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">YYCategories </a></h1>
+				<a id="developerHome" href="../index.html">ibireme</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSString(YYAdd) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/stringNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ stringNamed:</option>
+	
+	<option value="//api/name/stringWithBase64EncodedString:">&nbsp;&nbsp;&nbsp;&nbsp;+ stringWithBase64EncodedString:</option>
+	
+	<option value="//api/name/stringWithUTF32Char:">&nbsp;&nbsp;&nbsp;&nbsp;+ stringWithUTF32Char:</option>
+	
+	<option value="//api/name/stringWithUTF32Chars:length:">&nbsp;&nbsp;&nbsp;&nbsp;+ stringWithUTF32Chars:length:</option>
+	
+	<option value="//api/name/stringWithUUID">&nbsp;&nbsp;&nbsp;&nbsp;+ stringWithUUID</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/base64EncodedString">&nbsp;&nbsp;&nbsp;&nbsp;- base64EncodedString</option>
+	
+	<option value="//api/name/containsCharacterSet:">&nbsp;&nbsp;&nbsp;&nbsp;- containsCharacterSet:</option>
+	
+	<option value="//api/name/containsEmoji">&nbsp;&nbsp;&nbsp;&nbsp;- containsEmoji</option>
+	
+	<option value="//api/name/containsString:">&nbsp;&nbsp;&nbsp;&nbsp;- containsString:</option>
+	
+	<option value="//api/name/crc32String">&nbsp;&nbsp;&nbsp;&nbsp;- crc32String</option>
+	
+	<option value="//api/name/dataValue">&nbsp;&nbsp;&nbsp;&nbsp;- dataValue</option>
+	
+	<option value="//api/name/enumerateRegexMatches:options:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateRegexMatches:options:usingBlock:</option>
+	
+	<option value="//api/name/enumerateUTF32CharInRange:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateUTF32CharInRange:usingBlock:</option>
+	
+	<option value="//api/name/heightForFont:width:">&nbsp;&nbsp;&nbsp;&nbsp;- heightForFont:width:</option>
+	
+	<option value="//api/name/hmacMD5StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacMD5StringWithKey:</option>
+	
+	<option value="//api/name/hmacSHA1StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA1StringWithKey:</option>
+	
+	<option value="//api/name/hmacSHA224StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA224StringWithKey:</option>
+	
+	<option value="//api/name/hmacSHA256StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA256StringWithKey:</option>
+	
+	<option value="//api/name/hmacSHA384StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA384StringWithKey:</option>
+	
+	<option value="//api/name/hmacSHA512StringWithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- hmacSHA512StringWithKey:</option>
+	
+	<option value="//api/name/isNotBlank">&nbsp;&nbsp;&nbsp;&nbsp;- isNotBlank</option>
+	
+	<option value="//api/name/jsonValueDecoded">&nbsp;&nbsp;&nbsp;&nbsp;- jsonValueDecoded</option>
+	
+	<option value="//api/name/matchesRegex:options:">&nbsp;&nbsp;&nbsp;&nbsp;- matchesRegex:options:</option>
+	
+	<option value="//api/name/md2String">&nbsp;&nbsp;&nbsp;&nbsp;- md2String</option>
+	
+	<option value="//api/name/md4String">&nbsp;&nbsp;&nbsp;&nbsp;- md4String</option>
+	
+	<option value="//api/name/md5String">&nbsp;&nbsp;&nbsp;&nbsp;- md5String</option>
+	
+	<option value="//api/name/numberValue">&nbsp;&nbsp;&nbsp;&nbsp;- numberValue</option>
+	
+	<option value="//api/name/pathScale">&nbsp;&nbsp;&nbsp;&nbsp;- pathScale</option>
+	
+	<option value="//api/name/rangeOfAll">&nbsp;&nbsp;&nbsp;&nbsp;- rangeOfAll</option>
+	
+	<option value="//api/name/sha1String">&nbsp;&nbsp;&nbsp;&nbsp;- sha1String</option>
+	
+	<option value="//api/name/sha224String">&nbsp;&nbsp;&nbsp;&nbsp;- sha224String</option>
+	
+	<option value="//api/name/sha256String">&nbsp;&nbsp;&nbsp;&nbsp;- sha256String</option>
+	
+	<option value="//api/name/sha384String">&nbsp;&nbsp;&nbsp;&nbsp;- sha384String</option>
+	
+	<option value="//api/name/sha512String">&nbsp;&nbsp;&nbsp;&nbsp;- sha512String</option>
+	
+	<option value="//api/name/sizeForFont:size:mode:">&nbsp;&nbsp;&nbsp;&nbsp;- sizeForFont:size:mode:</option>
+	
+	<option value="//api/name/stringByAppendingNameScale:">&nbsp;&nbsp;&nbsp;&nbsp;- stringByAppendingNameScale:</option>
+	
+	<option value="//api/name/stringByAppendingPathScale:">&nbsp;&nbsp;&nbsp;&nbsp;- stringByAppendingPathScale:</option>
+	
+	<option value="//api/name/stringByEscapingHTML">&nbsp;&nbsp;&nbsp;&nbsp;- stringByEscapingHTML</option>
+	
+	<option value="//api/name/stringByReplacingRegex:options:withString:">&nbsp;&nbsp;&nbsp;&nbsp;- stringByReplacingRegex:options:withString:</option>
+	
+	<option value="//api/name/stringByTrim">&nbsp;&nbsp;&nbsp;&nbsp;- stringByTrim</option>
+	
+	<option value="//api/name/stringByURLDecode">&nbsp;&nbsp;&nbsp;&nbsp;- stringByURLDecode</option>
+	
+	<option value="//api/name/stringByURLDecode:">&nbsp;&nbsp;&nbsp;&nbsp;- stringByURLDecode:</option>
+	
+	<option value="//api/name/stringByURLEncode">&nbsp;&nbsp;&nbsp;&nbsp;- stringByURLEncode</option>
+	
+	<option value="//api/name/stringByURLEncode:">&nbsp;&nbsp;&nbsp;&nbsp;- stringByURLEncode:</option>
+	
+	<option value="//api/name/widthForFont:">&nbsp;&nbsp;&nbsp;&nbsp;- widthForFont:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Hash">Hash</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Encode and decode">Encode and decode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Drawing">Drawing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Regular Expression">Regular Expression</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Emoji">Emoji</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Utilities">Utilities</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringNamed:">stringNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithBase64EncodedString:">stringWithBase64EncodedString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithUTF32Char:">stringWithUTF32Char:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithUTF32Chars:length:">stringWithUTF32Chars:length:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithUUID">stringWithUUID</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/base64EncodedString">base64EncodedString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containsCharacterSet:">containsCharacterSet:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containsEmoji">containsEmoji</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containsString:">containsString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/crc32String">crc32String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataValue">dataValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateRegexMatches:options:usingBlock:">enumerateRegexMatches:options:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateUTF32CharInRange:usingBlock:">enumerateUTF32CharInRange:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/heightForFont:width:">heightForFont:width:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacMD5StringWithKey:">hmacMD5StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA1StringWithKey:">hmacSHA1StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA224StringWithKey:">hmacSHA224StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA256StringWithKey:">hmacSHA256StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA384StringWithKey:">hmacSHA384StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hmacSHA512StringWithKey:">hmacSHA512StringWithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isNotBlank">isNotBlank</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonValueDecoded">jsonValueDecoded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/matchesRegex:options:">matchesRegex:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/md2String">md2String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/md4String">md4String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/md5String">md5String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberValue">numberValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathScale">pathScale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangeOfAll">rangeOfAll</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sha1String">sha1String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sha224String">sha224String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sha256String">sha256String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sha384String">sha384String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sha512String">sha512String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sizeForFont:size:mode:">sizeForFont:size:mode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByAppendingNameScale:">stringByAppendingNameScale:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByAppendingPathScale:">stringByAppendingPathScale:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByEscapingHTML">stringByEscapingHTML</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByReplacingRegex:options:withString:">stringByReplacingRegex:options:withString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByTrim">stringByTrim</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByURLDecode">stringByURLDecode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByURLDecode:">stringByURLDecode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByURLEncode">stringByURLEncode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByURLEncode:">stringByURLEncode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/widthForFont:">widthForFont:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSString(YYAdd) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSString(YYAdd) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSString+YYAdd.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provide hash, encrypt, encode and some common method for &lsquo;NSString&rsquo;.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Hash" name="task_Hash"></a>
+						<h3 class="subsubtitle task-title">Hash</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/md2String">&ndash;&nbsp;md2String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/md4String">&ndash;&nbsp;md4String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/md5String">&ndash;&nbsp;md5String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sha1String">&ndash;&nbsp;sha1String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sha224String">&ndash;&nbsp;sha224String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sha256String">&ndash;&nbsp;sha256String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sha384String">&ndash;&nbsp;sha384String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sha512String">&ndash;&nbsp;sha512String</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacMD5StringWithKey:">&ndash;&nbsp;hmacMD5StringWithKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA1StringWithKey:">&ndash;&nbsp;hmacSHA1StringWithKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA224StringWithKey:">&ndash;&nbsp;hmacSHA224StringWithKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA256StringWithKey:">&ndash;&nbsp;hmacSHA256StringWithKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA384StringWithKey:">&ndash;&nbsp;hmacSHA384StringWithKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hmacSHA512StringWithKey:">&ndash;&nbsp;hmacSHA512StringWithKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/crc32String">&ndash;&nbsp;crc32String</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Encode and decode" name="task_Encode and decode"></a>
+						<h3 class="subsubtitle task-title">Encode and decode</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/base64EncodedString">&ndash;&nbsp;base64EncodedString</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithBase64EncodedString:">+&nbsp;stringWithBase64EncodedString:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByURLEncode">&ndash;&nbsp;stringByURLEncode</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByURLDecode">&ndash;&nbsp;stringByURLDecode</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByURLEncode:">&ndash;&nbsp;stringByURLEncode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByURLDecode:">&ndash;&nbsp;stringByURLDecode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByEscapingHTML">&ndash;&nbsp;stringByEscapingHTML</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Drawing" name="task_Drawing"></a>
+						<h3 class="subsubtitle task-title">Drawing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sizeForFont:size:mode:">&ndash;&nbsp;sizeForFont:size:mode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/widthForFont:">&ndash;&nbsp;widthForFont:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/heightForFont:width:">&ndash;&nbsp;heightForFont:width:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Regular Expression" name="task_Regular Expression"></a>
+						<h3 class="subsubtitle task-title">Regular Expression</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/matchesRegex:options:">&ndash;&nbsp;matchesRegex:options:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateRegexMatches:options:usingBlock:">&ndash;&nbsp;enumerateRegexMatches:options:usingBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByReplacingRegex:options:withString:">&ndash;&nbsp;stringByReplacingRegex:options:withString:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Emoji" name="task_Emoji"></a>
+						<h3 class="subsubtitle task-title">Emoji</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containsEmoji">&ndash;&nbsp;containsEmoji</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Utilities" name="task_Utilities"></a>
+						<h3 class="subsubtitle task-title">Utilities</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithUUID">+&nbsp;stringWithUUID</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithUTF32Char:">+&nbsp;stringWithUTF32Char:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithUTF32Chars:length:">+&nbsp;stringWithUTF32Chars:length:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateUTF32CharInRange:usingBlock:">&ndash;&nbsp;enumerateUTF32CharInRange:usingBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByTrim">&ndash;&nbsp;stringByTrim</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByAppendingNameScale:">&ndash;&nbsp;stringByAppendingNameScale:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringByAppendingPathScale:">&ndash;&nbsp;stringByAppendingPathScale:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathScale">&ndash;&nbsp;pathScale</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isNotBlank">&ndash;&nbsp;isNotBlank</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containsString:">&ndash;&nbsp;containsString:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containsCharacterSet:">&ndash;&nbsp;containsCharacterSet:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberValue">&ndash;&nbsp;numberValue</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataValue">&ndash;&nbsp;dataValue</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rangeOfAll">&ndash;&nbsp;rangeOfAll</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/jsonValueDecoded">&ndash;&nbsp;jsonValueDecoded</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringNamed:">+&nbsp;stringNamed:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/stringNamed:" title="stringNamed:"></a>
+	<h3 class="subsubtitle method-title">stringNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a string from the file in main bundle (similar to [UIImage imageNamed:]).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stringNamed:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The file name (in main bundle).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new string create from the file in UTF-8 character encoding.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithBase64EncodedString:" title="stringWithBase64EncodedString:"></a>
+	<h3 class="subsubtitle method-title">stringWithBase64EncodedString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSString from base64 encoded string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stringWithBase64EncodedString:(NSString *)<em>base64EncodedString</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>base64Encoding</em></dt>
+			<dd><p>The encoded string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithUTF32Char:" title="stringWithUTF32Char:"></a>
+	<h3 class="subsubtitle method-title">stringWithUTF32Char:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a string containing the characters in a given UTF32Char.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stringWithUTF32Char:(UTF32Char)<em>char32</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>char32</em></dt>
+			<dd><p>A UTF-32 character.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new string, or nil if the character is invalid.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithUTF32Chars:length:" title="stringWithUTF32Chars:length:"></a>
+	<h3 class="subsubtitle method-title">stringWithUTF32Chars:length:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a string containing the characters in a given UTF32Char array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stringWithUTF32Chars:(const UTF32Char *)<em>char32</em> length:(NSUInteger)<em>length</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>char32</em></dt>
+			<dd><p>An array of UTF-32 character.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>length</em></dt>
+			<dd><p>The character count in array.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new string, or nil if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithUUID" title="stringWithUUID"></a>
+	<h3 class="subsubtitle method-title">stringWithUUID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new UUID NSString
+e.g. &ldquo;D1178E50-2A4D-4F1F-9BD3-F6AAB00E06B1&rdquo;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stringWithUUID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/base64EncodedString" title="base64EncodedString"></a>
+	<h3 class="subsubtitle method-title">base64EncodedString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSString for base64 encoded.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)base64EncodedString</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/containsCharacterSet:" title="containsCharacterSet:"></a>
+	<h3 class="subsubtitle method-title">containsCharacterSet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the target CharacterSet is contained within the receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)containsCharacterSet:(NSCharacterSet *)<em>set</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>set</em></dt>
+			<dd><p>A character set to test the the receiver.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/containsEmoji" title="containsEmoji"></a>
+	<h3 class="subsubtitle method-title">containsEmoji</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the receiver contains Apple Emoji (displayed in current version of iOS).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)containsEmoji</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/containsString:" title="containsString:"></a>
+	<h3 class="subsubtitle method-title">containsString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the target string is contained within the receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)containsString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>A string to test the the receiver.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Apple has implemented this method in iOS8.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/crc32String" title="crc32String"></a>
+	<h3 class="subsubtitle method-title">crc32String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for crc32 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)crc32String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataValue" title="dataValue"></a>
+	<h3 class="subsubtitle method-title">dataValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSData using UTF-8 encoding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateRegexMatches:options:usingBlock:" title="enumerateRegexMatches:options:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">enumerateRegexMatches:options:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Match the regular expression, and executes a given block using each object in the matches.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enumerateRegexMatches:(NSString *)<em>regex</em> options:(NSRegularExpressionOptions)<em>options</em> usingBlock:(void ( ^ ) ( NSString *match , NSRange matchRange , BOOL *stop ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>regex</em></dt>
+			<dd><p>The regular expression</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>The matching options to report.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to apply to elements in the array of matches.
+The block takes four arguments:
+     match: The match substring.
+     matchRange: The matching options.
+     stop: A reference to a Boolean value. The block can set the value
+         to YES to stop further processing of the array. The stop
+         argument is an out-only argument. You should only ever set
+         this Boolean to YES within the Block.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateUTF32CharInRange:usingBlock:" title="enumerateUTF32CharInRange:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">enumerateUTF32CharInRange:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enumerates the unicode characters (UTF-32) in the specified range of the string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enumerateUTF32CharInRange:(NSRange)<em>range</em> usingBlock:(void ( ^ ) ( UTF32Char char32 , NSRange range , BOOL *stop ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range within the string to enumerate substrings.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block executed for the enumeration. The block takes four arguments:
+    char32: The unicode character.
+    range: The range in receiver. If the range.length is 1, the character is in BMP;
+        otherwise (range.length is 2) the character is in none-BMP Plane and stored
+        by a surrogate pair in the receiver.
+    stop: A reference to a Boolean value that the block can use to stop the enumeration
+        by setting <em>stop = YES; it should not touch </em>stop otherwise.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/heightForFont:width:" title="heightForFont:width:"></a>
+	<h3 class="subsubtitle method-title">heightForFont:width:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the height of the string if it were rendered with the specified constraints.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)heightForFont:(UIFont *)<em>font</em> width:(CGFloat)<em>width</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>The font to use for computing the string size.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>The maximum acceptable width for the string. This value is used
+to calculate where line breaks and wrapping would occur.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The height of the resulting string&rsquo;s bounding box. These values
+may be rounded up to the nearest whole number.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacMD5StringWithKey:" title="hmacMD5StringWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacMD5StringWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for hmac using algorithm md5 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hmacMD5StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA1StringWithKey:" title="hmacSHA1StringWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA1StringWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for hmac using algorithm sha1 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA1StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA224StringWithKey:" title="hmacSHA224StringWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA224StringWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for hmac using algorithm sha224 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA224StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA256StringWithKey:" title="hmacSHA256StringWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA256StringWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for hmac using algorithm sha256 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA256StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA384StringWithKey:" title="hmacSHA384StringWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA384StringWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for hmac using algorithm sha384 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA384StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hmacSHA512StringWithKey:" title="hmacSHA512StringWithKey:"></a>
+	<h3 class="subsubtitle method-title">hmacSHA512StringWithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for hmac using algorithm sha512 with key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hmacSHA512StringWithKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The hmac key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isNotBlank" title="isNotBlank"></a>
+	<h3 class="subsubtitle method-title">isNotBlank</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>nil, @&ldquo;&rdquo;, @&ldquo;  &rdquo;, @&ldquo;\n&rdquo; will Returns NO; otherwise Returns YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isNotBlank</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/jsonValueDecoded" title="jsonValueDecoded"></a>
+	<h3 class="subsubtitle method-title">jsonValueDecoded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an NSDictionary/NSArray which is decoded from receiver.
+Returns nil if an error occurs.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)jsonValueDecoded</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>e.g. NSString: @&ldquo;{"name&rdquo;:&ldquo;a&rdquo;,&ldquo;count&rdquo;:2}&ldquo;  => NSDictionary: @[@"name&rdquo;:@&ldquo;a&rdquo;,@&ldquo;count&rdquo;:@2]</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/matchesRegex:options:" title="matchesRegex:options:"></a>
+	<h3 class="subsubtitle method-title">matchesRegex:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether it can match the regular expression</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)matchesRegex:(NSString *)<em>regex</em> options:(NSRegularExpressionOptions)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>regex</em></dt>
+			<dd><p>The regular expression</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>The matching options to report.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if can match the regex; otherwize, NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/md2String" title="md2String"></a>
+	<h3 class="subsubtitle method-title">md2String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for md2 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)md2String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/md4String" title="md4String"></a>
+	<h3 class="subsubtitle method-title">md4String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for md4 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)md4String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/md5String" title="md5String"></a>
+	<h3 class="subsubtitle method-title">md5String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for md5 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)md5String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberValue" title="numberValue"></a>
+	<h3 class="subsubtitle method-title">numberValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Try to parse this string and returns an <code>NSNumber</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSNumber *)numberValue</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns an <code>NSNumber</code> if parse succeed, or nil if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathScale" title="pathScale"></a>
+	<h3 class="subsubtitle method-title">pathScale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the path scale.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)pathScale</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>e.g.</p>
+
+<table>
+<tr><th>Path            </th><th>Scale </th></tr>
+<tr><td>"icon.png"      </td><td>1     </td></tr>
+<tr><td>"icon@2x.png"   </td><td>2     </td></tr>
+<tr><td>"icon@2.5x.png" </td><td>2.5   </td></tr>
+<tr><td>"icon@2x"       </td><td>1     </td></tr>
+<tr><td>"icon@2x..png"  </td><td>1     </td></tr>
+<tr><td>"icon@2x.png/"  </td><td>1     </td></tr>
+</table>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rangeOfAll" title="rangeOfAll"></a>
+	<h3 class="subsubtitle method-title">rangeOfAll</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns NSMakeRange(0, self.length).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSRange)rangeOfAll</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sha1String" title="sha1String"></a>
+	<h3 class="subsubtitle method-title">sha1String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for sha1 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)sha1String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sha224String" title="sha224String"></a>
+	<h3 class="subsubtitle method-title">sha224String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for sha224 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)sha224String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sha256String" title="sha256String"></a>
+	<h3 class="subsubtitle method-title">sha256String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for sha256 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)sha256String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sha384String" title="sha384String"></a>
+	<h3 class="subsubtitle method-title">sha384String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for sha384 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)sha384String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sha512String" title="sha512String"></a>
+	<h3 class="subsubtitle method-title">sha512String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a lowercase NSString for sha512 hash.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)sha512String</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sizeForFont:size:mode:" title="sizeForFont:size:mode:"></a>
+	<h3 class="subsubtitle method-title">sizeForFont:size:mode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the size of the string if it were rendered with the specified constraints.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGSize)sizeForFont:(UIFont *)<em>font</em> size:(CGSize)<em>size</em> mode:(NSLineBreakMode)<em>lineBreakMode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>The font to use for computing the string size.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>The maximum acceptable size for the string. This value is
+used to calculate where line breaks and wrapping would occur.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lineBreakMode</em></dt>
+			<dd><p>The line break options for computing the size of the string.
+For a list of possible values, see NSLineBreakMode.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The width and height of the resulting string&rsquo;s bounding box.
+These values may be rounded up to the nearest whole number.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByAppendingNameScale:" title="stringByAppendingNameScale:"></a>
+	<h3 class="subsubtitle method-title">stringByAppendingNameScale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add scale modifier to the file name (without path extension),
+From @&ldquo;name&rdquo; to @&ldquo;name@2x&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByAppendingNameScale:(CGFloat)<em>scale</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scale</em></dt>
+			<dd><p>Resource scale.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>String by add scale modifier, or just return if it&rsquo;s not end with file name.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>e.g.</p>
+
+<table>
+<tr><th>Before     </th><th>After(scale:2)</th></tr>
+<tr><td>"icon"     </td><td>"icon@2x"     </td></tr>
+<tr><td>"icon "    </td><td>"icon @2x"    </td></tr>
+<tr><td>"icon.top" </td><td>"icon.top@2x" </td></tr>
+<tr><td>"/p/name"  </td><td>"/p/name@2x"  </td></tr>
+<tr><td>"/path/"   </td><td>"/path/"      </td></tr>
+</table>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByAppendingPathScale:" title="stringByAppendingPathScale:"></a>
+	<h3 class="subsubtitle method-title">stringByAppendingPathScale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add scale modifier to the file path (with path extension),
+From @&ldquo;name.png&rdquo; to @&ldquo;name@2x.png&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByAppendingPathScale:(CGFloat)<em>scale</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scale</em></dt>
+			<dd><p>Resource scale.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>String by add scale modifier, or just return if it&rsquo;s not end with file name.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>e.g.</p>
+
+<table>
+<tr><th>Before     </th><th>After(scale:2)</th></tr>
+<tr><td>"icon.png" </td><td>"icon@2x.png" </td></tr>
+<tr><td>"icon..png"</td><td>"icon.@2x.png"</td></tr>
+<tr><td>"icon"     </td><td>"icon@2x"     </td></tr>
+<tr><td>"icon "    </td><td>"icon @2x"    </td></tr>
+<tr><td>"icon."    </td><td>"icon.@2x"    </td></tr>
+<tr><td>"/p/name"  </td><td>"/p/name@2x"  </td></tr>
+<tr><td>"/path/"   </td><td>"/path/"      </td></tr>
+</table>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByEscapingHTML" title="stringByEscapingHTML"></a>
+	<h3 class="subsubtitle method-title">stringByEscapingHTML</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Escape commmon HTML to Entity.
+Example: &ldquo;a&lt;b&rdquo; will be escape to &ldquo;a&lt;b&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByEscapingHTML</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByReplacingRegex:options:withString:" title="stringByReplacingRegex:options:withString:"></a>
+	<h3 class="subsubtitle method-title">stringByReplacingRegex:options:withString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new string containing matching regular expressions replaced with the template string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByReplacingRegex:(NSString *)<em>regex</em> options:(NSRegularExpressionOptions)<em>options</em> withString:(NSString *)<em>replacement</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>regex</em></dt>
+			<dd><p>The regular expression</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>The matching options to report.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>replacement</em></dt>
+			<dd><p>The substitution template used when replacing matching instances.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A string with matching regular expressions replaced by the template string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByTrim" title="stringByTrim"></a>
+	<h3 class="subsubtitle method-title">stringByTrim</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Trim blank characters (space and newline) in head and tail.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByTrim</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the trimmed string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByURLDecode" title="stringByURLDecode"></a>
+	<h3 class="subsubtitle method-title">stringByURLDecode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>URL decode a string in utf-8.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByURLDecode</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the decoded string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByURLDecode:" title="stringByURLDecode:"></a>
+	<h3 class="subsubtitle method-title">stringByURLDecode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>URL encode a string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByURLDecode:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>The encoding to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>URL encoded string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByURLEncode" title="stringByURLEncode"></a>
+	<h3 class="subsubtitle method-title">stringByURLEncode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>URL encode a string in utf-8.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByURLEncode</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the encoded string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringByURLEncode:" title="stringByURLEncode:"></a>
+	<h3 class="subsubtitle method-title">stringByURLEncode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>URL encode a string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringByURLEncode:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>The encoding to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>URL encoded string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/widthForFont:" title="widthForFont:"></a>
+	<h3 class="subsubtitle method-title">widthForFont:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the width of the string if it were to be rendered with the specified
+font on a single line.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)widthForFont:(UIFont *)<em>font</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>The font to use for computing the string width.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The width of the resulting string&rsquo;s bounding box. These values may be
+rounded up to the nearest whole number.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+YYAdd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 ibireme. All rights reserved. (Last updated: 2015-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
