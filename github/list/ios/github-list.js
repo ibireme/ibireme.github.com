@@ -78,6 +78,7 @@ list:[
     {name:'HJCache',        owner:'markofjohnson', desc:'一个缓存网络内容等的Cache'},
     {name:'RNCryptor',      owner:'RNCryptor',     desc:'加密解密相关 貌似更上流, note:去看一下他博客,有更详细的文章'},
     {name:'MIHCrypto',      owner:'hohl',          desc:'各种加密解密算法 (AES/DES/RSA/MD5/SHA等)，包装自OpenSSL'},
+    {name:'INBSecurityCrypto', owner:'Daniate',    desc:'一些加密解密工具和示例'},
     {name:'ssziparchive',   owner:'soffes',        desc:'zip压缩 zip解压~'},
     {name:'ZipKit',         owner:'kolpanic',      desc:'一个ZipKit 从bitbucket Mirror过来'},
     {name:'ZipKit',    owner:'FivesquareSoftware', desc:'如同ZipKit 改为ARC了'},
@@ -328,6 +329,7 @@ list:[
 list:[
     {name:'ijkplayer',         owner:'Bilibili',        desc:'B站出的视频播放器库,基于ffmpeg,支持iOS/Android,支持流播放'},
     {name:'kxmovie',           owner:'kolyvan',         desc:'一个基于ffmpeg的视频播放器'},
+    {name:'KRVideoPlayer',     owner:'36Kr-Mobile',     desc:'类似Weico的播放器，支持竖屏模式下全屏播放'},
     {name:'GPUImage',          owner:'BradLarson',      desc:'基于GPU的实时图像视频处理 '},
     {name:'XBImageFilters',    owner:'xissburg',        desc:'一个GPU实时处理的库 类似GPUImage'},
     {name:'FilterKit',         owner:'eklipse2k8',      desc:'在iOS中构建和调节滤镜的库，基于GPUImage'},
@@ -402,6 +404,7 @@ list:[
     {name:'cam',                 owner:'thisandagain', desc:'一个AVFoundation的封装、照相等功能'},
     {name:'Filtrr',              owner:'OmidH',        desc:'几个Filter 速度也不行'},
     {name:'PhotoTweaks',         owner:'itouch2',      desc:'一个图片调整的控件，支持旋转和裁剪'},
+    {name:'UIImageView_FaceAwareFill', owner:'Julioacarrettoni', desc:'用CoreImage人脸识别，自动调整图片位置，让人脸居中'},
     {name:'ZXingObjC',           owner:'TheLevelUp',   desc:'ZXing 二维码/条形码处理'},
     {name:'RSBarcodes',          owner:'yeahdongcn',   desc:'二维码/条形码识别/合成'},
     {name:'Tesseract-OCR-iOS',   owner:'gali8',        desc:'OCR文字识别'},
@@ -956,6 +959,8 @@ list:[
     {name:'WSCoachMarksView',    owner:'workshirt',       desc:'为某个控件加上蒙板 类似Spotlight'},
     {name:'COSTouchVisualizer',  owner:'conopsys',        desc:'在屏幕上显示手指的触摸事件'},
     {name:'KLHorizontalSelect',  owner:'KieranLafferty',  desc:'横向扫动选择'},
+    {name:'KYGooeyMenu',         owner:'KittenYang',      desc:'类似 Path 的带黏性的菜单'},
+    {name:'KYCuteView',          owner:'KittenYang',      desc:'类似 QQ 那样，拖拽能拽走的小球'},
     {name:'iOS-StyledPageControl', owner:'honcheng',      desc:'自定义PageControl,多种样式'},
     {name:'iOS-blur',            owner:'ArcticMinds',     desc:'iOS7的模糊效果 iOS7Only'},
     {name:'FXBlurView',          owner:'nicklockwood',    desc:'iOS7的模糊效果 可以用在iOS5以上'},
@@ -988,7 +993,8 @@ list:[
     {name:'PEPhotoCropEditor',   owner:'kishikawakatsumi',desc:'图片裁切的工具，类似系统的图片App'},
     {name:'InformaticToolbar',   owner:'gregwym',         desc:'下边栏显示提示和动作'},
     {name:'CCHMapClusterController',owner:'choefele',     desc:'自动归类MapKit上面的标记'},
-    {name:'JTSImageViewController',owner:'jaredsinclair', desc:'点击弹出图片，双击缩放，再点击缩回原处，这种常见的功能...'}
+    {name:'JTSImageViewController',owner:'jaredsinclair', desc:'点击弹出图片，双击缩放，再点击缩回原处，这种常见的功能...'},
+    {name:'FLXView',             owner:'robb',            desc:'以 flexbox 方式布局'}
     ]
 }
 
@@ -1009,7 +1015,8 @@ list:[
     {name:'modizer',            owner:'yoyofr',         desc:'很强大的App 可以读取和演奏各种mod音乐 midi合成 解压 下载 自带庞大音乐库~ 已上架'},
     {name:'NOTTaskPaperForIOS', owner:'jessegrosjean',  desc:'TaskPaper源码~'},
     {name:'GraphSketcher',      owner:'graphsketcher',  desc:'以OmniGroup为基础，做的类似OneNote的工具，支持Mac和iPad'},
-    {name:'Sol',                owner:'comyarzaheri',   desc:'漂亮的扁平风格的天气App'},
+    {name:'Sol',                owner:'comyarzaheri',   desc:'漂亮的扁平风格的天气 App'},
+    {name:'ESTMusicPlayer',     owner:'Aufree',         desc:'一个界面不错的音乐播放器 App'},
     {name:'ChatSecure-iOS',     owner:'chrisballinger', desc:'一个XMPP客户端～ 支持Jabber/GTalk等XMPP协议'},
     {name:'iOSSF',              owner:'gaosboy',        desc:'SegmentFault官方App ...'},
     {name:'PlainReader',        owner:'guojiubo',       desc:'CnBeta简阅,简洁好用的CB客户端,曾上架AppStore但因版权问题被下了'},
@@ -1070,6 +1077,8 @@ list:[
     {name:'DCIntrospect',    owner:'domesticcatsoftware',desc:'一套iOS调试工具,在iOS界面里显示信息'},
     {name:'CocoaLumberjack',  owner:'CocoaLumberjack',   desc:'一套类似Log4j的东西,可提供企业级的Log~~~~'},
     {name:'UALogger',         owner:'UrbanApps',         owner:'一个调试用Log工具,支持分级'},
+    {name:'ios-class-guard',  owner:'Polidea',           owner:'iOS 代码混淆工具'},
+    {name:'class-dump',       owner:'nygard',            owner:'class dump 嗯。。'},
     {name:'ARAnalytics',      owner:'orta',              desc:'用户行为统计，支持各大App数据平台'},
     {name:'SkyLab',           owner:'mattt',             desc:'A/B Test工具～'},
     {name:'HeapInspector-for-iOS',owner:'tapwork',       desc:'测试和定位内存泄露的库'},
@@ -1173,6 +1182,8 @@ list:[
     {name:'QuickCast',         owner:'petetak',      desc:'一个录屏分享的App'},
     {name:'zephyros',          owner:'sdegutis',     desc:'窗口管理 for hackers'},
     {name:'shuttle',           owner:'fitztrev',     desc:'SSH快捷方式 菜单栏插件'},
+    {name:'KeepingYouAwake',   owner:'newmarcel',    desc:'很小的工具栏插件，保持 Mac 不休眠'},
+    {name:'WWDC',              owner:'insidegui',    desc:'在 Mac 上直接查看、下载 WWDC 视频和演讲稿'},
     {name:'qlstephen',         owner:'whomwah',      desc:'系统QuickLook的插件,查看无扩展名的文本文件'},
     {name:'INAppStoreWindow',  owner:'indragiek',    desc:'Mac AppStore风格的NSWindow'},
     {name:'spectacle',         owner:'eczarny',      desc:'窗口管理 不用鼠标'},
@@ -1276,7 +1287,8 @@ list:[
     {name:'PromiseKit',owner:'mxcl',                desc:'Future and promise 方式编程. 这是一个双语版本的库(ObjC/Swift)'},
     {name:'SwiftTask', owner:'ReactKit',            desc:'任务管理 Promise + progress + pause + cancel + retry'},
     {name:'Cartography',owner:'robb',               desc:'Autolayout的封装'},
-    {name:'SnapKit',    owner:'SnapKit',            desc:'Autolayout的封装'}
+    {name:'SnapKit',    owner:'SnapKit',            desc:'Autolayout的封装'},
+    {name:'C4iOS',      owner:'C4Framework',        desc:'一系列工具和扩展'}
     ]
 },
 
@@ -1285,6 +1297,7 @@ list:[
     {name:'Alamofire',          owner:'Alamofire',      desc:'Swift最流行的HTTP请求库'},
     {name:'Just',               owner:'JustHTTP',       desc:'简单好用的HTTP请求库'},
     {name:'SwiftHTTP',          owner:'daltoniam',      desc:'简单的HTTP请求，简单包装自NSURLSession'},
+    {name:'Moya',               owner:'Moya',           desc:'网络层封装，基于 Alamofire'},
     {name:'Starscream',         owner:'daltoniam',      desc:'WebSocket连接库'},
     {name:'Argo',               owner:'thoughtbot',     desc:'JSON解析与对象映射'},
     {name:'SwiftyJSON',         owner:'SwiftyJSON',     desc:'JSON解析'},
@@ -1330,7 +1343,8 @@ list:[
     {name:'SCLAlertView-Swift', owner:'vikmeup',     desc:'一个自定义AlertView'},
     {name:'GuillotineMenu',     owner:'Yalantis',    desc:'一个在导航栏翻上翻下的菜单'},
     {name:'ios-charts',         owner:'danielgindi', desc:'图表绘制库,支持折线/饼图/柱状图/扇形/雷达图/K线等'},
-    {name:'PNChart-Swift',      owner:'kevinzhow',   desc:'图表绘制库, PNChart的Swift版本'}
+    {name:'PNChart-Swift',      owner:'kevinzhow',   desc:'图表绘制库, PNChart的Swift版本'},
+    {name:'XLActionController', owner:'xmartlabs',   desc:'各种样式的 action sheet, 使用简单'}
     ]
 },
 
@@ -1342,9 +1356,11 @@ list:[
     {name:'DBPathRecognizer',   owner:'didierbrun',     desc:'复杂的手势识别'},
     {name:'FontBlaster',        owner:'ArtSabintsev',   desc:'更方便的加载自定义字体'},
     {name:'Surge',              owner:'mattt',          desc:'Accelerate库的包装'},
+    {name:'SwiftyBeaver',       owner:'SwiftyBeaver',   desc:'log工具，支持自定义颜色'},
     {name:'Toucan',             owner:'gavinbunney',    desc:'图片调整库，支持裁剪、调整大小、Mask、圆角等功能'},
     {name:'Siren',              owner:'ArtSabintsev',   desc:'升级时的提示弹框, (Harpy的Swift版本) 使用时需要谨慎对待AppStore审核'},
-    {name:'MusicKit',           owner:'benzguo',        desc:'音乐分析、和弦探测、MIDI I/O'}
+    {name:'MusicKit',           owner:'benzguo',        desc:'音乐分析、和弦探测、MIDI I/O'},
+    {name:'Laurine',            owner:'JiriTrecak',     desc:'做国际化时，相关代码生成'}
     ]
 },
 
@@ -1352,6 +1368,7 @@ list:[
 list:[
     {name:'Chats',         owner:'acani',             desc:'一个具有原生界面风格的聊天App (注意这个还有配套的开源服务端)'},
     {name:'SwiftWeather',  owner:'JakeLin',           desc:'一个不错的天气App'},
+    {name:'focus',         owner:'mozilla',           desc:'Safari 内容屏蔽插件 App，Mozilla 出品，已上架'},
     {name:'VPNOn',         owner:'lexrus',            desc:'VPN连接管理,支持 Watch,已上架'},
     {name:'V2EXClient',    owner:'liaojinxing',       desc:'一个 V2EX 的一个客户端'},
     {name:'imWildCat',     owner:'imWildCat',         desc:'又一个 V2EX 客户端'},
